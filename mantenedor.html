@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="mantenedor.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+        aria-controls="nav-home" aria-selected="true">Grupo</a>
+      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+        aria-controls="nav-profile" aria-selected="false">Clase</a>
+      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+        aria-controls="nav-contact" aria-selected="false">Familia</a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
+        <div class="container-fluid ng-scope">
+          <div class="col-md-12 col-xs-12">
+            <div class="row cls-content-ctrl-ses">
+
+              <div class="col-md-8 col-xs-12">
+                <div class="row cls-content-ctrl-ses">
+                  <div class="col-md-2 col-xs-12" ng-show="vCmbGrupoxGerente">
+                    <div class="form-group">
+                      <b>Código : </b>
+                      <input type="password" class="form-control input-sm" id="password" name="password"
+                        placeholder="Código" required>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                    <div class="form-group">
+                      <b>Código Grupo: </b>
+                      <!--INI PCSU - 30/07/2019 – SESMOD-->
+                      <!--<select class="form-control input-sm" ng-model="GruposxGerente"-->
+                      <input type="password" class="form-control input-sm" id="password" name="password"
+                        placeholder="Código" required>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-12" style="margin-bottom:1%">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="form-group">
+                      <b>Código : </b>
+                      <input type="password" class="form-control input-sm" id="password" name="password"
+                        placeholder="Código" required>
+                    </div>
+                    <div class="btn-save">
+                      <button type="submit" class="btn  btn-sm btn-saves" align="right"><i
+                          class="fa fa-plus"></i>&nbsp;Guardar</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+              <div class="table-responsive">
+                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                  <div class="row" style="width: 100%;">
+                    <div class="col-sm-7 ">
+                      <div class="dataTables_length" id="DataTables_Table_0_length">
+                        <label style="justify-content: flex-start;">Ver
+                          <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
+                            class="form-control input-sm">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select> Líneas</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div id="DataTables_Table_0_filter" class="dataTables_filter"><label style="
+                        justify-content: flex-end;
+                    ">Buscar:<input type="search" class="form-control input-sm" placeholder=""
+                            aria-controls="DataTables_Table_0"></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <table
+                        class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
+                        datatable="ng" dt-options="showCase.dtOptions" style="display: table; width: 1244px"
+                        id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+                        <thead>
+                          <tr role="row">
+                            <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
+                              rowspan="1" colspan="1" aria-sort="ascending"
+                              aria-label=": activate to sort column descending" style="width: 79px;">
+                              Item
+                            </th>
+                            <th class="text-left sorting" style="width: 49px;" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Código: activate to sort column ascending">Código</th>
+
+                            <th class="text-center sorting" ng-show="vColUsuario" style="width: 15px;" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Usuario: activate to sort column ascending">Grupo</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
+                              style="width: 312px;">Descripción</th>
+                            <th class="text-center sorting" style="width: 95px;" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Acción: activate to sort column ascending">Acción</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              1
+                            </td>
+
+                            <td>
+                              0008
+                            </td>
+                            <td>
+                              11
+                            </td>
+                            <td>
+                              Comida y comedor
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-primary btn-xs" title="Editar">
+                                <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-primary btn-xs" title="Eliminar">
+                                <span class="glyphicon glyphicon-remove" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              2
+                            </td>
+                            <td>
+                              0007
+                            </td>
+                            <td>
+                              25
+                            </td>
+                            <td>
+                              Oficina
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-primary btn-xs" title="Editar">
+                                <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-primary btn-xs" title="Eliminar">
+                                <span class="glyphicon glyphicon-remove" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              3
+                            </td>
+
+                            <td>
+                              00011
+
+                            </td>
+                            <td>
+                              32
+                            </td>
+                            <td>
+                              Hospitalización
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-primary btn-xs" title="Editar">
+                                <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-primary btn-xs" title="Eliminar">
+                                <span class="glyphicon glyphicon-remove" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              4
+                            </td>
+
+                            <td>
+                              0005
+
+                            </td>
+                            <td>
+                              46
+                            </td>
+                            <td>
+                              Telecomunicaciones
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-primary btn-xs" title="Editar">
+                                <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-primary btn-xs" title="Eliminar">
+                                <span class="glyphicon glyphicon-remove" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              5
+                            </td>
+                            <td>
+                              00010
+                            </td>
+                            <td>
+                              53
+                            </td>
+                            <td>
+                              Recreo y Deporte
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-primary btn-xs" title="Editar">
+                                <span class="glyphicon glyphicon-edit" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-primary btn-xs" title="Eliminar">
+                                <span class="glyphicon glyphicon-remove" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="row" style="width: 100%;">
+
+                    <div class="col-sm-5 ">
+                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                        Mostrando
+                        0 hasta 0 de 0 registros</div>
+                    </div>
+                    <div class="col-sm-7" style="display: flex; justify-content: flex-end;
+                ">
+                      <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                        <ul class="pagination">
+                          <li class="paginate_button previous disabled " id="DataTables_Table_0_previous"><a href="#" class="btn btn-pag"
+                              aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0">Anterior</a></li>
+                          <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"   class="btn btn-pag"
+                              aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0">Siguiente</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="dt-loading" style="display: none;">Loading...</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- CLASE -->
+
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+      <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
+
+        <div class="container-fluid ng-scope">
+          <div class="col-md-12 col-xs-12">
+            <div class="row cls-content-ctrl-ses">
+
+              <div class="col-md-8 col-xs-12">
+                <div class="row cls-content-ctrl-ses">
+                  <div class="col-md-2 col-xs-12" ng-show="vCmbGrupoxGerente">
+                    <div class="form-group">
+                      <b>Código : </b>
+                      <input type="password" class="form-control input-sm" id="password" name="password"
+                        placeholder="Código" required>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                    <div class="form-group">
+                      <b>Código Clase: </b>
+
+                      <input type="password" class="form-control input-sm" id="password" name="password"
+                        placeholder="Código" required>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-12" style="margin-bottom:1%">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="form-group">
+                      <b>Código : </b>
+                      <input type="password" class="form-control input-sm" id="password" name="password"
+                        placeholder="Código" required>
+                    </div>
+                    <div class="btn-save">
+                      <button type="submit" class="btn  btn-sm btn-saves" align="right"><i
+                          class="fa fa-plus"></i>&nbsp;Guardar</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+              <div class="table-responsive">
+                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                  <div class="row">
+                    <div class="col-sm-7">
+                      <div class="dataTables_length" id="DataTables_Table_0_length"><label>Ver <select
+                            name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
+                            class="form-control input-sm">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select> Líneas</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Buscar:<input type="search"
+                            class="form-control input-sm" placeholder="" aria-controls="DataTables_Table_0"></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <table
+                        class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
+                        datatable="ng" dt-options="showCase.dtOptions" style="display: table; width: 1220px;"
+                        id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+                        <thead>
+                          <tr role="row">
+                            <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
+                              rowspan="1" colspan="1" aria-sort="ascending"
+                              aria-label=": activate to sort column descending" style="width: 79px;">
+                              Item
+                            </th>
+                            <th class="text-left sorting" style="width: 49px;" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Código: activate to sort column ascending">Código</th>
+
+                            <th class="text-center sorting" ng-show="vColUsuario" style="width: 15px;" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Usuario: activate to sort column ascending">Clase</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
+                              style="width: 312px;">Descripción</th>
+                            <th class="text-center sorting" style="width: 95px;" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Acción: activate to sort column ascending">Acción</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              1
+                            </td>
+
+                            <td>
+                              0008
+                            </td>
+                            <td>
+                              11
+                            </td>
+                            <td>
+                              Computo
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-primary btn-xs" title="Editar">
+                                <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-primary btn-xs" title="Eliminar">
+                                <span class="glyphicon glyphicon-remove" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              2
+                            </td>
+                            <td>
+                              0007
+                            </td>
+                            <td>
+                              25
+                            </td>
+                            <td>
+                              Equipo de Oficina
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-primary btn-xs" title="Editar">
+                                <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-primary btn-xs" title="Eliminar">
+                                <span class="glyphicon glyphicon-remove" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              3
+                            </td>
+
+                            <td>
+                              00011
+
+                            </td>
+                            <td>
+                              32
+                            </td>
+                            <td>
+                              Equipo de Seguridad
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-primary btn-xs" title="Editar">
+                                <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-primary btn-xs" title="Eliminar">
+                                <span class="glyphicon glyphicon-remove" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              4
+                            </td>
+
+                            <td>
+                              0005
+
+                            </td>
+                            <td>
+                              46
+                            </td>
+                            <td>
+                              Equipo de Limpieza
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-primary btn-xs" title="Editar">
+                                <span class="glyphicon glyphicon-play-circle" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-primary btn-xs" title="Eliminar">
+                                <span class="glyphicon glyphicon-remove" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              5
+                            </td>
+                            <td>
+                              00010
+                            </td>
+                            <td>
+                              53
+                            </td>
+                            <td>
+                              Equipo de Electricidad
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-primary btn-xs" title="Editar">
+                                <span class="glyphicon glyphicon-edit" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-primary btn-xs" title="Eliminar">
+                                <span class="glyphicon glyphicon-remove" data-toggle="tooltip"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="row">
+
+                    <div class="col-sm-5 ">
+                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                        Mostrando
+                        0 hasta 0 de 0 registros</div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                        <ul class="pagination">
+                          <li class="paginate_button previous disabled" id="DataTables_Table_0_previous"><a href="#"
+                              aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0">Anterior</a></li>
+                          <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"
+                              aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0">Siguiente</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="dt-loading" style="display: none;">Loading...</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">..
+
+      <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

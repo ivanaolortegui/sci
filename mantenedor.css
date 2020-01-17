@@ -1,0 +1,58 @@
+
+.cls-content {
+    box-shadow: 0 0 5px 0px #00000085;
+    
+}
+.cls-ingresar {
+    background-color: #33AADE !important;
+    color: white !important;
+    font-weight: bold;
+    width: 100%;
+    margin: 14px 0 5px 0;
+    
+}
+
+.cls-cambiar-contraseña {
+    background-color: white  !important;
+    color:  #33AADE !important;
+    font-weight: bold;
+    border-color: #33AADE !important;
+    width: 100%;
+}
+
+.col-md-offset-3 {
+    margin-left: 25%;
+}
+
+.form-content {
+    padding-top: 5%;
+}
+.img-content {
+    padding: 39% 0 0 8%;
+}
+.cls-content {
+    margin-top: 10%;
+}
+.text-select {
+    margin-top: 4%;
+    font-weight: 500;
+}
+.text-input {
+    margin-top: 4%;
+    font-weight: 500;
+    color: #33AADE;
+}
+
+.btn-save{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-saves {
+    background-color: #33AADE !important;
+    color: white !important;
+}
+
+.btn-pag{
+    border: 1px solid #007bff !important;
+}
