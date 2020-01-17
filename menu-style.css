@@ -41,7 +41,7 @@ img{
         width: 250px;
         height: 550px;
         border-right: 2px solid rgba(126, 120, 120, 0.438);
-        position: absolute;
+        position: relative;
         animation: mymove 3s;
    
     }
@@ -113,6 +113,8 @@ img{
     #sign-off{
         width: 250px;
         border: 0.5px solid rgba(126, 120, 120, 0.438);
+        position: absolute;
+        right: 0;
    
     }
     #sign-off ul li a {
