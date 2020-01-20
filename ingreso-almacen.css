@@ -5,3 +5,16 @@
 select {
     text-align-last: center;
 }
+
+.input-group-addon {
+  padding: 9px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #eee;
+  height: 38px;
+  border: 1px solid #ccc;
+}
+

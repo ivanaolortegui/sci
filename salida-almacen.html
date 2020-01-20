@@ -99,13 +99,11 @@
         <div class="container-fluid ng-scope">
           <div class="col-md-12 col-xs-12">
             <div class="col-md-12 col-xs-12" style="margin-right:0px;">
-              <h4 style="text-align: center;">Ingreso De Almacén </h4>
+              <h4 style="text-align: center;">Guías de Salida </h4>
             </div>
             <div class="row cls-content-ctrl-ses" style="margin-right: 0px;">
               <div class="col-md-6 col-xs-12" ng-show="vCmbGrupoxGerente">
-                <div class="col-md-12 col-xs-12" style="margin-right:0px;">
-                  <h6 style="text-align: center;">DATOS GENERALES: </h6>
-                </div>
+                
                 <div class="form-group">
                   <div class="input-group input-daterange">
                     <label class="label-input">Serie/Número: </label>
@@ -138,9 +136,12 @@
                     </select>
                   </div>
                 </div>
+              </div>
+
+              <div class="col-md-6 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
                 <div class="form-group">
                   <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Proveedor:</label>
+                    <label class="label-input">Almacén de destino:</label>
                     <select name="" id="" class="form-control input-sm">
                       <option value="">------SELECCIONE --------</option>
                     </select>
@@ -148,7 +149,7 @@
                 </div>
                 <div class="form-group">
                   <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Almacén:</label>
+                    <label class="label-input">Proveedor:</label>
                     <select name="" id="" class="form-control input-sm">
                       <option value="">------SELECCIONE --------</option>
                     </select>
@@ -161,76 +162,10 @@
                       placeholder="Observación:" required>
                   </div>
                 </div>
-              </div>
-
-              <div class="col-md-6 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
-                <div class="col-md-12 col-xs-12" style="margin-right:0px;">
-                  <h6 style="text-align: center;">DOCUMENTOS DE COMPRA: </h6>
-                </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Comprobante: </label>
-                    <input type="password" class="form-control input-sm" id="password" name="password"
-                      placeholder="Código" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Moneda: </label>
-                    <select name="" id="" class="form-control input-sm">
-                      <option value="">------SELECCIONE --------</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Forma de Pago: </label>
-                    <select name="" id="" class="form-control input-sm">
-                      <option value="">------SELECCIONE --------</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group input-daterange" style="
-                  text-align: start;
-              ">
-                    <label class="label-input">N° Documento: </label>
-                    <input type="text"
-                      class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                      ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="4"
-                      placeholder=""
-                      oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-                    <div class="input-group-addon">-</div>
-                    <input type="number"
-                      class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                      ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value=""
-                      placeholder="" maxlength="8"
-                      oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                      ng-pattern="/^-?[0-9][^\.]*$/">
-
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Fecha Doc. </label>
-                    <select name="" id="" class="form-control input-sm">
-                      <option value="">------SELECCIONE --------</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input"> Asociar: </label>
-                    <select name="" id="" class="form-control input-sm">
-                      <option value="">------SELECCIONE --------</option>
-                    </select>
-                  </div>
-                </div>
                 <div class="form-group">
                   <div class="btn-save" style="justify-content: flex-end;">
                     <button type="submit" class="btn  btn-sm btn-saves" style=" 
-                      height: 46% !important;
-                      margin-top: 8px !important; " align="right"><i class="fa fa-plus"></i>&nbsp;Guardar</button>
+                      height: 46% !important;" align="right"><i class="fa fa-plus"></i>&nbsp;Guardar</button>
                   </div>
                 </div>
               </div>
@@ -240,7 +175,7 @@
               <div class="table-responsive">
                 <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
                   <div class="row" style="width: 100%;     
-                      margin-bottom: 10px; margin-left:0px ">
+                      margin-bottom: 10px; margin-left:0px">
                     <div class="col-sm-7 ">
                       <div class="dataTables_length" id="DataTables_Table_0_length">
                         <label style="justify-content: flex-start;">Ver
@@ -306,12 +241,12 @@
                         <tbody>
                           <tr>
                             <td> 1 </td>
-                            <td> 745869221 </td>
-                            <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
+                            <td> 746451860106 </td>
+                            <td> ESTACION DOBLE  DE TRABAJO </td>
                             <td> UND </td>
                             <td> 1 </td>
-                            <td> 423.73 </td>
-                            <td> 423.73 </td>
+                            <td> 694.92 </td>
+                            <td> 694.92 </td>
                             <td> 0 </td>
                             <td class="text-center">
                               <button type="button" class="btn btn-edit btn-xs" title="Editar">
@@ -324,8 +259,8 @@
                           </tr>
                           <tr>
                             <td> 2 </td>
-                            <td> 745125223 </td>
-                            <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
+                            <td> 746451412512 </td>
+                            <td> ESTACION DOBLE  DE TRABAJO </td>
                             <td> UND </td>
                             <td> 1 </td>
                             <td> 423.73 </td>
@@ -343,7 +278,7 @@
 
                           <tr>
                             <td> 3 </td>
-                            <td> 748525412 </td>
+                            <td> 745423510241 </td>
                             <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
                             <td> UND </td>
                             <td> 1</td>
@@ -362,7 +297,7 @@
 
                           <tr>
                             <td> 4 </td>
-                            <td> 748212522 </td>
+                            <td> 745822335223 </td>
                             <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
                             <td> UND </td>
                             <td> 1 </td>
@@ -380,7 +315,7 @@
                           </tr>
                           <tr>
                             <td> 5 </td>
-                            <td> 748593212 </td>
+                            <td> 7851522154111 </td>
                             <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
                             <td> UND </td>
                             <td> 1</td>
@@ -403,7 +338,7 @@
                   <div class="row" style="width: 100%; margin-left: 0px;">
                     <div class="col-sm-3 ">
                       <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
-                        Total Cantidad: 6</div>
+                        Total Cantidad: 5</div>
                     </div>
                     <div class="col-sm-3 ">
                       <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
