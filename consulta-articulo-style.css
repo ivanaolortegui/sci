@@ -1,0 +1,380 @@
+body {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.sky-blue-ses {
+    background: #20A5DE;
+}
+.font-color-white{
+    color: white;
+}
+.position-absolute{
+    position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+img{
+    display:block;
+    margin:auto;
+    }
+
+.recta {
+        height: 5px;
+        background: #20A5DE;
+        margin-top: 5px;
+     }
+     
+     #menu ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 11pt;
+        background-color: rgb(255, 255, 255);
+          
+    }
+    #menu{
+        width: 250px;
+        height: 550px;
+        border-right: 2px solid rgba(126, 120, 120, 0.438);
+        position: relative;
+        animation: mymove 3s;
+        background: white;
+   
+    }
+    #menu ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+      
+        display: block;
+        padding: 4px 10px 4px 20px;
+    }
+
+    #menu ul li a:hover {
+        background: rgb(135, 200, 228);
+        color: #fff;
+    }
+
+    
+    #menu ul ul li {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        padding: 4px 10px 4px 30px;
+    }
+
+    #menu ul ul li:hover {
+        background:  rgb(135, 200, 228);
+        color: #fff;
+    }
+
+    .hide{
+        animation: no-mymove 3s;
+        display:none;
+    }
+    .title{
+        background: #20A5DE;
+        border-radius: 5px;
+        text-align: center;
+        color: white;
+        margin: 5px;
+        font-weight: bold;
+        font-size: 14px;
+        padding-top:3px ;
+        height: 30px;
+
+       
+    }
+   
+    @keyframes mymove {
+        from {left: -250px;}
+        to {left: 0px;}
+      }
+    
+    @keyframes no-mymove {
+        from {left: 0px;}
+        to {left: -250px;}
+      }
+    
+
+    #sign-off ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 11pt;
+        background-color: rgb(255, 255, 255);
+          
+    }
+    #sign-off{
+        width: 250px;
+        border: 0.5px solid rgba(126, 120, 120, 0.438);
+        position: absolute;
+        right: 0;
+   
+    }
+    #sign-off ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+      
+        display: block;
+        padding: 4px 10px 4px 20px;
+    }
+
+    #sign-off ul li a:hover {
+        background: rgb(135, 200, 228);
+        color: #fff;
+    }
+
+    *{
+        margin: 0px;  
+    }
+    
+    
+    
+    .headboard{
+        background: #33AADE !important;
+        color: white;
+        padding: 4px;
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 50px !important;
+    }
+    
+    p{
+        margin-bottom: 0 !important;
+    }
+    
+    
+    .cls-content {
+        box-shadow: 0 0 5px 0px #00000085;
+        
+    }
+    .cls-ingresar {
+        background-color: #33AADE !important;
+        color: white !important;
+        font-weight: bold;
+        width: 100%;
+        margin: 14px 0 5px 0;
+        
+    }
+    
+    .cls-cambiar-contraseña {
+        background-color: white  !important;
+        color:  #33AADE !important;
+        font-weight: bold;
+        border-color: #33AADE !important;
+        width: 100%;
+    }
+    
+    .col-md-offset-3 {
+        margin-left: 25%;
+    }
+    
+    .form-content {
+        padding-top: 5%;
+    }
+    .img-content {
+        padding: 39% 0 0 8%;
+    }
+    .cls-content {
+        margin-top: 10%;
+    }
+    .text-select {
+        margin-top: 4%;
+        font-weight: 500;
+        
+    }
+    .text-input {
+        margin-top: 4%;
+        font-weight: 500;
+        color: #33AADE;
+    }
+    
+    .btn-save{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-saves {
+        background-color: #33AADE !important;
+        color: white !important;
+    }
+    .select-size{
+        width:300px !important;
+        margin-top: 4%;
+        margin-left:10px !important;
+    }
+    
+    .border{
+          color: white;
+          padding: 4px 8px;
+          text-align: center;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          cursor: pointer;
+    
+    }
+    #btn1 {
+          background-color: white; 
+          color: #33AADE; 
+          border: 10px solid #33AADE
+    }
+    
+    #btn1:hover {
+        background-color: #33AADE;
+        color: white;
+    }
+    .border2{
+        color: #33AADE;
+        padding: 4px 8px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+    
+    }
+    #btn2 {
+        background-color: #33AADE; 
+        color: rgb(255, 255, 255); 
+        border: 4px solid rgb(255, 255, 255)
+    }
+    
+    #btn2:hover {
+      background-color: rgb(255, 255, 255);
+      color: #33AADE;
+    }
+    
+    *{
+        margin: 0px;  
+    }
+    
+    
+    
+    .headboard{
+        background: #33AADE !important;
+        color: white;
+        padding: 4px;
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 50px !important;
+    }
+    
+    p{
+        margin-bottom: 0 !important;
+    }
+    
+    
+    .cls-content {
+        box-shadow: 0 0 5px 0px #00000085;
+        
+    }
+    .cls-ingresar {
+        background-color: #33AADE !important;
+        color: white !important;
+        font-weight: bold;
+        width: 100%;
+        margin: 14px 0 5px 0;
+        
+    }
+    
+    .cls-cambiar-contraseña {
+        background-color: white  !important;
+        color:  #33AADE !important;
+        font-weight: bold;
+        border-color: #33AADE !important;
+        width: 100%;
+    }
+    
+    .col-md-offset-3 {
+        margin-left: 25%;
+    }
+    
+    .form-content {
+        padding-top: 5%;
+    }
+    .img-content {
+        padding: 39% 0 0 8%;
+    }
+    .cls-content {
+        margin-top: 10%;
+    }
+    .text-select {
+        margin-top: 4%;
+        font-weight: 500;
+        
+    }
+    .text-input {
+        margin-top: 4%;
+        font-weight: 500;
+        color: #33AADE;
+    }
+    
+    .btn-save{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-saves {
+        background-color: #33AADE !important;
+        color: white !important;
+    }
+    .select-size{
+        width:300px !important;
+        margin-top: 4%;
+        margin-left:10px !important;
+    }
+    
+    .border{
+          color: white;
+          padding: 4px 8px;
+          text-align: center;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          cursor: pointer;
+    
+    }
+    #btn1 {
+          background-color: white; 
+          color: #33AADE; 
+          border: 10px solid #33AADE
+    }
+    
+    #btn1:hover {
+        background-color: #33AADE;
+        color: white;
+    }
+    .border2{
+        color: #33AADE;
+        padding: 4px 8px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+    
+    }
+    #btn2 {
+        background-color: #33AADE; 
+        color: rgb(255, 255, 255); 
+        border: 4px solid rgb(255, 255, 255)
+    }
+    
+    #btn2:hover {
+      background-color: rgb(255, 255, 255);
+      color: #33AADE;
+    }
