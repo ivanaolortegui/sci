@@ -1,0 +1,86 @@
+.headboard{
+    background: #33AADE !important;
+    color: white;
+    padding: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 50px !important;
+}
+.select-size{
+    width:200px !important;
+    margin-top: 4%;
+    margin-left:10px !important;
+}
+.text-select {
+    margin-top: 4%;
+    font-weight: 500;
+    
+}
+.btn-salir{
+background-color:white ;
+color: #33AADE;
+font-weight:700;
+border-radius: 10px 0 0 0;
+padding: 10px;
+
+background-image:url(img/Polygon\ 31.png);
+background-repeat: no-repeat;
+height:40px;
+  width:40px;
+  background-position:center;
+  margin:0.5px !important;
+  border: solid 2px  #33AADE;
+  float: right;
+
+}
+.btn-historial{
+background: #33AADE;
+color: white;
+font-weight:700;
+border-radius: 0 0 10px 0;
+padding: 5px;
+height:40px;
+width:150px;
+background-position: right;
+margin:0.5px !important;
+border: solid 2px  #33AADE;
+float: left;
+
+}
+.poligono-blanco{
+display:inline;
+vertical-align:middle;
+padding-left: 10px;
+}
+.btn-anterior{
+    border-radius: 10px 0 0 10px;
+    background: #ffffff;
+    border: solid 0.5px  rgba(0, 0, 0, 0.26);
+    font-weight:400;
+    padding: 5px;
+}
+.btn-number{
+background:#33AADE;
+color:white;
+border: solid 0.5px  #33AADE;
+font-weight:400;
+padding: 5px;
+
+}
+.btn-siguiente{
+    border-radius: 0 10px 10px 0;
+    background: white;
+    border: solid 0.5px  rgba(0, 0, 0, 0.26);
+    font-weight:400;
+    padding: 5px;
+
+}
+.btn-anterior:hover {
+    border: solid 1px  #33AADE; }  /* El usuario esta sobre el enlace */
+.btn-anterior:active {
+    color:#33AADE }
+
+    .btn-siguiente:hover {
+        border: solid 1px  #33AADE; }  /* El usuario esta sobre el enlace */
+    .btn-siguiente:active {
+        color:#33AADE } 

@@ -43,6 +43,7 @@ img{
         border-right: 2px solid rgba(126, 120, 120, 0.438);
         position: relative;
         animation: mymove 3s;
+        background: white;
    
     }
     #menu ul li a {
