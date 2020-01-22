@@ -54,7 +54,7 @@
 }
 
 .btn-pag {
-    border: 1px solid #007bff !important;
+    border: 1px solid #33AADE !important;
 }
 
 .btn-edit {
@@ -62,7 +62,7 @@
     border-color: #5cd1a7 !important;
     color: white !important; 
     padding: 1px 6px !important;
-  /*   #ff0000 */
+ 
 }
 
 .btn-delete {
@@ -77,4 +77,13 @@
 }
 a {
     color: #495057 !important;
+}
+
+.btn-delete-modal {
+    background-color: #33AADE !important;
+    color: white !important;
+}
+.btn-cancel-modal {
+    color: #33aade !important;
+    border: 1px solid #33aade !important;
 }

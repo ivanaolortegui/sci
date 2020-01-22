@@ -133,6 +133,7 @@
                     <label class="label-input">Tipo de movimiento: </label>
                     <select name="" id="" class="form-control input-sm">
                       <option value="">------SELECCIONE --------</option>
+                      <option value="">------Salida de almacen--------</option>
                     </select>
                   </div>
                 </div>
@@ -144,14 +145,17 @@
                     <label class="label-input">Almacén de destino:</label>
                     <select name="" id="" class="form-control input-sm">
                       <option value="">------SELECCIONE --------</option>
+                      <option value="">------OFICIN201- PISO2 --------</option>
+                      <option value="">------OFICIN302- PISO2 --------</option>
                     </select>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Proveedor:</label>
+                    <label class="label-input">Cliente:</label>
                     <select name="" id="" class="form-control input-sm">
                       <option value="">------SELECCIONE --------</option>
+                      <option value="">------NINGUNO --------</option>
                     </select>
                   </div>
                 </div>
@@ -253,7 +257,7 @@
                                 <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
                               </button>
                               <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                <span class="fa fa-trash-alt" data-toggle="tooltip" data-placement="top"></span>
+                                <span class="fa fa-trash-alt"  data-toggle="modal" data-target="#exampleModal" data-placement="top"></span>
                               </button>
                             </td>
                           </tr>
@@ -271,7 +275,7 @@
                                 <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
                               </button>
                               <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                <span class="fa fa-trash-alt" data-toggle="tooltip" data-placement="top"></span>
+                                <span class="fa fa-trash-alt"  data-toggle="modal" data-target="#exampleModal" data-placement="top"></span>
                               </button>
                             </td>
                           </tr>
@@ -290,7 +294,7 @@
                                 <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
                               </button>
                               <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                <span class="fa fa-trash-alt" data-toggle="tooltip" data-placement="top"></span>
+                                <span class="fa fa-trash-alt"  data-toggle="modal" data-target="#exampleModal" data-placement="top"></span>
                               </button>
                             </td>
                           </tr>
@@ -309,7 +313,7 @@
                                 <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
                               </button>
                               <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                <span class="fa fa-trash-alt" data-toggle="tooltip" data-placement="top"></span>
+                                <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal" data-placement="top"></span>
                               </button>
                             </td>
                           </tr>
@@ -327,7 +331,7 @@
                                 <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
                               </button>
                               <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                <span class="fa fa-trash-alt" data-toggle="tooltip" data-placement="top"></span>
+                                <span class="fa fa-trash-alt"data-toggle="modal" data-target="#exampleModal"  data-placement="top"></span>
                               </button>
                             </td>
                           </tr>
@@ -372,7 +376,7 @@
 
   </nav>
 
-
+  
   <footer class="position-absolute sky-blue-ses" style="position: relative !important; bottom:0 !important;">
     <div class="col-md-12 col-xs-12">
       <p style="margin:5px;" class="text-center py-2 font-color-white">© 2019 - 2020 SES - Sistema Logístico 1.0 -
@@ -381,7 +385,26 @@
   </footer>
 
 
-
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar Familia</h5>
+        <button type="button" class=" btn" data-dismiss="modal" aria-label="Close" style="color: #33AADE !important;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        ¿Está seguro que desea eliminar la familia?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-delete-modal">Eliminar</button>
+        <button type="button" class="btn btn-cancel-modal" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
   <script src="main.js"></script>
