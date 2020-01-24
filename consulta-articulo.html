@@ -101,284 +101,278 @@
   </nav>
   <div class="headboard">
     <p>Consulta de Articulo</p>
-</div>
-<div class="container-fluid">
+  </div>
+  <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6 col-sm-6  col-xs-12">
-            <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Local:</label>
-            <select class="form-control select-size">
+      <div class="col-md-6 col-sm-6  col-xs-12">
+        <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Local:</label>
+        <select class="form-control select-size">
 
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-            </select>
-        </div>
-        <div class="col-md-6 col-sm-6  col-xs-12">
-            <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Almacen:</label>
-            <select class="form-control select-size">
+          <option value=""> ------ Seleccione ------ </option>
+          <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima </option>
+          <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
+          <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
+        </select>
+      </div>
+      <div class="col-md-6 col-sm-6  col-xs-12">
+        <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Almacen:</label>
+        <select class="form-control select-size">
 
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-            </select>
-        </div>
+          <option value=""> ------ Seleccione ------ </option>
+          <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima </option>
+          <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
+          <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
+        </select>
+      </div>
     </div>
     <div class="row">
-        <div class="col-md-12 col-xs-12">
-            <div class="table-responsive">
-                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                    <div class="row" style="width: 100%;">
-                        <div class="col-sm-5">
-                            <div id="DataTables_Table_0_filter" class="dataTables_filter" style="float:left"><label
-                                    style="
+      <div class="col-md-12 col-xs-12">
+        <div class="table-responsive">
+          <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+            <div class="row" style="width: 100%;">
+              <div class="col-sm-5">
+                <div id="DataTables_Table_0_filter" class="dataTables_filter" style="float:left"><label style="
                       justify-content: flex-end; margin: 20px;
                   ">Buscar:<input type="search" class="form-control input-sm" placeholder=""
-                                        aria-controls="DataTables_Table_0" style="margin-left:10px;"></label>
-                            </div>
-                        </div>
-                        <div class="col-sm-7 ">
-                            <div class="dataTables_length" id="DataTables_Table_0_length"
-                                style="float:right; margin: 20px;">
-                                <label style="justify-content: flex-start;">Ver
-                                    <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
-                                        class="form-control input-sm" style="margin-left:10px;margin-right:10px;">
-                                        <option value="10">10</option>
-                                        <option value="25">25</option>
-                                        <option value="50">50</option>
-                                        <option value="100">100</option>
-                                    </select> Líneas</label>
-                            </div>
-                        </div>
-                    </div>
+                      aria-controls="DataTables_Table_0" style="margin-left:10px;"></label>
                 </div>
+              </div>
+              <div class="col-sm-7 ">
+                <div class="dataTables_length" id="DataTables_Table_0_length" style="float:right; margin: 20px;">
+                  <label style="justify-content: flex-start;">Ver
+                    <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
+                      class="form-control input-sm" style="margin-left:10px;margin-right:10px;">
+                      <option value="10">10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                    </select> Líneas</label>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="row">
-        <div class="col-md-12 col-xs-12">
-            <div class="table-responsive">
-                <div class="col-sm-12">
-                    <table
-                        class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
-                        datatable="ng" dt-options="showCase.dtOptions" style="display: table; width: 1244px"
-                        id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
-                        <thead>
-                            <tr role="row">
-                                <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
-                                    rowspan="1" colspan="1" aria-sort="ascending"
-                                    aria-label=": activate to sort column descending" style="width: 79px;">
-                                   Código
-                                </th>
-                                <th class="text-left sorting" style="width: 50px;" tabindex="0"
-                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-label="Código: activate to sort column ascending">Código de Fabricación</th>
+      <div class="col-md-12 col-xs-12">
+        <div class="table-responsive">
+          <div class="col-sm-12">
+            <table
+              class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
+              datatable="ng" dt-options="showCase.dtOptions" style="display: table; width: 1244px"
+              id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+              <thead>
+                <tr role="row">
+                  <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                    colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending"
+                    style="width: 79px;">
+                    Código
+                  </th>
+                  <th class="text-left sorting" style="width: 50px;" tabindex="0" aria-controls="DataTables_Table_0"
+                    rowspan="1" colspan="1" aria-label="Código: activate to sort column ascending">Código de Fabricación
+                  </th>
 
-                                <th class="text-center sorting" ng-show="vColUsuario" style="width: 300px;"
-                                    tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-label="Usuario: activate to sort column ascending">Artículo</th>
-                                <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0"
-                                    rowspan="1" colspan="1"
-                                    aria-label="Tipo de Solicitud: activate to sort column ascending"
-                                    style="width: 50;">Marca</th>
-                                <th class="text-center sorting" style="width: 50px;" tabindex="0"
-                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-label="Acción: activate to sort column ascending">U/M</th>
-                                    <th class="text-center sorting" style="width: 95px;" tabindex="0"
-                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-label="Acción: activate to sort column ascending">Stock</th>
-                                    <th class="text-center sorting" style="width: 250px;" tabindex="0"
-                                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                    aria-label="Acción: activate to sort column ascending">Almacen</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-center">
-                                    3087
-                                </td>
+                  <th class="text-center sorting" ng-show="vColUsuario" style="width: 300px;" tabindex="0"
+                    aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                    aria-label="Usuario: activate to sort column ascending">Artículo</th>
+                  <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                    colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending" style="width: 50;">
+                    Marca</th>
+                  <th class="text-center sorting" style="width: 50px;" tabindex="0" aria-controls="DataTables_Table_0"
+                    rowspan="1" colspan="1" aria-label="Acción: activate to sort column ascending">U/M</th>
+                  <th class="text-center sorting" style="width: 95px;" tabindex="0" aria-controls="DataTables_Table_0"
+                    rowspan="1" colspan="1" aria-label="Acción: activate to sort column ascending">Stock</th>
+                  <th class="text-center sorting" style="width: 250px;" tabindex="0" aria-controls="DataTables_Table_0"
+                    rowspan="1" colspan="1" aria-label="Acción: activate to sort column ascending">Almacen</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">
+                    3087
+                  </td>
 
-                                <td  class="text-center">
-                                    002874220051
-                                </td>
-                                <td  class="text-center">
-                                    ANTENA INALÁMBRICA
-                                </td>
-                                <td  class="text-center">
-                                    S/M
-                                </td>
-                                <td  class="text-center">
-                                    UNID.
-                                </td>
-                                <td  class="text-center">
-                                    1
-                                </td>
-                                <td  class="text-center">
-                                    ALMACEN EUS
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">
-                                    3087
-                                </td>
+                  <td class="text-center">
+                    002874220051
+                  </td>
+                  <td class="text-center">
+                    ANTENA INALÁMBRICA
+                  </td>
+                  <td class="text-center">
+                    S/M
+                  </td>
+                  <td class="text-center">
+                    UNID.
+                  </td>
+                  <td class="text-center">
+                    1
+                  </td>
+                  <td class="text-center">
+                    ALMACEN EUS
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">
+                    3087
+                  </td>
 
-                                <td  class="text-center">
-                                    002874220051
-                                </td>
-                                <td  class="text-center">
-                                    ANTENA INALÁMBRICA
-                                </td>
-                                <td  class="text-center">
-                                    S/M
-                                </td>
-                                <td  class="text-center">
-                                    UNID.
-                                </td>
-                                <td  class="text-center">
-                                    1
-                                </td>
-                                <td  class="text-center">
-                                    OFICINA 200 - PISO 2
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">
-                                    3087
-                                </td>
+                  <td class="text-center">
+                    002874220051
+                  </td>
+                  <td class="text-center">
+                    ANTENA INALÁMBRICA
+                  </td>
+                  <td class="text-center">
+                    S/M
+                  </td>
+                  <td class="text-center">
+                    UNID.
+                  </td>
+                  <td class="text-center">
+                    1
+                  </td>
+                  <td class="text-center">
+                    OFICINA 200 - PISO 2
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">
+                    3087
+                  </td>
 
-                                <td  class="text-center">
-                                    002874220051
-                                </td>
-                                <td  class="text-center">
-                                    ANTENA INALÁMBRICA
-                                </td>
-                                <td  class="text-center">
-                                    S/M
-                                </td>
-                                <td  class="text-center">
-                                    UNID.
-                                </td>
-                                <td  class="text-center">
-                                    1
-                                </td>
-                                <td  class="text-center">
-                                    OFICINA 310 - PISO 3
-                                </td>
-                            </tr>
+                  <td class="text-center">
+                    002874220051
+                  </td>
+                  <td class="text-center">
+                    ANTENA INALÁMBRICA
+                  </td>
+                  <td class="text-center">
+                    S/M
+                  </td>
+                  <td class="text-center">
+                    UNID.
+                  </td>
+                  <td class="text-center">
+                    1
+                  </td>
+                  <td class="text-center">
+                    OFICINA 310 - PISO 3
+                  </td>
+                </tr>
 
-                            <tr>
-                                <td class="text-center">
-                                    3087
-                                </td>
+                <tr>
+                  <td class="text-center">
+                    3087
+                  </td>
 
-                                <td  class="text-center">
-                                    002874220051
-                                </td>
-                                <td  class="text-center">
-                                    ANTENA INALÁMBRICA
-                                </td>
-                                <td  class="text-center">
-                                    S/M
-                                </td>
-                                <td  class="text-center">
-                                    UNID.
-                                </td>
-                                <td  class="text-center">
-                                    1
-                                </td>
-                                <td  class="text-center">
-                                    OFICINA 204 - PISO 2
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">
-                                    3088
-                                </td>
+                  <td class="text-center">
+                    002874220051
+                  </td>
+                  <td class="text-center">
+                    ANTENA INALÁMBRICA
+                  </td>
+                  <td class="text-center">
+                    S/M
+                  </td>
+                  <td class="text-center">
+                    UNID.
+                  </td>
+                  <td class="text-center">
+                    1
+                  </td>
+                  <td class="text-center">
+                    OFICINA 204 - PISO 2
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">
+                    3088
+                  </td>
 
-                                <td  class="text-center">
-                                    002874220052
-                                </td>
-                                <td  class="text-center">
-                                    ADAPTADOR INALAMBRICO PCI
-                                </td>
-                                <td  class="text-center">
-                                    S/M
-                                </td>
-                                <td  class="text-center">
-                                    UNID.
-                                </td>
-                                <td  class="text-center">
-                                    1
-                                </td>
-                                <td  class="text-center">
-                                    ALMACEN EUS
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">
-                                    3148
-                                </td>
+                  <td class="text-center">
+                    002874220052
+                  </td>
+                  <td class="text-center">
+                    ADAPTADOR INALAMBRICO PCI
+                  </td>
+                  <td class="text-center">
+                    S/M
+                  </td>
+                  <td class="text-center">
+                    UNID.
+                  </td>
+                  <td class="text-center">
+                    1
+                  </td>
+                  <td class="text-center">
+                    ALMACEN EUS
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">
+                    3148
+                  </td>
 
-                                <td  class="text-center">
-                                    002874220074
-                                </td>
-                                <td  class="text-center">
-                                     CABLE DE CONSOLA
-                                </td>
-                                <td  class="text-center">
-                                    S/M
-                                </td>
-                                <td  class="text-center">
-                                    UNID.
-                                </td>
-                                <td  class="text-center">
-                                    2
-                                </td>
-                                <td  class="text-center">
-                                    ALMACEN EUS
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">
-                                    3061
-                                </td>
+                  <td class="text-center">
+                    002874220074
+                  </td>
+                  <td class="text-center">
+                    CABLE DE CONSOLA
+                  </td>
+                  <td class="text-center">
+                    S/M
+                  </td>
+                  <td class="text-center">
+                    UNID.
+                  </td>
+                  <td class="text-center">
+                    2
+                  </td>
+                  <td class="text-center">
+                    ALMACEN EUS
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">
+                    3061
+                  </td>
 
-                                <td  class="text-center">
-                                    002874220025
-                                </td>
-                                <td  class="text-center">
-                                    TARJETA RED
-                                </td>
-                                <td  class="text-center">
-                                    S/M
-                                </td>
-                                <td  class="text-center">
-                                    UNID.
-                                </td>
-                                <td  class="text-center">
-                                    1
-                                </td>
-                                <td  class="text-center">
-                                    ALMACEN EUS
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <strong>002874220051 - ÁNTENA INALÁMBRICA</strong>
-                    <div style="float:right">
-                    <button id="btn1" class="border">Salir</button>
-                    <button id="btn2" class="border2">Kardex</button>
-                    </div>
-                </div>
+                  <td class="text-center">
+                    002874220025
+                  </td>
+                  <td class="text-center">
+                    TARJETA RED
+                  </td>
+                  <td class="text-center">
+                    S/M
+                  </td>
+                  <td class="text-center">
+                    UNID.
+                  </td>
+                  <td class="text-center">
+                    1
+                  </td>
+                  <td class="text-center">
+                    ALMACEN EUS
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <strong>002874220051 - ÁNTENA INALÁMBRICA</strong>
+            <div style="float:right">
+              <button id="btn1" class="border">Salir</button>
+              <button id="btn2" class="border2">Kardex</button>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
 
 
-<footer class="position-absolute sky-blue-ses" style="position: relative !important; bottom:0 !important;">
+  <footer class="position-absolute sky-blue-ses" style="position: relative !important; bottom:0 !important;">
     <div class="col-md-12 col-xs-12">
       <p style="margin:5px;" class="text-center py-2 font-color-white">© 2019 - 2020 SES - Sistema Logístico 1.0 -
         Todos los derechos reservados</p>
