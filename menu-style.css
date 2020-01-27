@@ -42,9 +42,11 @@ img{
         height: 550px;
         border-right: 2px solid rgba(126, 120, 120, 0.438);
         position: relative;
-        animation: mymove 3s;
         background: white;
    
+    }
+    .show{
+ animation: mymove 3s;
     }
     #menu ul li a {
         color: rgb(0, 0, 0);
@@ -74,8 +76,10 @@ img{
     }
 
     .hide{
-        animation: no-mymove 3s;
         display:none;
+    }
+    .hide-menu{
+        animation: no-mymove 3s both;
     }
     .title{
         background: #20A5DE;
@@ -98,7 +102,9 @@ img{
     
     @keyframes no-mymove {
         from {left: 0px;}
-        to {left: -250px;}
+        to {  left: -250px;
+      }
+
       }
     
 

@@ -5,23 +5,26 @@ const menu =  document.getElementById("menu")
 const login = document.getElementById("login")
 const signOff = document.getElementById("sign-off")
 
-/*login.addEventListener("click",()=>{
+login.addEventListener("click",()=>{
     if(signOff.classList.contains("hide")){
        signOff.classList.remove("hide");
-          signOff.classList.add('show')
+          signOff.classList.add('show-2')
     } else {
-      signOff.classList.remove("show");
+      signOff.classList.remove("show-2");
       signOff.classList.add('hide')
     }
-})*/
+})
 
 iconMenu.addEventListener("click", () => {
     if(menu.classList.contains("hide")){
         menu.classList.remove("hide");
           menu.classList.add('show')
-    } else {
+    } else if (menu.classList.contains("show")){
        menu.classList.remove("show");
-        menu.classList.add('hide')
+        menu.classList.add('hide-menu');
+    } else if (menu.classList.contains("hide-menu")){
+        menu.classList.remove("hide-menu");
+        menu.classList.add('show');
     }
     })
 
