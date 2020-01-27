@@ -14,6 +14,7 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title>Sistema de Logística</title>
   <link rel="stylesheet" href="consulta-articulo-style.css">
+  <link rel="stylesheet" href="menu-style.css">
 </head>
 
 <body>
@@ -33,9 +34,9 @@
         <div class="col-md-5 col-sm-5  col-xs-4 text-center ">
 
         </div>
-        <div id="login " class="col-md-4 col-sm-4  col-xs-4 text-center"
+        <div class="col-md-4 col-sm-4  col-xs-4 text-center"
           style="padding-left: 0 !important; padding-right: 0 !important;">
-          <a style="margin-left:100px; margin-top:100px!important;text-decoration:none;color:black;" href=""
+          <a id="login"  style="margin-left:100px; margin-top:100px!important;text-decoration:none;color:black;" href=""
             class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-user pull-left " style="font-size: 1.5em;margin-top:10px!important;color:#555"></i>
             <span class=""
@@ -50,6 +51,7 @@
         </div>
       </div>
     </div>
+    <div class="recta"></div>
 
     <div id="menu" class="hide" style="float: left;">
       <div class="title">
@@ -89,7 +91,7 @@
       </ul>
 
     </div>
-    <div id="sign-off" class="" style="float:right;">
+    <div id="sign-off" class="hide" style="float:right;">
       <ul>
         <li id="perfil"><a href="#"><i class="fas fa-edit" style="margin-right: 5px;"></i>Perfil</a></li>
 
@@ -99,10 +101,13 @@
 
     </div>
   </nav>
-  <div class="headboard">
-    <p>Consulta de Articulo</p>
-  </div>
-  <div class="container-fluid">
+
+  <div class="container-fluid" style="padding-right: 0 !important;padding-left: 0!important;">
+    <div class="row headboard">
+                            
+      <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Consulta de Artículo</p>
+  
+</div>
     <div class="row">
       <div class="col-md-6 col-sm-6  col-xs-12">
         <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Local:</label>

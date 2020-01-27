@@ -1,8 +1,14 @@
+*{
+    font-family: Calibri,"Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
+
 .headboard{
-    background: #33AADE !important;
-    color: white;
+    background:#D4D4D4 !important;
+    color: black;
     padding: 4px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     padding-left: 50px !important;
 }
