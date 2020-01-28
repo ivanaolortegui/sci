@@ -31,9 +31,9 @@
         <div class="col-md-5 col-sm-5  col-xs-4 text-center ">
 
         </div>
-        <div id="login " class="col-md-4 col-sm-4  col-xs-4 text-center"
+        <div class="col-md-4 col-sm-4  col-xs-4 text-center"
           style="padding-left: 0 !important; padding-right: 0 !important;">
-          <a style="margin-left:100px; margin-top:100px!important;text-decoration:none;color:black;" href=""
+          <a id="login"  style="margin-left:100px; margin-top:100px!important;text-decoration:none;color:black;" href=""
             class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-user pull-left " style="font-size: 1.5em;margin-top:10px!important;color:#555"></i>
             <span class=""
@@ -42,6 +42,8 @@
               style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Judith
               Quiñones</span>
             <span <i style="margin-right:0px !important;color:#555" class="caret-down"></span>
+
+
           </a>
         </div>
       </div>
@@ -86,21 +88,27 @@
       </ul>
 
     </div>
-    <div id="sign-off" class="" style="float:right;">
+    <div id="sign-off" class="hide" style="float:right;">
       <ul>
         <li id="perfil"><a href="#"><i class="fas fa-edit" style="margin-right: 5px;"></i>Perfil</a></li>
 
         <li id="off"><a href="#"><i class="fas fa-sign-out-alt" style="margin-right: 5px;"></i>Cerrar Sesión</a></li>
       </ul>
+
+
     </div>
+  </nav>
     <div>
-      <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
-        <div class="container-fluid ng-scope">
-          <div class="col-md-12 col-xs-12">
-            <div class="col-md-12 col-xs-12" style="margin-right:0px;">
-              <h4 style="text-align: center;">Ingreso De Almacén </h4>
-            </div>
-            <div class="row cls-content-ctrl-ses" style="margin-right: 0px;">
+      <div class="panel-body" style="padding-bottom: 0px;">
+        <div class="container-fluid ng-scope" style="padding-left: 0px !important; padding-right: 0px !important;"  >
+          <div class="row headboard">
+                            
+            <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Ingreso de Almacén</p>
+        
+    </div>
+          
+            
+            <div class="row cls-content-ctrl-ses" style="margin-right: 0px; margin-top:15px">
               <div class="col-md-6 col-xs-12" ng-show="vCmbGrupoxGerente">
                 <div class="col-md-12 col-xs-12" style="margin-right:0px;">
                   <h6 style="text-align: center;">DATOS GENERALES: </h6>

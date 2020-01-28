@@ -21,7 +21,6 @@
 <body>
 
 
-
   <nav class="">
     <div class="container-fluid">
       <div class="row">
@@ -35,9 +34,9 @@
         <div class="col-md-5 col-sm-5  col-xs-4 text-center ">
 
         </div>
-        <div id="login " class="col-md-4 col-sm-4  col-xs-4 text-center"
+        <div class="col-md-4 col-sm-4  col-xs-4 text-center"
           style="padding-left: 0 !important; padding-right: 0 !important;">
-          <a style="margin-left:100px; margin-top:100px!important;text-decoration:none;color:black;" href=""
+          <a id="login" style="margin-left:100px; margin-top:100px!important;text-decoration:none;color:black;" href=""
             class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-user pull-left " style="font-size: 1.5em;margin-top:10px!important;color:#555"></i>
             <span class=""
@@ -92,7 +91,7 @@
       </ul>
 
     </div>
-    <div id="sign-off" class="" style="float:right;">
+    <div id="sign-off" class="hide" style="float:right;">
       <ul>
         <li id="perfil"><a href="#"><i class="fas fa-edit" style="margin-right: 5px;"></i>Perfil</a></li>
 
@@ -101,299 +100,70 @@
 
 
     </div>
-    <div>
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-            aria-controls="nav-home" aria-selected="true">Grupo</a>
-          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-            aria-controls="nav-profile" aria-selected="false">Clase</a>
-          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
-            aria-controls="nav-contact" aria-selected="false">Familia</a>
-        </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-          <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
-            <div class="container-fluid ng-scope">
-              <div class="col-md-12 col-xs-12">
-                <div class="row cls-content-ctrl-ses" style="margin-right: 0px;">
-                  <div class="col-md-2 col-xs-12" ng-show="vCmbGrupoxGerente">
-                    <div class="form-group">
-                      <div class="input-group input-daterange">
-                        <label class="label-input" style="width: auto;">Código : </label>
-                        <input type="password" class="form-control input-sm" id="password" name="password"
-                          placeholder="Código" required>
-                      </div>
+  </nav>
+  <div class="container-fluid" style="padding-left: 0px !important; padding-right: 0px !important;">
+    <div class="row headboard">
+
+      <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Mantenimiento ?</p>
+
+    </div>
+    <br>
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+          aria-controls="nav-home" aria-selected="true">Grupo</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+          aria-controls="nav-profile" aria-selected="false">Clase</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+          aria-controls="nav-contact" aria-selected="false">Familia</a>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
+          <div class="container-fluid ng-scope">
+         
+              <div class="row cls-content-ctrl-ses" style="margin-right: 0px; margin-top:10px;">
+                <div class="col-md-2 col-xs-12" ng-show="vCmbGrupoxGerente">
+                  <div class="form-group">
+                    <div class="input-group input-daterange">
+                      <label class="label-input" style="width: auto;">Código : </label>
+                      <input type="password" class="form-control input-sm" id="password" name="password"
+                        placeholder="Código" required>
                     </div>
-                  </div>
-                  <div class="col-md-2 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
-                    <div class="form-group" style="text-align: start;">
-                      <div class="input-group input-daterange">
-                        <label class="label-input" style="width: auto;">Código Grupo: </label>
-
-                        <input type="password" class="form-control input-sm" id="password" name="password"
-                          placeholder="Código" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xs-12" style="margin-bottom:1%">
-                    <div class="form-group">
-
-                      <div class="form-group ">
-                        <div class="input-group input-daterange">
-                          <label class="label-input" style="width: auto;">Descripción : </label>
-                          <input type="password" class="form-control input-sm" id="password" name="password"
-                            placeholder="Código" required>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <div class="col-md-2 col-xs-12">
-                    <button type="submit" class="btn  btn-sm btn-saves" style=" padding:7px 11px;
-                    margin-top: 0px !important;" align="right"><i class="fa fa-plus"></i>&nbsp;Guardar</button>
-                  </div>
-
-                </div>
-                <div class="row cls-content-ctrl-ses">
-                  <div class="table-responsive">
-                    <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                      <div class="row" style="width: 100%; margin-bottom: 10px; margin-left:0px">
-                        <div class="col-sm-7 ">
-                          <div class="dataTables_length" id="DataTables_Table_0_length">
-                            <label style="justify-content: flex-start;">Ver
-                              <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
-                                class="form-control input-sm">
-                                <option value="10">10</option>
-                                <option value="25">25</option>
-                                <option value="50">50</option>
-                                <option value="100">100</option>
-                              </select> Líneas</label>
-                          </div>
-                        </div>
-                        <div class="col-sm-5">
-                          <div id="DataTables_Table_0_filter" class="dataTables_filter"><label style="
-                            justify-content: flex-end;">Buscar: <input type="search" class="form-control input-sm"
-                                placeholder="" aria-controls="DataTables_Table_0" style="
-                                margin-left: 3px;
-                            "></label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row" style="width: 100%; margin-bottom: 10px; margin-left:0px ">
-                        <div class="col-sm-12">
-                          <table
-                            class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
-                            datatable="ng" dt-options="showCase.dtOptions" style="display: table;"
-                            id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
-                            <thead>
-                              <tr role="row">
-                                <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
-                                  rowspan="1" colspan="1" aria-sort="ascending"
-                                  aria-label=": activate to sort column descending" style="width: 79px;">
-                                  Item
-                                  <span class="fa fa-sort"></span>
-                                </th>
-                                <th class="text-left sorting" style="width: 49px;" tabindex="0"
-                                  aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                  aria-label="Código: activate to sort column ascending">Código</th>
-
-                                <th class="text-center sorting" ng-show="vColUsuario" style="width: 15px;" tabindex="0"
-                                  aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                  aria-label="Usuario: activate to sort column ascending">Grupo</th>
-                                <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0"
-                                  rowspan="1" colspan="1"
-                                  aria-label="Tipo de Solicitud: activate to sort column ascending"
-                                  style="width: 312px;">Descripción</th>
-                                <th class="text-center sorting" style="width: 95px;" tabindex="0"
-                                  aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                  aria-label="Acción: activate to sort column ascending">Acción</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  1
-                                </td>
-
-                                <td>
-                                  0008
-                                </td>
-                                <td>
-                                  11
-                                </td>
-                                <td>
-                                  Comida y comedor
-                                </td>
-                                <td class="text-center">
-                                  <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                    <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                                  </button>
-                                  <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                    <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
-                                      data-placement="top"></span>
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  2
-                                </td>
-                                <td>
-                                  0007
-                                </td>
-                                <td>
-                                  25
-                                </td>
-                                <td>
-                                  Oficina
-                                </td>
-                                <td class="text-center">
-                                  <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                    <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                                  </button>
-                                  <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                    <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
-                                      data-placement="top"></span>
-                                  </button>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td> 3 </td>
-                                <td> 00011 </td>
-                                <td> 32 </td>
-                                <td> Hospitalización </td>
-                                <td class="text-center">
-                                  <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                    <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                                  </button>
-                                  <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                    <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
-                                      data-placement="top"></span>
-                                  </button>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td> 4 </td>
-
-                                <td> 0005 </td>
-                                <td> 46 </td>
-                                <td> Telecomunicaciones </td>
-                                <td class="text-center">
-                                  <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                    <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                                  </button>
-                                  <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                    <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
-                                      data-placement="top"></span>
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  5
-                                </td>
-                                <td>
-                                  00010
-                                </td>
-                                <td>
-                                  53
-                                </td>
-                                <td>
-                                  Recreo y Deporte
-                                </td>
-                                <td class="text-center">
-                                  <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                    <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                                  </button>
-                                  <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                    <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
-                                      data-placement="top"></span>
-                                  </button>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                      <div class="row" style="width: 100%; margin-right: 0px;margin-left: 0px;">
-
-                        <div class="col-sm-5 ">
-                          <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
-                            Mostrando
-                            0 hasta 0 de 0 registros</div>
-                        </div>
-                        <div class="col-sm-7" style="display: flex; justify-content: flex-end;">
-                          <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
-                            <ul class="pagination">
-                              <li class="paginate_button previous disabled " id="DataTables_Table_0_previous"><a
-                                  href="#" class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
-                                  tabindex="0">Anterior</a></li>
-                              <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"
-                                  class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="1"
-                                  tabindex="0">Siguiente</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <h3 class="dt-loading" style="display: none;">Loading...</h3>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CLASE -->
+                <div class="col-md-2 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                  <div class="form-group" style="text-align: start;">
+                    <div class="input-group input-daterange">
+                      <label class="label-input" style="width: auto;">Código Grupo: </label>
 
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-          <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
-            <div class="container-fluid ng-scope">
-              <div class="col-md-12 col-xs-12">
-                <div class="row cls-content-ctrl-ses" style="margin-right: 0; ">
-                  <div class="col-md-2 col-xs-12" ng-show="vCmbGrupoxGerente">
-                    <div class="form-group">
-                      <div class="input-group input-daterange">
-                        <label class="label-input" style="width: auto;">Código : </label>
-                        <input type="password" class="form-control input-sm" id="password" name="password"
-                          placeholder="Código" required>
-                      </div>
+                      <input type="password" class="form-control input-sm" id="password" name="password"
+                        placeholder="Código" required>
                     </div>
                   </div>
-                  <div class="col-md-2 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                </div>
+                <div class="col-md-6 col-xs-12" style="margin-bottom:1%">
+                  <div class="form-group">
 
-                    <div class="form-group" style="text-align: start;">
-                      <div class="input-group input-daterange">
-                        <label class="label-input" style="width: auto;">Código Clase: </label>
-                        <input type="password" class="form-control input-sm" id="password" name="password"
-                          placeholder="Código" required>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xs-12" style="margin-bottom:1%">
                     <div class="form-group ">
                       <div class="input-group input-daterange">
-                        <label class="label-input" style="width: auto;">Código : </label>
+                        <label class="label-input" style="width: auto;">Descripción : </label>
                         <input type="password" class="form-control input-sm" id="password" name="password"
                           placeholder="Código" required>
                       </div>
+                    </div>
 
-                    </div>
-                  </div>
-                  <div class=" col-md-2 col-xs-12">
-                    <div class="form-group ">
-                      <button type="submit" class="btn  btn-sm btn-saves" style=" padding:7px 11px;
-                    margin-top: 0px !important;" align="right"><i class="fa fa-plus"></i>&nbsp;Guardar</button>
-                    </div>
                   </div>
                 </div>
+
+                <div class="col-md-2 col-xs-12">
+                  <button type="submit" class="btn  btn-sm btn-saves" style=" padding:7px 11px;
+                    margin-top: 0px !important;" align="right"><i class="fa fa-plus"></i>&nbsp;Guardar</button>
+                </div>
+
               </div>
-              <div class="row cls-content-ctrl-ses">
+              <div class="row cls-content-ctrl-ses" >
                 <div class="table-responsive">
                   <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
                     <div class="row" style="width: 100%; margin-bottom: 10px; margin-left:0px">
@@ -418,7 +188,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row" style="width: 100%;margin-right: 0px;margin-left: 0px;">
+                    <div class="row" style="width: 100%; margin-bottom: 10px; margin-left:0px ">
                       <div class="col-sm-12">
                         <table
                           class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
@@ -438,7 +208,7 @@
 
                               <th class="text-center sorting" ng-show="vColUsuario" style="width: 15px;" tabindex="0"
                                 aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                aria-label="Usuario: activate to sort column ascending">Clase</th>
+                                aria-label="Usuario: activate to sort column ascending">Grupo</th>
                               <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0"
                                 rowspan="1" colspan="1"
                                 aria-label="Tipo de Solicitud: activate to sort column ascending" style="width: 312px;">
@@ -450,7 +220,10 @@
                           </thead>
                           <tbody>
                             <tr>
-                              <td> 1 </td>
+                              <td>
+                                1
+                              </td>
+
                               <td>
                                 0008
                               </td>
@@ -458,7 +231,7 @@
                                 11
                               </td>
                               <td>
-                                Computo
+                                Comida y comedor
                               </td>
                               <td class="text-center">
                                 <button type="button" class="btn btn-edit btn-xs" title="Editar">
@@ -481,7 +254,7 @@
                                 25
                               </td>
                               <td>
-                                Equipo de Oficina
+                                Oficina
                               </td>
                               <td class="text-center">
                                 <button type="button" class="btn btn-edit btn-xs" title="Editar">
@@ -495,20 +268,10 @@
                             </tr>
 
                             <tr>
-                              <td>
-                                3
-                              </td>
-
-                              <td>
-                                00011
-
-                              </td>
-                              <td>
-                                32
-                              </td>
-                              <td>
-                                Equipo de Seguridad
-                              </td>
+                              <td> 3 </td>
+                              <td> 00011 </td>
+                              <td> 32 </td>
+                              <td> Hospitalización </td>
                               <td class="text-center">
                                 <button type="button" class="btn btn-edit btn-xs" title="Editar">
                                   <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
@@ -521,20 +284,11 @@
                             </tr>
 
                             <tr>
-                              <td>
-                                4
-                              </td>
+                              <td> 4 </td>
 
-                              <td>
-                                0005
-
-                              </td>
-                              <td>
-                                46
-                              </td>
-                              <td>
-                                Equipo de Limpieza
-                              </td>
+                              <td> 0005 </td>
+                              <td> 46 </td>
+                              <td> Telecomunicaciones </td>
                               <td class="text-center">
                                 <button type="button" class="btn btn-edit btn-xs" title="Editar">
                                   <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
@@ -556,7 +310,7 @@
                                 53
                               </td>
                               <td>
-                                Equipo de Electricidad
+                                Recreo y Deporte
                               </td>
                               <td class="text-center">
                                 <button type="button" class="btn btn-edit btn-xs" title="Editar">
@@ -596,272 +350,523 @@
                   <h3 class="dt-loading" style="display: none;">Loading...</h3>
                 </div>
               </div>
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-          <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
-            <div class="container-fluid ng-scope">
-              <div class="col-md-12 col-xs-12">
-                <div class="row cls-content-ctrl-ses" style="margin-right: 0;">
-                  <div class="col-md-2 col-xs-12" ng-show="vCmbGrupoxGerente">
-                    <div class="form-group">
-                      <div class="input-group input-daterange">
-                        <label>Código : </label>
-                        <input type="password" class="form-control input-sm" id="password" name="password"
-                          placeholder="Código" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-2 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
-                    <div class="form-group" style="text-align: start;">
-                      <div class="input-group input-daterange">
-                        <label class="label-input" style="width: auto;">Código Familia: </label>
-
-                        <input type="password" class="form-control input-sm" id="password" name="password"
-                          placeholder="Código" required>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6 col-xs-12" style="margin-bottom:1%">
-                    <div class="form-group">
-                      <div class="input-group input-daterange">
-
-                        <label>Código : </label>
-                        <input type="password" class="form-control input-sm" id="password" name="password"
-                          placeholder="Código" required>
-
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="col-md-2 col-xs-12">
-                    <button type="submit" class="btn  btn-sm btn-saves" style=" padding:7px 11px;
-                  margin-top: 0px !important;" align="right"><i class="fa fa-plus"></i>&nbsp;Guardar</button>
-                  </div>
-                </div>
-                <div class="row cls-content-ctrl-ses">
-                  <div class="table-responsive">
-                    <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                      <div class="row" style="width: 100%;    margin-bottom: 10px; margin-right: 0px;
-                      margin-left: 0px;">
-                        <div class="col-sm-7 ">
-                          <div class="dataTables_length" id="DataTables_Table_0_length">
-                            <label style="justify-content: flex-start;">Ver
-                              <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
-                                class="form-control input-sm">
-                                <option value="10">10</option>
-                                <option value="25">25</option>
-                                <option value="50">50</option>
-                                <option value="100">100</option>
-                              </select> Líneas</label>
-                          </div>
-                        </div>
-                        <div class="col-sm-5">
-                          <div id="DataTables_Table_0_filter" class="dataTables_filter"><label style="
-                            justify-content: flex-end;">Buscar: <input type="search" class="form-control input-sm"
-                                placeholder="" aria-controls="DataTables_Table_0" style="
-                                margin-left: 3px;"></label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row" style="width: 100%;margin-right: 0px;
-                      margin-left: 0px;">
-                        <div class="col-sm-12">
-                          <table
-                            class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
-                            datatable="ng" dt-options="showCase.dtOptions" style="display: table;"
-                            id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
-                            <thead>
-                              <tr role="row">
-                                <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
-                                  rowspan="1" colspan="1" aria-sort="ascending"
-                                  aria-label=": activate to sort column descending" style="width: 79px;">
-                                  Item
-                                  <span class="fa fa-sort"></span>
-                                </th>
-                                <th class="text-left sorting" style="width: 49px;" tabindex="0"
-                                  aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                  aria-label="Código: activate to sort column ascending">Código</th>
-
-                                <th class="text-center sorting" ng-show="vColUsuario" style="width: 15px;" tabindex="0"
-                                  aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                  aria-label="Usuario: activate to sort column ascending">Familia</th>
-                                <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0"
-                                  rowspan="1" colspan="1"
-                                  aria-label="Tipo de Solicitud: activate to sort column ascending"
-                                  style="width: 312px;">
-                                  Descripción</th>
-                                <th class="text-center sorting" style="width: 95px;" tabindex="0"
-                                  aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                  aria-label="Acción: activate to sort column ascending">Acción</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  1
-                                </td>
-
-                                <td>
-                                  0008
-                                </td>
-                                <td>
-                                  11
-                                </td>
-                                <td>
-                                  Adaptador de red
-                                </td>
-                                <td class="text-center">
-                                  <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                    <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                                  </button>
-                                  <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                    <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
-                                      data-placement="top"></span>
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  2
-                                </td>
-                                <td>
-                                  0007
-                                </td>
-                                <td>
-                                  25
-                                </td>
-                                <td>
-                                  Aspiradora
-                                </td>
-                                <td class="text-center">
-                                  <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                    <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                                  </button>
-                                  <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                    <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
-                                      data-placement="top"></span>
-                                  </button>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>
-                                  3
-                                </td>
-
-                                <td>
-                                  00011
-
-                                </td>
-                                <td>
-                                  32
-                                </td>
-                                <td>
-                                  Archivador de Madera
-                                </td>
-                                <td class="text-center">
-                                  <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                    <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                                  </button>
-                                  <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                    <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
-                                      data-placement="top"></span>
-                                  </button>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>
-                                  4
-                                </td>
-
-                                <td>
-                                  0005
-
-                                </td>
-                                <td>
-                                  46
-                                </td>
-                                <td>
-                                  Archivador de Melani
-                                </td>
-                                <td class="text-center">
-                                  <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                    <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                                  </button>
-                                  <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                    <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
-                                      data-placement="top"></span>
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  5
-                                </td>
-                                <td>
-                                  00010
-                                </td>
-                                <td>
-                                  53
-                                </td>
-                                <td>
-                                  Banco de Madera
-                                </td>
-                                <td class="text-center">
-                                  <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                    <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                                  </button>
-                                  <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                    <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
-                                      data-placement="top"></span>
-                                  </button>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                      <div class="row" style="width: 100%; margin-right: 0px;margin-left: 0px;">
-
-                        <div class="col-sm-5 ">
-                          <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
-                            Mostrando
-                            0 hasta 0 de 0 registros</div>
-                        </div>
-                        <div class="col-sm-7" style="display: flex; justify-content: flex-end;">
-                          <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
-                            <ul class="pagination">
-                              <li class="paginate_button previous disabled " id="DataTables_Table_0_previous"><a
-                                  href="#" class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
-                                  tabindex="0">Anterior</a></li>
-                              <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"
-                                  class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="1"
-                                  tabindex="0">Siguiente</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <h3 class="dt-loading" style="display: none;">Loading...</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
+      <!-- CLASE -->
 
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
+          <div class="container-fluid ng-scope">
+           
+              <div class="row cls-content-ctrl-ses" style="margin-right: 0;margin-top:10px ">
+                <div class="col-md-2 col-xs-12" ng-show="vCmbGrupoxGerente">
+                  <div class="form-group">
+                    <div class="input-group input-daterange">
+                      <label class="label-input" style="width: auto;">Código : </label>
+                      <input type="password" class="form-control input-sm" id="password" name="password"
+                        placeholder="Código" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+
+                  <div class="form-group" style="text-align: start;">
+                    <div class="input-group input-daterange">
+                      <label class="label-input" style="width: auto;">Código Clase: </label>
+                      <input type="password" class="form-control input-sm" id="password" name="password"
+                        placeholder="Código" required>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12" style="margin-bottom:1%">
+                  <div class="form-group ">
+                    <div class="input-group input-daterange">
+                      <label class="label-input" style="width: auto;">Código : </label>
+                      <input type="password" class="form-control input-sm" id="password" name="password"
+                        placeholder="Código" required>
+                    </div>
+
+                  </div>
+                </div>
+                <div class=" col-md-2 col-xs-12">
+                  <div class="form-group ">
+                    <button type="submit" class="btn  btn-sm btn-saves" style=" padding:7px 11px;
+                    margin-top: 0px !important;" align="right"><i class="fa fa-plus"></i>&nbsp;Guardar</button>
+                  </div>
+                </div>
+              </div>
+            
+            <div class="row cls-content-ctrl-ses">
+              <div class="table-responsive">
+                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                  <div class="row" style="width: 100%; margin-bottom: 10px; margin-left:0px">
+                    <div class="col-sm-7 ">
+                      <div class="dataTables_length" id="DataTables_Table_0_length">
+                        <label style="justify-content: flex-start;">Ver
+                          <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
+                            class="form-control input-sm">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select> Líneas</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div id="DataTables_Table_0_filter" class="dataTables_filter"><label style="
+                            justify-content: flex-end;">Buscar: <input type="search" class="form-control input-sm"
+                            placeholder="" aria-controls="DataTables_Table_0" style="
+                                margin-left: 3px;
+                            "></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" style="width: 100%;margin-right: 0px;margin-left: 0px;">
+                    <div class="col-sm-12">
+                      <table
+                        class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
+                        datatable="ng" dt-options="showCase.dtOptions" style="display: table;" id="DataTables_Table_0"
+                        role="grid" aria-describedby="DataTables_Table_0_info">
+                        <thead>
+                          <tr role="row">
+                            <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
+                              rowspan="1" colspan="1" aria-sort="ascending"
+                              aria-label=": activate to sort column descending" style="width: 79px;">
+                              Item
+                              <span class="fa fa-sort"></span>
+                            </th>
+                            <th class="text-left sorting" style="width: 49px;" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Código: activate to sort column ascending">Código</th>
+
+                            <th class="text-center sorting" ng-show="vColUsuario" style="width: 15px;" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Usuario: activate to sort column ascending">Clase</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
+                              style="width: 312px;">
+                              Descripción</th>
+                            <th class="text-center sorting" style="width: 95px;" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Acción: activate to sort column ascending">Acción</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td> 1 </td>
+                            <td>
+                              0008
+                            </td>
+                            <td>
+                              11
+                            </td>
+                            <td>
+                              Computo
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                                <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                                <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              2
+                            </td>
+                            <td>
+                              0007
+                            </td>
+                            <td>
+                              25
+                            </td>
+                            <td>
+                              Equipo de Oficina
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                                <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                                <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              3
+                            </td>
+
+                            <td>
+                              00011
+
+                            </td>
+                            <td>
+                              32
+                            </td>
+                            <td>
+                              Equipo de Seguridad
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                                <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                                <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              4
+                            </td>
+
+                            <td>
+                              0005
+
+                            </td>
+                            <td>
+                              46
+                            </td>
+                            <td>
+                              Equipo de Limpieza
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                                <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                                <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              5
+                            </td>
+                            <td>
+                              00010
+                            </td>
+                            <td>
+                              53
+                            </td>
+                            <td>
+                              Equipo de Electricidad
+                            </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                                <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                                <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="row" style="width: 100%; margin-right: 0px;margin-left: 0px;">
+
+                    <div class="col-sm-5 ">
+                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                        Mostrando
+                        0 hasta 0 de 0 registros</div>
+                    </div>
+                    <div class="col-sm-7" style="display: flex; justify-content: flex-end;">
+                      <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                        <ul class="pagination">
+                          <li class="paginate_button previous disabled " id="DataTables_Table_0_previous"><a href="#"
+                              class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
+                              tabindex="0">Anterior</a></li>
+                          <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"
+                              class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="1"
+                              tabindex="0">Siguiente</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="dt-loading" style="display: none;">Loading...</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
+          <div class="container-fluid ng-scope">
+           
+              <div class="row cls-content-ctrl-ses" style="margin-right: 0;margin-top:10px ">
+                <div class="col-md-2 col-xs-12" ng-show="vCmbGrupoxGerente">
+                  <div class="form-group">
+                    <div class="input-group input-daterange">
+                      <label class="label-input" style="width: auto;">Código : </label>
+                      <input type="password" class="form-control input-sm" id="password" name="password"
+                        placeholder="Código" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                  <div class="form-group" style="text-align: start;">
+                    <div class="input-group input-daterange">
+                      <label class="label-input" style="width: auto;">Código Familia: </label>
+
+                      <input type="password" class="form-control input-sm" id="password" name="password"
+                        placeholder="Código" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-xs-12" style="margin-bottom:1%">
+                  <div class="form-group">
+                    <div class="input-group input-daterange">
+
+                      <label class="label-input" style="width: auto;">Descripción : </label>
+                      <input type="password" class="form-control input-sm" id="password" name="password"
+                        placeholder="Código" required>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-2 col-xs-12">
+                  <button type="submit" class="btn  btn-sm btn-saves" style=" padding:7px 11px;
+                  margin-top: 0px !important;" align="right"><i class="fa fa-plus"></i>&nbsp;Guardar</button>
+                </div>
+              </div>
+              <div class="row cls-content-ctrl-ses">
+                <div class="table-responsive">
+                  <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                    <div class="row" style="width: 100%;    margin-bottom: 10px; margin-right: 0px;
+                      margin-left: 0px;">
+                      <div class="col-sm-7 ">
+                        <div class="dataTables_length" id="DataTables_Table_0_length">
+                          <label style="justify-content: flex-start;">Ver
+                            <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
+                              class="form-control input-sm">
+                              <option value="10">10</option>
+                              <option value="25">25</option>
+                              <option value="50">50</option>
+                              <option value="100">100</option>
+                            </select> Líneas</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-5">
+                        <div id="DataTables_Table_0_filter" class="dataTables_filter"><label style="
+                            justify-content: flex-end;">Buscar: <input type="search" class="form-control input-sm"
+                              placeholder="" aria-controls="DataTables_Table_0" style="
+                                margin-left: 3px;"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="width: 100%;margin-right: 0px;
+                      margin-left: 0px;">
+                      <div class="col-sm-12">
+                        <table
+                          class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
+                          datatable="ng" dt-options="showCase.dtOptions" style="display: table;" id="DataTables_Table_0"
+                          role="grid" aria-describedby="DataTables_Table_0_info">
+                          <thead>
+                            <tr role="row">
+                              <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
+                                rowspan="1" colspan="1" aria-sort="ascending"
+                                aria-label=": activate to sort column descending" style="width: 79px;">
+                                Item
+                                <span class="fa fa-sort"></span>
+                              </th>
+                              <th class="text-left sorting" style="width: 49px;" tabindex="0"
+                                aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                                aria-label="Código: activate to sort column ascending">Código</th>
+
+                              <th class="text-center sorting" ng-show="vColUsuario" style="width: 15px;" tabindex="0"
+                                aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                                aria-label="Usuario: activate to sort column ascending">Familia</th>
+                              <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                rowspan="1" colspan="1"
+                                aria-label="Tipo de Solicitud: activate to sort column ascending" style="width: 312px;">
+                                Descripción</th>
+                              <th class="text-center sorting" style="width: 95px;" tabindex="0"
+                                aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                                aria-label="Acción: activate to sort column ascending">Acción</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                1
+                              </td>
+
+                              <td>
+                                0008
+                              </td>
+                              <td>
+                                11
+                              </td>
+                              <td>
+                                Adaptador de red
+                              </td>
+                              <td class="text-center">
+                                <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                                  <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                                </button>
+                                <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                                  <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                                    data-placement="top"></span>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                2
+                              </td>
+                              <td>
+                                0007
+                              </td>
+                              <td>
+                                25
+                              </td>
+                              <td>
+                                Aspiradora
+                              </td>
+                              <td class="text-center">
+                                <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                                  <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                                </button>
+                                <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                                  <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                                    data-placement="top"></span>
+                                </button>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                3
+                              </td>
+
+                              <td>
+                                00011
+
+                              </td>
+                              <td>
+                                32
+                              </td>
+                              <td>
+                                Archivador de Madera
+                              </td>
+                              <td class="text-center">
+                                <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                                  <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                                </button>
+                                <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                                  <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                                    data-placement="top"></span>
+                                </button>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                4
+                              </td>
+
+                              <td>
+                                0005
+
+                              </td>
+                              <td>
+                                46
+                              </td>
+                              <td>
+                                Archivador de Melani
+                              </td>
+                              <td class="text-center">
+                                <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                                  <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                                </button>
+                                <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                                  <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                                    data-placement="top"></span>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                5
+                              </td>
+                              <td>
+                                00010
+                              </td>
+                              <td>
+                                53
+                              </td>
+                              <td>
+                                Banco de Madera
+                              </td>
+                              <td class="text-center">
+                                <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                                  <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                                </button>
+                                <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                                  <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                                    data-placement="top"></span>
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="row" style="width: 100%; margin-right: 0px;margin-left: 0px;">
+
+                      <div class="col-sm-5 ">
+                        <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                          Mostrando
+                          0 hasta 0 de 0 registros</div>
+                      </div>
+                      <div class="col-sm-7" style="display: flex; justify-content: flex-end;">
+                        <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                          <ul class="pagination">
+                            <li class="paginate_button previous disabled " id="DataTables_Table_0_previous"><a href="#"
+                                class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
+                                tabindex="0">Anterior</a></li>
+                            <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"
+                                class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="1"
+                                tabindex="0">Siguiente</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="dt-loading" style="display: none;">Loading...</h3>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </div>
     </div>
+
+  </div>
 
   </nav>
 
