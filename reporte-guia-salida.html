@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="mantenedor.css">
+  <link rel="stylesheet" href="menu-style.css">
+  <link rel="stylesheet" href="ingreso-almacen.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <title>SIG - SISTEMA DE GESTION</title>
+
+</head>
+
+<body>
+
+  <nav class="">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-3  col-xs-3 text-center">
+          <div id="icon-menu" style="height: 15px; width: 15px;margin-top:10px;float: left; cursor: pointer" alt=""><i
+              class="fas fa-bars"></i></div>
+
+          <img style="height: 40px; width: 120px;margin-top:4px;margin-bottom:2px;margin-left:20px;float: left;"
+            src="img/logo-ses.png" alt="">
+        </div>
+        <div class="col-md-5 col-sm-5  col-xs-4 text-center ">
+
+        </div>
+        <div class="col-md-4 col-sm-4  col-xs-4 text-center"
+          style="padding-left: 0 !important; padding-right: 0 !important;">
+          <a id="login" style="margin-left:100px; margin-top:100px!important;text-decoration:none;color:black;" href=""
+            class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user pull-left " style="font-size: 1.5em;margin-top:10px!important;color:#555"></i>
+            <span class=""
+              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px; color:#555">Bienvenido(a):</span>
+            <span class=""
+              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Judith
+              Quiñones</span>
+            <span <i style="margin-right:0px !important;color:#555" class="caret-down"></span>
+
+
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="recta"></div>
+
+    <div id="menu" class="hide" style="float: left;">
+      <div class="title">
+        <p>SISTEMA DE LOGÍSTICA</p>
+      </div>
+      <ul>
+        <li id="article"><a href="#">Artículo <i style="float: right; margin-top:2px;"
+              class="fas fa-caret-down show"></i></a></li>
+        <ul id="article_sub_menu" class="hide">
+          <li><a>SUBMENÚ 1</a></li>
+          <li><a>SUBMENÚ 2</a></li>
+        </ul>
+        <li id="inventories"><a href="#">Inventarios <i style="float: right; margin-top:2px;"
+              class="fas fa-caret-down"></i></a></li>
+        <ul id="inventories_sub_menu" class="hide">
+          <li><a>SUBMENÚ 1</a></li>
+          <li><a>SUBMENÚ 2</a></li>
+        </ul>
+        <li id="shopping"><a href="#">Compras <i style="float: right; margin-top:2px;"
+              class="fas fa-caret-down"></i></a></li>
+        <ul id="shopping_sub_menu" class="hide">
+          <li><a>SUBMENÚ 1</a></li>
+          <li><a>SUBMENÚ 2</a></li>
+        </ul>
+        <li id="report"><a href="#">Reportes <i style="float: right; margin-top:2px;" class="fas fa-caret-down"></i></a>
+        </li>
+        <ul id="report_sub_menu" class="hide">
+          <li><a>SUBMENÚ 1</a></li>
+          <li><a>SUBMENÚ 2</a></li>
+        </ul>
+        <li id="maintenance"><a href="#">Mantenimiento <i style="float: right; margin-top:2px;"
+              class="fas fa-caret-down"></i></a></li>
+        <ul id="maintenance_sub_menu" class="hide">
+          <li><a>SUBMENÚ 1</a></li>
+          <li><a>SUBMENÚ 2</a></li>
+        </ul>
+      </ul>
+
+    </div>
+    <div id="sign-off" class="hide" style="float:right;">
+      <ul>
+        <li id="perfil"><a href="#"><i class="fas fa-edit" style="margin-right: 5px;"></i>Perfil</a></li>
+        <li id="off"><a href="#"><i class="fas fa-sign-out-alt" style="margin-right: 5px;"></i>Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <div>
+
+  </div>
+
+
+
+
+  <div class="container-fluid" style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
+    <div class="row headboard">
+      <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Reporte</p>
+
+    </div>
+    <br>
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+          aria-controls="nav-home" aria-selected="true">Reporte Ingreso a Almancen</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+          aria-controls="nav-profile" aria-selected="false">Reporte de Guía de Salida</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+          aria-controls="nav-contact" aria-selected="false">Reporte de Guía de Remisión</a>
+      </div>
+    </nav>
+
+
+
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="panel-body" style="padding-bottom: 0px;">
+          <div class="container-fluid"
+            style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
+
+            <div class="row" style="
+            margin-top: 9px;
+        ">
+              <div class="col-md-6 col-xs-12" ng-show="vCmbGrupoxGerente">
+
+                <div class="form-group">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Local: </label>
+                    <select name="" id="" class="form-control input-sm">
+                      <option value="">------SELECCIONE --------</option>
+                      <option value="3" class="ng-binding ng-scope">Software Enterprise Services</option>
+                      <option value="3" class="ng-binding ng-scope">Inretail Perú Corp</option>
+                      <option value="3" class="ng-binding ng-scope">Candela Perú</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Fecha de Inicio: </label>
+                    <select name="" id="" class="form-control input-sm">
+                      <option value="">------SELECCIONE --------</option>
+                      <option value="">------01/010/2020--------</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                <div class="form-group">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Almacen: </label>
+                    <select name="" id="" class="form-control input-sm">
+                      <option value="">------ALMACEN ADM--------</option>
+                      <option value="">------OFICINA- 201--------</option>
+                      <option value="">------OFICINA- 301--------</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Fecha Final: </label>
+                    <select name="" id="" class="form-control input-sm">
+                      <option value="">------SELECCIONE --------</option>
+                      <option value="">------01/02/2019--------</option>
+                    </select>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="row cls-content-ctrl-ses">
+              <div class="table-responsive">
+                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                  <div class="row" style="width: 100%;     
+                          margin-bottom: 10px; margin-left:0px">
+                    <div class="col-sm-7 ">
+                      <div class="dataTables_length" id="DataTables_Table_0_length">
+                        <label style="justify-content: flex-start;">Ver
+                          <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
+                            class="form-control input-sm">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select> Líneas</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div id="DataTables_Table_0_filter" class="dataTables_filter"><label style="
+                                justify-content: flex-end;">Buscar: <input type="search" class="form-control input-sm"
+                            placeholder="" aria-controls="DataTables_Table_0" style="
+                                    margin-left: 3px;
+                                "></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" style="width: 100%; margin-left: 0px!important;">
+                    <div class="col-sm-12">
+                      <table
+                        class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
+                        datatable="ng" dt-options="showCase.dtOptions" style="display: table;" id="DataTables_Table_0"
+                        role="grid" aria-describedby="DataTables_Table_0_info">
+                        <thead>
+                          <tr role="row">
+                            <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
+                              rowspan="1" colspan="1" aria-sort="ascending"
+                              aria-label=": activate to sort column descending" style="width: 99px;"> Fecha </th>
+                            <th class="text-left sorting" style="width: 49px;" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Código: activate to sort column ascending" style="text-align: center;">Hora
+                            </th>
+
+                            <th class="text-center sorting" ng-show="vColUsuario" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Usuario: activate to sort column ascending" style="width: 200px;">Tipo
+                            </th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
+                              style="width: 312px;">Proveedor</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending">Serie</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending">Número</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending">
+                              Cod.Fabricado</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
+                              style="width: 212px;">Articulo</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Acción: activate to sort column ascending">
+                              UM</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Acción: activate to sort column ascending">
+                              Ingreso</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Acción: activate to sort column ascending">
+                              P.Uni</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Acción: activate to sort column ascending">
+                              P.Total</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="text-align: center;"> 1 </td>
+                            <td style="text-align: center;"> 746451860106 </td>
+                            <td style="text-align: center;"> ESTACION DOBLE DE TRABAJO </td>
+                            <td style="text-align: center;"> UND </td>
+                            <td style="text-align: center;"> 1 </td>
+                            <td style="text-align: center;"> 694.92 </td>
+                            <td style="text-align: center;"> 694.92 </td>
+                            <td style="text-align: center;"> 0 </td>
+                            <td class="text-center"> No </td>
+                            <td class="text-center"> Si</td>
+                            <td class="text-center"> 18 </td>
+                            <td class="text-center"> 18 </td>
+                          </tr>
+                          <tr>
+                            <td style="text-align: center;"> 2 </td>
+                            <td style="text-align: center;"> 746451412512 </td>
+                            <td style="text-align: center;"> ESTACION DOBLE DE TRABAJO </td>
+                            <td style="text-align: center;"> UND </td>
+                            <td style="text-align: center;"> 1 </td>
+                            <td style="text-align: center;"> 423.73 </td>
+                            <td style="text-align: center;"> 423.73 </td>
+                            <td style="text-align: center;"> 0 </td>
+                            <td class="text-center"> No </td>
+                            <td class="text-center"> Si</td>
+                            <td class="text-center"> 18 </td>
+                            <td class="text-center"> 18 </td>
+                          </tr>
+
+                          <tr>
+                            <td style="text-align: center;"> 3 </td>
+                            <td style="text-align: center;"> 745423510241 </td>
+                            <td style="text-align: center;"> ESTACION INDIVIDUAL DEL TRABAJO </td>
+                            <td style="text-align: center;"> UND </td>
+                            <td style="text-align: center;"> 1</td>
+                            <td style="text-align: center;"> 423.73 </td>
+                            <td style="text-align: center;"> 423.73 </td>
+                            <td style="text-align: center;"> 0 </td>
+                            <td class="text-center"> No </td>
+                            <td class="text-center"> Si</td>
+                            <td class="text-center"> 18 </td>
+                            <td class="text-center"> 18 </td>
+                          </tr>
+
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="row" style="width: 100%; margin-left: 0px;">
+                    <div class="col-sm-3 ">
+                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                        Total Cantidad: 5</div>
+                    </div>
+                    <div class="col-sm-3 ">
+                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                        Sub Total: 10000.00</div>
+                    </div>
+                    <div class="col-sm-3 ">
+                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                        IGV: 100.00</div>
+                    </div>
+                    <div class="col-sm-3" style="display: flex; justify-content: flex-end;">
+                      <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                        <ul class="pagination">
+                          <li class="paginate_button previous disabled " id="DataTables_Table_0_previous"><a href="#"
+                              class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
+                              tabindex="0">Anterior</a></li>
+                          <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"
+                              class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="1"
+                              tabindex="0">Siguiente</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="dt-loading" style="display: none;">Loading...</h3>
+              </div>
+
+              <div class="col-md-6 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+
+
+                <div class="form-group">
+                  <div class="btn-save" style="justify-content: flex-end;">
+                    <button type="submit" class="btn  btn-sm btn-saves" style=" 
+                        height: 46% !important; background-color: #28a745 !important;" align="right"><i
+                        class="fa fa-plus"></i>&nbsp;Exportar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- CLASE -->
+
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="panel-body" style="padding-bottom: 0px;">
+          <div class="container-fluid"
+            style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
+
+            <div class="row" style="            margin-top: 9px;        ">
+              <div class="col-md-6 col-xs-12" ng-show="vCmbGrupoxGerente">
+
+                <div class="form-group">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Local: </label>
+                    <select name="" id="" class="form-control input-sm">
+                      <option value="">------SELECCIONE --------</option>
+                      <option value="3" class="ng-binding ng-scope">Software Enterprise Services</option>
+                      <option value="3" class="ng-binding ng-scope">Inretail Perú Corp</option>
+                      <option value="3" class="ng-binding ng-scope">Candela Perú</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Fecha de Inicio: </label>
+                    <select name="" id="" class="form-control input-sm">
+                      <option value="">------SELECCIONE --------</option>
+                      <option value="">------01/010/2020--------</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                <div class="form-group">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Almacen: </label>
+                    <select name="" id="" class="form-control input-sm">
+                      <option value="">------ALMACEN ADM--------</option>
+                      <option value="">------OFICINA- 201--------</option>
+                      <option value="">------OFICINA- 301--------</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Fecha Final: </label>
+                    <select name="" id="" class="form-control input-sm">
+                      <option value="">------SELECCIONE --------</option>
+                      <option value="">------01/02/2019--------</option>
+                    </select>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="row cls-content-ctrl-ses">
+              <div class="table-responsive">
+                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                  <div class="row" style="width: 100%;     
+                          margin-bottom: 10px; margin-left:0px">
+                    <div class="col-sm-7 ">
+                      <div class="dataTables_length" id="DataTables_Table_0_length">
+                        <label style="justify-content: flex-start;">Ver
+                          <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
+                            class="form-control input-sm">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select> Líneas</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div id="DataTables_Table_0_filter" class="dataTables_filter"><label style="
+                                justify-content: flex-end;">Buscar: <input type="search" class="form-control input-sm"
+                            placeholder="" aria-controls="DataTables_Table_0" style="
+                                    margin-left: 3px;
+                                "></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" style="width: 100%; margin-left: 0px!important;">
+                    <div class="col-sm-12">
+                      <table
+                        class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
+                        datatable="ng" dt-options="showCase.dtOptions" style="display: table;" id="DataTables_Table_0"
+                        role="grid" aria-describedby="DataTables_Table_0_info">
+                        <thead>
+                          <tr role="row">
+                            <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
+                              rowspan="1" colspan="1" aria-sort="ascending"
+                              aria-label=": activate to sort column descending" style="width: 99px;"> Fecha </th>
+                            <th class="text-left sorting" style="width: 49px;" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Código: activate to sort column ascending" style="text-align: center;">Hora
+                            </th>
+
+                            <th class="text-center sorting" ng-show="vColUsuario" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Usuario: activate to sort column ascending" style="width: 200px;">Tipo
+                            </th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
+                              style="width: 312px;">Proveedor</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending">Serie</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending">Número</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending">
+                              Cod.Fabricado</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
+                              style="width: 212px;">Articulo</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Acción: activate to sort column ascending">
+                              UM</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Acción: activate to sort column ascending">
+                              Ingreso</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Acción: activate to sort column ascending">
+                              P.Uni</th>
+                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-label="Acción: activate to sort column ascending">
+                              P.Total</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="text-align: center;"> 1 </td>
+                            <td style="text-align: center;"> 746451860106 </td>
+                            <td style="text-align: center;"> ESTACION DOBLE DE TRABAJO </td>
+                            <td style="text-align: center;"> UND </td>
+                            <td style="text-align: center;"> 1 </td>
+                            <td style="text-align: center;"> 694.92 </td>
+                            <td style="text-align: center;"> 694.92 </td>
+                            <td style="text-align: center;"> 0 </td>
+                            <td class="text-center"> No </td>
+                            <td class="text-center"> Si</td>
+                            <td class="text-center"> 18 </td>
+                            <td class="text-center"> 18 </td>
+                          </tr>
+                          <tr>
+                            <td style="text-align: center;"> 2 </td>
+                            <td style="text-align: center;"> 746451412512 </td>
+                            <td style="text-align: center;"> ESTACION DOBLE DE TRABAJO </td>
+                            <td style="text-align: center;"> UND </td>
+                            <td style="text-align: center;"> 1 </td>
+                            <td style="text-align: center;"> 423.73 </td>
+                            <td style="text-align: center;"> 423.73 </td>
+                            <td style="text-align: center;"> 0 </td>
+                            <td class="text-center"> No </td>
+                            <td class="text-center"> Si</td>
+                            <td class="text-center"> 18 </td>
+                            <td class="text-center"> 18 </td>
+                          </tr>
+
+                          <tr>
+                            <td style="text-align: center;"> 3 </td>
+                            <td style="text-align: center;"> 745423510241 </td>
+                            <td style="text-align: center;"> ESTACION INDIVIDUAL DEL TRABAJO </td>
+                            <td style="text-align: center;"> UND </td>
+                            <td style="text-align: center;"> 1</td>
+                            <td style="text-align: center;"> 423.73 </td>
+                            <td style="text-align: center;"> 423.73 </td>
+                            <td style="text-align: center;"> 0 </td>
+                            <td class="text-center"> No </td>
+                            <td class="text-center"> Si</td>
+                            <td class="text-center"> 18 </td>
+                            <td class="text-center"> 18 </td>
+                          </tr>
+
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="row" style="width: 100%; margin-left: 0px;">
+                    <div class="col-sm-3 ">
+                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                        Total Cantidad: 5</div>
+                    </div>
+                    <div class="col-sm-3 ">
+                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                        Sub Total: 10000.00</div>
+                    </div>
+                    <div class="col-sm-3 ">
+                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                        IGV: 100.00</div>
+                    </div>
+                    <div class="col-sm-3" style="display: flex; justify-content: flex-end;">
+                      <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                        <ul class="pagination">
+                          <li class="paginate_button previous disabled " id="DataTables_Table_0_previous"><a href="#"
+                              class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
+                              tabindex="0">Anterior</a></li>
+                          <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"
+                              class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="1"
+                              tabindex="0">Siguiente</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="dt-loading" style="display: none;">Loading...</h3>
+              </div>
+
+              <div class="col-md-6 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+
+
+                <div class="form-group">
+                  <div class="btn-save" style="justify-content: flex-end;">
+                    <button type="submit" class="btn  btn-sm btn-saves" style=" 
+                        height: 46% !important; background-color: #28a745 !important;" align="right"><i
+                        class="fa fa-plus"></i>&nbsp;Exportar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <div class="panel-body" style="padding-bottom: 0px;">
+          <div class="container-fluid"
+            style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
+
+            <div class="row" style="            margin-top: 9px;        ">
+              <div class="col-md-6 col-xs-12" ng-show="vCmbGrupoxGerente">
+
+                <div class="form-group">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Local: </label>
+                    <select name="" id="" class="form-control input-sm">
+                      <option value="">------SELECCIONE --------</option>
+                      <option value="3" class="ng-binding ng-scope">Software Enterprise Services</option>
+                      <option value="3" class="ng-binding ng-scope">Inretail Perú Corp</option>
+                      <option value="3" class="ng-binding ng-scope">Candela Perú</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Fecha de Inicio: </label>
+                    <select name="" id="" class="form-control input-sm">
+                      <option value="">------SELECCIONE --------</option>
+                      <option value="">------01/010/2020--------</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                <div class="form-group">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Almacen: </label>
+                    <select name="" id="" class="form-control input-sm">
+                      <option value="">------ALMACEN ADM--------</option>
+                      <option value="">------OFICINA- 201--------</option>
+                      <option value="">------OFICINA- 301--------</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Fecha Final: </label>
+                    <select name="" id="" class="form-control input-sm">
+                      <option value="">------SELECCIONE --------</option>
+                      <option value="">------01/02/2019--------</option>
+                    </select>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="row cls-content-ctrl-ses">
+              <div class="table-responsive">
+                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                  <div class="row" style="width: 100%;     
+                          margin-bottom: 10px; margin-left:0px">
+                    <div class="col-sm-7 ">
+                      <div class="dataTables_length" id="DataTables_Table_0_length">
+                        <label style="justify-content: flex-start;">Ver
+                          <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
+                            class="form-control input-sm">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select> Líneas</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div id="DataTables_Table_0_filter" class="dataTables_filter"><label style="
+                                justify-content: flex-end;">Buscar: <input type="search" class="form-control input-sm"
+                            placeholder="" aria-controls="DataTables_Table_0" style="
+                                    margin-left: 3px;
+                                "></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" style="width: 100%; margin-left: 0px!important;">
+                    <div class="col-sm-12">
+                      <table
+                      class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
+                      datatable="ng" dt-options="showCase.dtOptions" style="display: table;" id="DataTables_Table_0"
+                      role="grid" aria-describedby="DataTables_Table_0_info">
+                      <thead>
+                        <tr role="row">
+                          <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
+                            rowspan="1" colspan="1" aria-sort="ascending"
+                            aria-label=": activate to sort column descending" style="width: 99px;"> Fecha </th>
+                          <th class="text-left sorting" style="width: 49px;" tabindex="0"
+                            aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                            aria-label="Código: activate to sort column ascending" style="text-align: center;">Hora
+                          </th>
+
+                          <th class="text-center sorting" ng-show="vColUsuario" tabindex="0"
+                            aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                            aria-label="Usuario: activate to sort column ascending" style="width: 200px;">Tipo
+                          </th>
+                          <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                            colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
+                            style="width: 312px;">Proveedor</th>
+                          <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                            colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending">Serie</th>
+                          <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                            colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending">Número</th>
+                          <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                            colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending">
+                            Cod.Fabricado</th>
+                          <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                            colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
+                            style="width: 212px;">Articulo</th>
+                          <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                            colspan="1" aria-label="Acción: activate to sort column ascending">
+                            UM</th>
+                          <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                            colspan="1" aria-label="Acción: activate to sort column ascending">
+                            Ingreso</th>
+                          <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                            colspan="1" aria-label="Acción: activate to sort column ascending">
+                            P.Uni</th>
+                          <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                            colspan="1" aria-label="Acción: activate to sort column ascending">
+                            P.Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="text-align: center;"> 1 </td>
+                          <td style="text-align: center;"> 746451860106 </td>
+                          <td style="text-align: center;"> ESTACION DOBLE DE TRABAJO </td>
+                          <td style="text-align: center;"> UND </td>
+                          <td style="text-align: center;"> 1 </td>
+                          <td style="text-align: center;"> 694.92 </td>
+                          <td style="text-align: center;"> 694.92 </td>
+                          <td style="text-align: center;"> 0 </td>
+                          <td class="text-center"> No </td>
+                          <td class="text-center"> Si</td>
+                          <td class="text-center"> 18 </td>
+                          <td class="text-center"> 18 </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: center;"> 2 </td>
+                          <td style="text-align: center;"> 746451412512 </td>
+                          <td style="text-align: center;"> ESTACION DOBLE DE TRABAJO </td>
+                          <td style="text-align: center;"> UND </td>
+                          <td style="text-align: center;"> 1 </td>
+                          <td style="text-align: center;"> 423.73 </td>
+                          <td style="text-align: center;"> 423.73 </td>
+                          <td style="text-align: center;"> 0 </td>
+                          <td class="text-center"> No </td>
+                          <td class="text-center"> Si</td>
+                          <td class="text-center"> 18 </td>
+                          <td class="text-center"> 18 </td>
+                        </tr>
+
+                        <tr>
+                          <td style="text-align: center;"> 3 </td>
+                          <td style="text-align: center;"> 745423510241 </td>
+                          <td style="text-align: center;"> ESTACION INDIVIDUAL DEL TRABAJO </td>
+                          <td style="text-align: center;"> UND </td>
+                          <td style="text-align: center;"> 1</td>
+                          <td style="text-align: center;"> 423.73 </td>
+                          <td style="text-align: center;"> 423.73 </td>
+                          <td style="text-align: center;"> 0 </td>
+                          <td class="text-center"> No </td>
+                          <td class="text-center"> Si</td>
+                          <td class="text-center"> 18 </td>
+                          <td class="text-center"> 18 </td>
+                        </tr>
+
+
+                      </tbody>
+                    </table>
+                    </div>
+                  </div>
+                  <div class="row" style="width: 100%; margin-left: 0px;">
+                    <div class="col-sm-3 ">
+                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                        Total Cantidad: 5</div>
+                    </div>
+                    <div class="col-sm-3 ">
+                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                        Sub Total: 10000.00</div>
+                    </div>
+                    <div class="col-sm-3 ">
+                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                        IGV: 100.00</div>
+                    </div>
+                    <div class="col-sm-3" style="display: flex; justify-content: flex-end;">
+                      <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                        <ul class="pagination">
+                          <li class="paginate_button previous disabled " id="DataTables_Table_0_previous"><a href="#"
+                              class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
+                              tabindex="0">Anterior</a></li>
+                          <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"
+                              class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="1"
+                              tabindex="0">Siguiente</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="dt-loading" style="display: none;">Loading...</h3>
+              </div>
+
+              <div class="col-md-6 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+
+
+                <div class="form-group">
+                  <div class="btn-save" style="justify-content: flex-end;">
+                    <button type="submit" class="btn  btn-sm btn-saves" style=" 
+                        height: 46% !important; background-color: #28a745 !important;" align="right"><i
+                        class="fa fa-plus"></i>&nbsp;Exportar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <footer class=" sky-blue-ses" style="position:fixed;
+  left:0px;
+  bottom:0px;
+  height:25px;
+  width:100%;">
+    <div class="col-md-12 col-xs-12">
+      <p style="margin:5px;" class="text-center font-color-white">© 2019 - 2020 SES - Sistema Logístico 1.0 -
+        Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar Familia</h5>
+          <button type="button" class=" btn" data-dismiss="modal" aria-label="Close" style="color: #33AADE !important;">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          ¿Está seguro que desea eliminar la familia?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-delete-modal">Eliminar</button>
+          <button type="button" class="btn btn-cancel-modal" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
