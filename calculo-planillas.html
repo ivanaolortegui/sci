@@ -292,11 +292,11 @@
                               aria-label="Usuario: activate to sort column ascending" style="width: 312px;"> TIPO DE
                               PLANILLA
                             </th>
-                        
+
                           </tr>
                         </thead>
                         <tbody>
-                         <!--  <tr style="
+                          <!--  <tr style="
                           text-align: center;
                       ">
                            <td><input ng-click="MarcarTodos();" type="checkbox" ng-model="marcar" class="ng-valid ng-dirty ng-valid-parse ng-touched ng-empty ng-pristine ng-untouched"></td> 
@@ -362,6 +362,203 @@
                       </table>
                     </div>
                   </div>
+
+                  <div class="row" style="width: 100%; margin-left: 0px!important;">
+                    <div class="col-sm-12">
+                      <table
+                        class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
+                        datatable="ng" dt-options="showCase.dtOptions" style="display: table;" id="DataTables_Table_0"
+                        role="grid" aria-describedby="DataTables_Table_0_info">
+                        <thead>
+                          <tr role="row">
+
+                            <th class="text-center " tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                              colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending"
+                              style="width: 120px;">
+                              ANTIGUOS
+
+                            </th>
+                            <th class="text-center sorting" style="width: 120px;" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Código: activate to sort column ascending">NUEVOS</th>
+
+                            <th class="text-center sorting" ng-show="vColUsuario" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Usuario: activate to sort column ascending" style="width: 200px;">TOTAL
+                            </th>
+
+                            <th class="text-center sorting" ng-show="vColUsuario" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Usuario: activate to sort column ascending" style="width: 120px;">PENDIENTE
+                            </th>
+                            <th class="text-center sorting" ng-show="vColUsuario" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Usuario: activate to sort column ascending" style="width: 250px;"> IMPORTE DE
+                              PLANILLA
+                            </th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr style="
+                          text-align: center;
+                      ">
+                            <td style="
+                           text-align: center;
+                       "> 250 </td>
+                            <td style="
+                           text-align: center;
+                       "> 8 </td>
+                            <td style="
+                            text-align: center;
+                        "> 258</td>
+
+                            <td class="text-center">
+                              3
+                            </td>
+                            <td class="text-center">
+                              <strong style="color:red"> S/300,000.00</strong>
+                            </td>
+                            <!-- 
+                          </tr>
+                        
+                          <tr>
+                            <td style="
+                            text-align: center;
+                        "><input ng-click="MarcarTodos();" type="checkbox" ng-model="marcar" class="ng-valid ng-dirty ng-valid-parse ng-touched ng-empty ng-pristine ng-untouched"></td> 
+                            <td style="
+                            text-align: center;
+                        "> 1842 </td> 
+                            <td style="                            text-align: center;                        "> 32243871 </td>
+                             <td  style="
+                             text-align: center;
+                         "> Jorge Gabriel  </td > 
+                             <td class="text-center">
+                               Alfonzo Sabido
+                             </td>
+                             <td class="text-center">
+                              Practicante
+                             </td>
+                           </tr>
+                           <tr>
+                            <td style="
+                            text-align: center;
+                        "><input ng-click="MarcarTodos();" type="checkbox" ng-model="marcar" class="ng-valid ng-dirty ng-valid-parse ng-touched ng-empty ng-pristine ng-untouched"></td> 
+                            <td style="
+                            text-align: center;
+                        "> 1251 </td> 
+                            <td style="
+                            text-align: center;
+                        "> 7850571 </td>
+                             <td style="
+                             text-align: center;
+                         "> Alan Brian </td> 
+                             <td class="text-center">
+                              Begines Lopez
+                             </td>
+                             <td class="text-center">
+                              Colaborador
+                             </td>
+                           </tr>
+
+ -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" style="width: 120px;"></th>
+                        <th scope="col" style="width: 120px;
+                        text-align: center;">Antiguos</th>
+                        <th scope="col" style="width: 80px;
+                        text-align: center;">Nuevos</th>
+                        <th scope="col" style="width: 80px;
+                        text-align: center;">Total</th>
+                        <th scope="col" style="width: 80px;
+                         text-align: center;">Pendiente</th>
+                        <th scope="col" style="width: 80px;
+                           text-align: center;">Importe de Planilla</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Colaboradores</th>
+                        <td style="
+                        text-align: center;
+                    ">154</td>
+                        <td style="
+                        text-align: center;
+                    ">5</td>
+                        <td style="
+                     text-align: center;
+                 ">159</td>
+                        <td style="
+                   text-align: center;
+               ">1</td>
+                        <td style="
+                text-align: center;
+            "> <strong style="color:red"> S/220,000.00</strong></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Practicantes</th>
+                        <td style="
+                        text-align: center;
+                    ">85</td>
+                        <td style="
+                        text-align: center;
+                    ">0</td>
+                        <td style="
+                     text-align: center;
+                 ">85</td>
+                        <td style="
+                  text-align: center;
+              ">0</td>
+                        <td style="
+               text-align: center;
+           "> <strong style="color:red"> S/79,050.00</strong></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Recibo por Honorario</th>
+                        <td style="
+                        text-align: center;
+                    ">53</td>
+                        <td style="
+                    text-align: center;
+                ">2</td>
+                        <td style="
+                text-align: center;
+            ">55</td>
+                        <td style="
+                        text-align: center;
+                    ">1</td>
+                     <td style="
+                     text-align: center;
+                 "> <strong style="color:red"> S/56,000.00</strong></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Staff</th>
+                        <td style="
+                        text-align: center;
+                    ">26</td>
+                        <td style="
+                        text-align: center;
+                    ">0</td><td style="
+                        text-align: center;
+                    ">26</td><td style="
+                        text-align: center;
+                    ">1</td>
+                   <td style="
+                   text-align: center;
+               "> <strong style="color:red"> S/130,000.00</strong></td>
+                  </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
                   <div class="row" style="width: 100%; margin-left: 0px;">
                     <div class="col-sm-3 ">
                       <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
@@ -400,7 +597,7 @@
               aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
-                  VER Más detalles
+                  Ver Más detalles
                 </div>
               </div>
             </div>
@@ -411,6 +608,125 @@
     </div>
 
   </nav>
+  <br><br>
+
+  <div class="row" style="width: 100%; margin-left: 0px!important;">
+    <div class="col-sm-12">
+      <table
+        class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
+        datatable="ng" dt-options="showCase.dtOptions" style="display: table;" id="DataTables_Table_0"
+        role="grid" aria-describedby="DataTables_Table_0_info">
+        <thead>
+          <tr role="row">
+            <th class="text-center " tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+              colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending"
+              style="width: 79px;">
+              N°
+
+            </th>
+            <th class="text-left sorting" style="width: 118px;" tabindex="0"
+              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+              aria-label="Código: activate to sort column ascending">DNI O CE</th>
+
+            <th class="text-center sorting" ng-show="vColUsuario" tabindex="0"
+              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+              aria-label="Usuario: activate to sort column ascending" style="width: 312px;">NOMBRES
+            </th>
+
+            <th class="text-center sorting" ng-show="vColUsuario" tabindex="0"
+              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+              aria-label="Usuario: activate to sort column ascending" style="width: 312px;">APELLIDOS
+            </th>
+            <th class="text-center sorting" ng-show="vColUsuario" tabindex="0"
+              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+              aria-label="Usuario: activate to sort column ascending" style="width: 312px;"> TIPO DE
+              PLANILLA
+            </th>
+            <th class="text-center sorting" ng-show="vColUsuario" tabindex="0"
+            aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+            aria-label="Usuario: activate to sort column ascending" style="width: 312px;"> TIPO DE
+            ACCIÓN
+          </th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="
+          text-align: center;
+      ">
+           
+           <td style="
+           text-align: center;
+       "> 102 </td> 
+           <td style="
+           text-align: center;
+       "> 10235511 </td>
+            <td style="
+            text-align: center;
+        "> Arnol Jose </td>
+           
+            <td class="text-center">
+              Perez Fuenmayor
+            </td>
+            <td class="text-center">
+             STAFF
+            </td>
+            <td class="text-center">
+              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                <span class="fas fa-unlock" data-toggle="modal" data-target="#exampleModal" data-placement="top"></span>
+              </button>
+            </td>
+          </tr>
+        
+          <tr>
+            
+            <td style="
+            text-align: center;
+        "> 1842 </td> 
+            <td style="                            text-align: center;                        "> 32243871 </td>
+             <td  style="
+             text-align: center;
+         "> Jorge Gabriel  </td > 
+             <td class="text-center">
+               Alfonzo Sabido
+             </td>
+             <td class="text-center">
+              Practicante
+             </td>
+             <td class="text-center">
+              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                <span class="fas fa-unlock" data-toggle="modal" data-target="#exampleModal" data-placement="top"></span>
+              </button>
+            </td>
+           </tr>
+           <tr>
+            <td style="
+            text-align: center;
+        "> 1251 </td> 
+            <td style="
+            text-align: center;
+        "> 7850571 </td>
+             <td style="
+             text-align: center;
+         "> Alan Brian </td> 
+             <td class="text-center">
+              Begines Lopez
+             </td>
+             <td class="text-center">
+              Colaborador
+             </td>
+             <td class="text-center">
+              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                <span class="fas fa-unlock" data-toggle="modal" data-target="#exampleModal" data-placement="top"></span>
+              </button>
+            </td>
+           </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
 
 
   <footer class="position-absolute sky-blue-ses" style="position: relative !important; bottom:0 !important;">
