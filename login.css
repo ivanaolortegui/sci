@@ -10,6 +10,12 @@
     width: 100%;
     margin: 14px 0 5px 0;
     
+    
+}
+
+a:link
+{
+text-decoration:none;
 }
 
 .cls-cambiar-contraseña {
