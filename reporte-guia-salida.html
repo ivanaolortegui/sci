@@ -67,8 +67,9 @@
         <li id="inventories"><a href="#">Inventarios <i style="float: right; margin-top:2px;"
               class="fas fa-caret-down"></i></a></li>
         <ul id="inventories_sub_menu" class="hide">
-          <li><a>SUBMENÚ 1</a></li>
-          <li><a>SUBMENÚ 2</a></li>
+          <li><a href="ingreso-almacen.html">Ingreso a Almacén</a></li>
+          <li><a href="salida-almacen.html">Guías de Salida</a></li>
+          <li><a href="">Guías de Remisión</a></li>
         </ul>
         <li id="shopping"><a href="#">Compras <i style="float: right; margin-top:2px;"
               class="fas fa-caret-down"></i></a></li>
@@ -79,13 +80,13 @@
         <li id="report"><a href="#">Reportes <i style="float: right; margin-top:2px;" class="fas fa-caret-down"></i></a>
         </li>
         <ul id="report_sub_menu" class="hide">
-          <li><a>SUBMENÚ 1</a></li>
+          <li><a href="reporte-guia-salida.html">Reporte de Inventarios</a></li>
           <li><a>SUBMENÚ 2</a></li>
         </ul>
         <li id="maintenance"><a href="#">Mantenimiento <i style="float: right; margin-top:2px;"
               class="fas fa-caret-down"></i></a></li>
         <ul id="maintenance_sub_menu" class="hide">
-          <li><a>SUBMENÚ 1</a></li>
+          <li><a href="mantenedor.html">Artículos</a></li>
           <li><a>SUBMENÚ 2</a></li>
         </ul>
       </ul>
@@ -98,9 +99,6 @@
       </ul>
     </div>
   </nav>
-
-
-
   <div>
 
   </div>
@@ -110,10 +108,11 @@
 
   <div class="container-fluid" style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
     <div class="row headboard">
-      <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Reporte</p>
+      <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Reportes</p>
 
     </div>
     <br>
+    <div>
     <nav>
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
@@ -127,17 +126,14 @@
 
 
 
-    <div class="tab-content" id="nav-tabContent">
+    <div class="tab-content" id="nav-tabContent" style="    margin: 0 15px;">
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
         <div class="panel-body" style="padding-bottom: 0px;">
           <div class="container-fluid"
             style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
 
-            <div class="row" style="
-            margin-top: 9px;
-        ">
+            <div class="row" style="            margin-top: 9px;        ">
               <div class="col-md-6 col-xs-12" ng-show="vCmbGrupoxGerente">
-
                 <div class="form-group">
                   <div class=" input-group input-daterange" style="text-align: start;">
                     <label class="label-input">Local: </label>
@@ -660,9 +656,7 @@
                     <div class="col-sm-5">
                       <div id="DataTables_Table_0_filter" class="dataTables_filter"><label style="
                                 justify-content: flex-end;">Buscar: <input type="search" class="form-control input-sm"
-                            placeholder="" aria-controls="DataTables_Table_0" style="
-                                    margin-left: 3px;
-                                "></label>
+                            placeholder="" aria-controls="DataTables_Table_0" style="       margin-left: 3px;      "></label>
                       </div>
                     </div>
                   </div>
@@ -811,7 +805,7 @@
         </div>
       </div>
     </div>
-
+  </div>
   </div>
 
 

@@ -2,290 +2,289 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="mantenedor.css" rel="stylesheet" />
-    <link rel="stylesheet" href="ingreso-almacen.css">
-    <link rel="stylesheet" href="menu-style.css">
-    <link rel="stylesheet" href="registrar-articulo.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="mantenedor.css" rel="stylesheet" />
+  <link rel="stylesheet" href="ingreso-almacen.css">
+  <link rel="stylesheet" href="menu-style.css">
+  <link rel="stylesheet" href="registrar-articulo.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <title>Mantenimiento</title>
+  <title>Mantenimiento</title>
 </head>
 
 <body>
 
 
-    <nav class="">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 col-sm-3  col-xs-3 text-center">
-                    <div id="icon-menu" style="height: 15px; width: 15px;margin-top:10px;float: left;" alt=""><i
-                            class="fas fa-bars"></i></div>
+  <nav class="">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-3  col-xs-3 text-center">
+          <div id="icon-menu" style="height: 15px; width: 15px;margin-top:10px;float: left;" alt=""><i
+              class="fas fa-bars"></i></div>
 
-                    <img style="height: 40px; width: 120px;margin-top:4px;margin-bottom:2px;margin-left:20px;float: left;"
-                        src="img/logo-ses.png" alt="">
-                </div>
-                <div class="col-md-5 col-sm-5  col-xs-4 text-center ">
-
-                </div>
-                <div class="col-md-4 col-sm-4  col-xs-4 text-center"
-                    style="padding-left: 0 !important; padding-right: 0 !important;">
-                    <a id="login"
-                        style="margin-left:100px; margin-top:100px!important;text-decoration:none;color:black;" href=""
-                        class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                        aria-expanded="false">
-                        <i class="fa fa-user pull-left "
-                            style="font-size: 1.5em;margin-top:10px!important;color:#555"></i>
-                        <span class=""
-                            style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px; color:#555">Bienvenido(a):</span>
-                        <span class=""
-                            style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Judith
-                            Quiñones</span>
-                        <span <i style="margin-right:0px !important;color:#555" class="caret-down"></span>
-
-
-                    </a>
-                </div>
-            </div>
+          <img style="height: 40px; width: 120px;margin-top:4px;margin-bottom:2px;margin-left:20px;float: left;"
+            src="img/logo-ses.png" alt="">
         </div>
-        <div class="recta"></div>
-
-        <div id="menu" class="hide" style="float: left;">
-            <div class="title">
-                <p>SISTEMA DE LOGÍSTICA</p>
-            </div>
-            <ul>
-                <li id="article"><a href="#">Artículo <i style="float: right; margin-top:2px;"
-                            class="fas fa-caret-down show"></i></a></li>
-                <ul id="article_sub_menu" class="hide">
-                    <li><a>SUBMENÚ 1</a></li>
-                    <li><a>SUBMENÚ 2</a></li>
-                </ul>
-                <li id="inventories"><a href="#">Inventarios <i style="float: right; margin-top:2px;"
-                            class="fas fa-caret-down"></i></a></li>
-                <ul id="inventories_sub_menu" class="hide">
-                    <li><a>SUBMENÚ 1</a></li>
-                    <li><a>SUBMENÚ 2</a></li>
-                </ul>
-                <li id="shopping"><a href="#">Compras <i style="float: right; margin-top:2px;"
-                            class="fas fa-caret-down"></i></a></li>
-                <ul id="shopping_sub_menu" class="hide">
-                    <li><a>SUBMENÚ 1</a></li>
-                    <li><a>SUBMENÚ 2</a></li>
-                </ul>
-                <li id="report"><a href="#">Reportes <i style="float: right; margin-top:2px;"
-                            class="fas fa-caret-down"></i></a>
-                </li>
-                <ul id="report_sub_menu" class="hide">
-                    <li><a>SUBMENÚ 1</a></li>
-                    <li><a>SUBMENÚ 2</a></li>
-                </ul>
-                <li id="maintenance"><a href="#">Mantenimiento <i style="float: right; margin-top:2px;"
-                            class="fas fa-caret-down"></i></a></li>
-                <ul id="maintenance_sub_menu" class="hide">
-                    <li><a>SUBMENÚ 1</a></li>
-                    <li><a>SUBMENÚ 2</a></li>
-                </ul>
-            </ul>
+        <div class="col-md-5 col-sm-5  col-xs-4 text-center ">
 
         </div>
-        <div id="sign-off" class="hide" style="float:right;">
-            <ul>
-                <li id="perfil"><a href="#"><i class="fas fa-edit" style="margin-right: 5px;"></i>Perfil</a></li>
+        <div class="col-md-4 col-sm-4  col-xs-4 text-center"
+          style="padding-left: 0 !important; padding-right: 0 !important;">
+          <a id="login" style="margin-left:100px; margin-top:100px!important;text-decoration:none;color:black;" href=""
+            class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user pull-left " style="font-size: 1.5em;margin-top:10px!important;color:#555"></i>
+            <span class=""
+              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px; color:#555">Bienvenido(a):</span>
+            <span class=""
+              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Judith
+              Quiñones</span>
+            <span <i style="margin-right:0px !important;color:#555" class="caret-down"></span>
 
-                <li id="off"><a href="#"><i class="fas fa-sign-out-alt" style="margin-right: 5px;"></i>Cerrar Sesión</a>
-                </li>
-            </ul>
 
-
+          </a>
         </div>
+      </div>
+    </div>
+    <div class="recta"></div>
+
+    <div id="menu" class="hide" style="float: left;">
+      <div class="title">
+        <p>SISTEMA DE LOGÍSTICA</p>
+      </div>
+      <ul>
+        <li id="article"><a href="#">Artículo <i style="float: right; margin-top:2px;"
+              class="fas fa-caret-down show"></i></a></li>
+        <ul id="article_sub_menu" class="hide">
+          <li><a>SUBMENÚ 1</a></li>
+          <li><a>SUBMENÚ 2</a></li>
+        </ul>
+        <li id="inventories"><a href="#">Inventarios <i style="float: right; margin-top:2px;"
+              class="fas fa-caret-down"></i></a></li>
+        <ul id="inventories_sub_menu" class="hide">
+          <li><a href="ingreso-almacen.html">Ingreso a Almacén</a></li>
+          <li><a href="salida-almacen.html">Guías de Salida</a></li>
+          <li><a href="">Guías de Remisión</a></li>
+        </ul>
+        <li id="shopping"><a href="#">Compras <i style="float: right; margin-top:2px;"
+              class="fas fa-caret-down"></i></a></li>
+        <ul id="shopping_sub_menu" class="hide">
+          <li><a>SUBMENÚ 1</a></li>
+          <li><a>SUBMENÚ 2</a></li>
+        </ul>
+        <li id="report"><a href="#">Reportes <i style="float: right; margin-top:2px;" class="fas fa-caret-down"></i></a>
+        </li>
+        <ul id="report_sub_menu" class="hide">
+          <li><a href="reporte-guia-salida.html">Reporte de Inventarios</a></li>
+          <li><a>SUBMENÚ 2</a></li>
+        </ul>
+        <li id="maintenance"><a href="#">Mantenimiento <i style="float: right; margin-top:2px;"
+              class="fas fa-caret-down"></i></a></li>
+        <ul id="maintenance_sub_menu" class="hide">
+          <li><a href="mantenedor.html">Artículos</a></li>
+          <li><a>SUBMENÚ 2</a></li>
+        </ul>
+      </ul>
+
+    </div>
+    <div id="sign-off" class="hide" style="float:right;">
+      <ul>
+        <li id="perfil"><a href="#"><i class="fas fa-edit" style="margin-right: 5px;"></i>Perfil</a></li>
+
+        <li id="off"><a href="#"><i class="fas fa-sign-out-alt" style="margin-right: 5px;"></i>Cerrar Sesión</a>
+        </li>
+      </ul>
+
+
+    </div>
+  </nav>
+  <div class="container-fluid" style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
+    <div class="row headboard">
+
+      <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Reporte Garantía / Vida Útil</p>
+
+    </div>
+    <br>
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+          aria-controls="nav-home" aria-selected="true">Garantía</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+          aria-controls="nav-profile" aria-selected="false">Vida Útil</a>
+      </div>
     </nav>
-    <div class="container-fluid"
-        style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
-        <div class="row headboard">
-
-            <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Reporte Garantía / Vida Útil</p>
-
-        </div>
-        <br>
-        <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-                    aria-controls="nav-home" aria-selected="true">Garantía</a>
-                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                    aria-controls="nav-profile" aria-selected="false">Vida Útil</a>
-            </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
-                    <div class="container-fluid" style="margin-top:20px !important">
-                        <div class="row" style="padding-left: 0px !important; padding-right: 0px !important;margin-left: 10% !important;margin-right: 10% !important;">
-                            <div class="col-md-12 col-sm-12  col-xs-12">
-                                <label class="" style="float: left;margin-left: 10% !important; margin-right: 1%; margin-top: 1%;
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
+          <div class="container-fluid" style="margin-top:20px !important">
+            <div class="row"
+              style="padding-left: 0px !important; padding-right: 0px !important;margin-left: 10% !important;margin-right: 10% !important;">
+              <div class="col-md-12 col-sm-12  col-xs-12">
+                <label class="" style="float: left;margin-left: 10% !important; margin-right: 1%; margin-top: 1%;
                                 font-weight: 500;">Local:</label>
-                                <select class="form-control" style="float:right; width:80% !important;
+                <select class="form-control" style="float:right; width:80% !important;
                                 margin-top: 1%;
                                 ">
-                
-                                    <option value=""> ------ Seleccione ------ </option>
-                                    <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                                    </option>
-                                    <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                                    <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row" style="padding-left: 0px !important; padding-right: 0px !important;margin-left: 10% !important;margin-right: 10% !important;">
-                            <div class="col-md-12 col-sm-12  col-xs-12">
-                                <label class="" style="float: left;margin-left: 10% !important; margin-right: 1%; margin-top: 1%;
-                                font-weight: 500;">Almacén:</label>
-                               <select class="form-control" style="float:right; width:80% !important;
-                                margin-top: 1%;
-                                ">
-                
-                                    <option value=""> ------ Seleccione ------ </option>
-                                    <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                                    </option>
-                                    <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                                    <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-                                </select>
-                            </div>
-                        </div> 
-                        <div class="row" style="margin:25px; margin-top:70px !important">
-                            <div class="col-md-6 col-sm-6  col-xs-6" style="padding-left: 0 !important;">
-                                <button class="btn-salir"></button>
-                            </div>
-                            <div class="col-md-6 col-sm-6  col-xs-6" style="padding-left: 0 !important;">
-                                <button class="btn-historial">IMPRIMIR<img class="poligono-blanco" src="img/Polygon 32.png"
-                                        alt=""></button>
-                            </div>
-                        </div>
-                    
 
-                    </div>
-                </div>
+                  <option value=""> ------ Seleccione ------ </option>
+                  <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
+                  </option>
+                  <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
+                  <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
+                </select>
+              </div>
             </div>
-            <!-- CLASE -->
-
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
-                    <div class="container-fluid" style="margin-top:20px !important">
-                        <div class="row" style="padding-left: 0px !important; padding-right: 0px !important;margin-left: 10% !important;margin-right: 10% !important;">
-                            <div class="col-md-12 col-sm-12  col-xs-12">
-                                <label class="" style="float: left;margin-left: 10% !important; margin-right: 1%; margin-top: 1%;
-                                font-weight: 500;">Local:</label>
-                                <select class="form-control" style="float:right; width:80% !important;
-                                margin-top: 1%;
-                                ">
-                
-                                    <option value=""> ------ Seleccione ------ </option>
-                                    <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                                    </option>
-                                    <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                                    <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row" style="padding-left: 0px !important; padding-right: 0px !important;margin-left: 10% !important;margin-right: 10% !important;">
-                            <div class="col-md-12 col-sm-12  col-xs-12">
-                                <label class="" style="float: left;margin-left: 10% !important; margin-right: 1%; margin-top: 1%;
+            <div class="row"
+              style="padding-left: 0px !important; padding-right: 0px !important;margin-left: 10% !important;margin-right: 10% !important;">
+              <div class="col-md-12 col-sm-12  col-xs-12">
+                <label class="" style="float: left;margin-left: 10% !important; margin-right: 1%; margin-top: 1%;
                                 font-weight: 500;">Almacén:</label>
-                               <select class="form-control" style="float:right; width:80% !important;
+                <select class="form-control" style="float:right; width:80% !important;
                                 margin-top: 1%;
                                 ">
-                
-                                    <option value=""> ------ Seleccione ------ </option>
-                                    <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                                    </option>
-                                    <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                                    <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-                                </select>
-                            </div>
-                        </div> 
-                        <div class="row" style="margin:25px; margin-top:70px !important">
-                            <div class="col-md-6 col-sm-6  col-xs-6" style="padding-left: 0 !important;">
-                                <button class="btn-salir"></button>
-                            </div>
-                            <div class="col-md-6 col-sm-6  col-xs-6" style="padding-left: 0 !important;">
-                                <button class="btn-historial">IMPRIMIR<img class="poligono-blanco" src="img/Polygon 32.png"
-                                        alt=""></button>
-                            </div>
-                        </div>
-                    
 
-                    </div>
-                    </div>
-
-                </div>
-
+                  <option value=""> ------ Seleccione ------ </option>
+                  <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
+                  </option>
+                  <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
+                  <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
+                </select>
+              </div>
+            </div>
+            <div class="row" style="margin:25px; margin-top:70px !important">
+              <div class="col-md-6 col-sm-6  col-xs-6" style="padding-left: 0 !important;">
+                <button class="btn-salir"></button>
+              </div>
+              <div class="col-md-6 col-sm-6  col-xs-6" style="padding-left: 0 !important;">
+                <button class="btn-historial">IMPRIMIR<img class="poligono-blanco" src="img/Polygon 32.png"
+                    alt=""></button>
+              </div>
             </div>
 
+
+          </div>
         </div>
+      </div>
+      <!-- CLASE -->
+
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
+          <div class="container-fluid" style="margin-top:20px !important">
+            <div class="row"
+              style="padding-left: 0px !important; padding-right: 0px !important;margin-left: 10% !important;margin-right: 10% !important;">
+              <div class="col-md-12 col-sm-12  col-xs-12">
+                <label class="" style="float: left;margin-left: 10% !important; margin-right: 1%; margin-top: 1%;
+                                font-weight: 500;">Local:</label>
+                <select class="form-control" style="float:right; width:80% !important;
+                                margin-top: 1%;
+                                ">
+
+                  <option value=""> ------ Seleccione ------ </option>
+                  <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
+                  </option>
+                  <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
+                  <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
+                </select>
+              </div>
+            </div>
+            <div class="row"
+              style="padding-left: 0px !important; padding-right: 0px !important;margin-left: 10% !important;margin-right: 10% !important;">
+              <div class="col-md-12 col-sm-12  col-xs-12">
+                <label class="" style="float: left;margin-left: 10% !important; margin-right: 1%; margin-top: 1%;
+                                font-weight: 500;">Almacén:</label>
+                <select class="form-control" style="float:right; width:80% !important;
+                                margin-top: 1%;
+                                ">
+
+                  <option value=""> ------ Seleccione ------ </option>
+                  <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
+                  </option>
+                  <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
+                  <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
+                </select>
+              </div>
+            </div>
+            <div class="row" style="margin:25px; margin-top:70px !important">
+              <div class="col-md-6 col-sm-6  col-xs-6" style="padding-left: 0 !important;">
+                <button class="btn-salir"></button>
+              </div>
+              <div class="col-md-6 col-sm-6  col-xs-6" style="padding-left: 0 !important;">
+                <button class="btn-historial">IMPRIMIR<img class="poligono-blanco" src="img/Polygon 32.png"
+                    alt=""></button>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
 
     </div>
 
-    </nav>
+  </div>
+
+  </div>
+
+  </nav>
 
 
-    <footer class=" sky-blue-ses" style="position:fixed;
+  <footer class=" sky-blue-ses" style="position:fixed;
   left:0px;
   bottom:0px;
   height:25px;
   width:100%;">
-        <div class="col-md-12 col-xs-12">
-            <p style="margin:5px;" class="text-center font-color-white">© 2019 - 2020 SES - Sistema Logístico 1.0 -
-                Todos los derechos reservados</p>
-        </div>
-    </footer>
-
-
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Eliminar Familia</h5>
-                    <button type="button" class=" btn" data-dismiss="modal" aria-label="Close"
-                        style="color: #33AADE !important;">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body" style="text-align: center;">
-                    ¿Está seguro que desea eliminar la familia?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-delete-modal">Eliminar</button>
-                    <button type="button" class="btn btn-cancel-modal" data-dismiss="modal">Cancelar</button>
-                </div>
-            </div>
-        </div>
+    <div class="col-md-12 col-xs-12">
+      <p style="margin:5px;" class="text-center font-color-white">© 2019 - 2020 SES - Sistema Logístico 1.0 -
+        Todos los derechos reservados</p>
     </div>
+  </footer>
 
 
-    <script src="main.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar Familia</h5>
+          <button type="button" class=" btn" data-dismiss="modal" aria-label="Close" style="color: #33AADE !important;">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          ¿Está seguro que desea eliminar la familia?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-delete-modal">Eliminar</button>
+          <button type="button" class="btn btn-cancel-modal" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
 </body>
 
