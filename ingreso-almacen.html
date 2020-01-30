@@ -17,6 +17,7 @@
 
   <title>SIG - SISTEMA DE GESTION</title>
 </head>
+
 <body>
   <nav class="">
     <div class="container-fluid">
@@ -33,7 +34,7 @@
         </div>
         <div class="col-md-4 col-sm-4  col-xs-4 text-center"
           style="padding-left: 0 !important; padding-right: 0 !important;">
-          <a id="login"  style="margin-left:100px; margin-top:100px!important;text-decoration:none;color:black;" href=""
+          <a id="login" style="margin-left:100px; margin-top:100px!important;text-decoration:none;color:black;" href=""
             class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-user pull-left " style="font-size: 1.5em;margin-top:10px!important;color:#555"></i>
             <span class=""
@@ -64,9 +65,9 @@
         <li id="inventories"><a href="#">Inventarios <i style="float: right; margin-top:2px;"
               class="fas fa-caret-down"></i></a></li>
         <ul id="inventories_sub_menu" class="hide">
-            <li><a href="ingreso-almacen.html">Ingreso a Almacén</a></li>
-            <li><a href="salida-almacen.html">Guías de Salida</a></li>
-            <li><a href="">Guías de Remisión</a></li>
+          <li><a href="ingreso-almacen.html">Ingreso a Almacén</a></li>
+          <li><a href="salida-almacen.html">Guías de Salida</a></li>
+          <li><a href="">Guías de Remisión</a></li>
         </ul>
         <li id="shopping"><a href="#">Compras <i style="float: right; margin-top:2px;"
               class="fas fa-caret-down"></i></a></li>
@@ -77,7 +78,7 @@
         <li id="report"><a href="#">Reportes <i style="float: right; margin-top:2px;" class="fas fa-caret-down"></i></a>
         </li>
         <ul id="report_sub_menu" class="hide">
-            <li><a href="reporte-guia-salida.html">Reporte de Inventarios</a></li>
+          <li><a href="reporte-guia-salida.html">Reporte de Inventarios</a></li>
           <li><a href="reporte-garantia-vidaUtil.html
             ">Garantía / Vida Útil</a></li>
           <li><a href="stock-almacen.html">Stock de Almacén</a></li>
@@ -86,8 +87,8 @@
         <li id="maintenance"><a href="#">Mantenimiento <i style="float: right; margin-top:2px;"
               class="fas fa-caret-down"></i></a></li>
         <ul id="maintenance_sub_menu" class="hide">
-            <li><a href="mantenedor.html">Artículos</a></li>
-            <li><a href="mantenedor-2.html">Sede</a></li>
+          <li><a href="mantenedor.html">Artículos</a></li>
+          <li><a href="mantenedor-2.html">Sede</a></li>
         </ul>
       </ul>
 
@@ -102,359 +103,459 @@
 
     </div>
   </nav>
-    <div>
-      <div class="panel-body" style="padding-bottom: 0px;">
-        <div class="container-fluid ng-scope" style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;"  >
-          <div class="row headboard">
-                            
-            <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Ingreso de Almacén</p>
-        
-    </div>
-          
-            
-            <div class="row cls-content-ctrl-ses" style="margin-right: 0px; margin-top:15px">
-              <div class="col-md-6 col-xs-12" ng-show="vCmbGrupoxGerente">
-                <div class="col-md-12 col-xs-12" style="margin-right:0px;">
-                  <h6 style="text-align: center;">DATOS GENERALES: </h6>
-                </div>
-                <div class="form-group">
-                  <div class="input-group input-daterange">
-                    <label class="label-input">Serie/Número: </label>
-                    <input type="text"
-                      class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                      ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="4"
-                      placeholder="Serie"
-                      oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-                    <div class="input-group-addon">-</div>
-                    <input type="number"
-                      class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                      ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value=""
-                      placeholder="Comprobante" maxlength="8"
-                      oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                      ng-pattern="/^-?[0-9][^\.]*$/">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Hora de Registro: </label>
-                    <input type="time"  class="form-control input-sm" id="password" name="password"
-                      placeholder="Código" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Tipo de movimiento: </label>
-                    <select name="" id="" class="form-control input-sm">
-                      <option value="">------SELECCIONE --------</option>
-                      <option value="">------COMPRA--------</option>
-                      <option value="">------VENTA--------</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Proveedor:</label>
-                    <select name="" id="" class="form-control input-sm">
-                      <option value="">------SELECCIONE --------</option>
-                      <option value="">------INDUSTRIALES DEL VALLE S.A.--------</option>
-                      <option value="">------ NYSAE SAC--------</option>
-                     
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Almacén:</label>
-                    <select name="" id="" class="form-control input-sm">
-                      <option value="">------SELECCIONE --------</option>
-                      <option value="">------ALMACÉN ADM--------</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Observación: </label>
-                    <input type="text" class="form-control input-sm" id="password" name="password"
-                      placeholder="Observación:" required>
-                  </div>
+  <div>
+    <div class="panel-body" style="padding-bottom: 0px;">
+      <div class="container-fluid ng-scope"
+        style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
+        <div class="row headboard">
+
+          <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Ingreso de Almacén</p>
+
+        </div>
+
+        <div class="row cls-content-ctrl-ses" style="margin-right: 0px; margin-top:15px">
+          <div class="col-md-4 col-xs-12" ng-show="vCmbGrupoxGerente">
+            <div class="col-md-12 col-xs-12" style="margin-right:0px;">
+              <h6 style="text-align: center;">DATOS GENERALES: </h6>
+            </div>
+
+            <div class="row">
+              <div class="form-group col-md-6">
+                <div class="input-group input-daterange">
+                  <label class="label-input">Serie/Número: </label>
+                  <input type="text"
+                    class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
+                    ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="4" placeholder="Serie"
+                    oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                  <div class="input-group-addon">-</div>
+                  <input type="number"
+                    class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
+                    ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value=""
+                    placeholder="Comprobante" maxlength="8"
+                    oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    ng-pattern="/^-?[0-9][^\.]*$/">
                 </div>
               </div>
+              <div class="form-group col-md-6">
+                <div class=" input-group input-daterange" style="text-align: start;">
+                  <label class="label-input">Hora de Registro: </label>
+                  <input type="time" class="form-control input-sm" id="password" name="password" placeholder="Código"
+                    required>
+                </div>
+              </div>
+            </div>
 
-              <div class="col-md-6 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
-                <div class="col-md-12 col-xs-12" style="margin-right:0px;">
-                  <h6 style="text-align: center;">DOCUMENTOS DE COMPRA: </h6>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <div class=" input-group input-daterange" style="text-align: start;">
+                  <label class="label-input">Tipo de movimiento: </label>
+                  <select name="" id="" class="form-control input-sm">
+                    <option value="">------SELECCIONE --------</option>
+                    <option value="">------COMPRA--------</option>
+                    <option value="">------VENTA--------</option>
+                  </select>
                 </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Comprobante: </label>
-                    <input type="password" class="form-control input-sm" id="password" name="password"
-                      placeholder="Código" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Moneda: </label>
-                    <select name="" id="" class="form-control input-sm">
-                      <option value="">------SELECCIONE --------</option>
-                      <option value="">------SOLES--------</option>
-                      <option value="">------DOLARES--------</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Forma de Pago: </label>
-                    <select name="" id="" class="form-control input-sm">
-                      <option value="">------SELECCIONE --------</option>
-                      <option value="">------NINGUNO--------</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group input-daterange" style="
-                  text-align: start;
-              ">
-                    <label class="label-input">N° Documento: </label>
-                    <input type="text"
-                      class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                      ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="4"
-                      placeholder=""
-                      oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-                    <div class="input-group-addon">-</div>
-                    <input type="number"
-                      class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                      ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value=""
-                      placeholder="" maxlength="8"
-                      oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                      ng-pattern="/^-?[0-9][^\.]*$/">
+              </div>
+              <div class="form-group col-md-6">
+                <div class=" input-group input-daterange" style="text-align: start;">
+                  <label class="label-input">Proveedor:</label>
+                  <select name="" id="" class="form-control input-sm">
+                    <option value="">------SELECCIONE --------</option>
+                    <option value="">------INDUSTRIALES DEL VALLE S.A.--------</option>
+                    <option value="">------ NYSAE SAC--------</option>
 
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input">Fecha Doc. </label>
-                    <select name="" id="" class="form-control input-sm">
-                      <option value="">------SELECCIONE --------</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class=" input-group input-daterange" style="text-align: start;">
-                    <label class="label-input"> Asociar: </label>
-                    <select name="" id="" class="form-control input-sm">
-                      <option value="">------SELECCIONE --------</option>
-                      <option value="">------NINGUNO--------</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="btn-save" style="justify-content: flex-end;">
-                    <button type="submit" class="btn  btn-sm btn-saves" style=" 
-                      height: 46% !important;
-                      margin-top: 8px !important; " align="right"><i class="fa fa-plus"></i>&nbsp;Guardar</button>
-                  </div>
+                  </select>
                 </div>
               </div>
 
             </div>
-            <div class="row cls-content-ctrl-ses">
-              <div class="table-responsive">
-                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                  <div class="row" style="width: 100%;     
-                      margin-bottom: 10px; margin-left:0px ">
-                    <div class="col-sm-7 ">
-                      <div class="dataTables_length" id="DataTables_Table_0_length">
-                        <label style="justify-content: flex-start;">Ver
-                          <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
-                            class="form-control input-sm">
-                            <option value="10">10</option>
-                            <option value="25">25</option>
-                            <option value="50">50</option>
-                            <option value="100">100</option>
-                          </select> Líneas</label>
-                      </div>
-                    </div>
-                    <div class="col-sm-5">
-                      <div id="DataTables_Table_0_filter" class="dataTables_filter"><label style="
-                            justify-content: flex-end;">Buscar: <input type="search" class="form-control input-sm"
-                            placeholder="" aria-controls="DataTables_Table_0" style="
-                                margin-left: 3px;
-                            "></label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row" style="width: 100%; margin-left: 0px!important;">
-                    <div class="col-sm-12">
-                      <table
-                        class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
-                        datatable="ng" dt-options="showCase.dtOptions" style="display: table;" id="DataTables_Table_0"
-                        role="grid" aria-describedby="DataTables_Table_0_info">
-                        <thead>
-                          <tr role="row">
-                            <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
-                              rowspan="1" colspan="1" aria-sort="ascending"
-                              aria-label=": activate to sort column descending" style="width: 79px;">
-                              N°
-                              <span class="fa fa-sort"></span>
-                            </th>
-                            <th class="text-left sorting" style="width: 49px;" tabindex="0"
-                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                              aria-label="Código: activate to sort column ascending">Cód. Patrimonial</th>
 
-                            <th class="text-center sorting" ng-show="vColUsuario" tabindex="0"
-                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                              aria-label="Usuario: activate to sort column ascending" style="width: 312px;">Descripción
-                            </th>
-                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending">U.MED</th>
-                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
-                              style="width: 312px;">Cantidad</th>
-                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
-                              style="width: 312px;">P.Unit</th>
-                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
-                              style="width: 312px;">Total Importe</th>
-                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                              colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
-                              style="width: 312px;">Stock</th>
-                            <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                              colspan="1" aria-label="Acción: activate to sort column ascending" style="width: 312px;">
-                              Acción</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td> 1 </td>
-                            <td> 745869221 </td>
-                            <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
-                            <td> UND </td>
-                            <td> 1 </td>
-                            <td> 423.73 </td>
-                            <td> 423.73 </td>
-                            <td> 0 </td>
-                            <td class="text-center">
-                              <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                              </button>
-                              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                <span class="fa fa-trash-alt"  data-toggle="modal" data-target="#exampleModal" data-placement="top"></span>
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td> 2 </td>
-                            <td> 745125223 </td>
-                            <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
-                            <td> UND </td>
-                            <td> 1 </td>
-                            <td> 423.73 </td>
-                            <td> 423.73 </td>
-                            <td> 0 </td>
-                            <td class="text-center">
-                              <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                              </button>
-                              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal" data-placement="top"></span>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td> 3 </td>
-                            <td> 748525412 </td>
-                            <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
-                            <td> UND </td>
-                            <td> 1</td>
-                            <td> 423.73 </td>
-                            <td> 423.73 </td>
-                            <td> 0 </td>
-                            <td class="text-center">
-                              <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                              </button>
-                              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal" data-placement="top"></span>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td> 4 </td>
-                            <td> 748212522 </td>
-                            <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
-                            <td> UND </td>
-                            <td> 1 </td>
-                            <td> 423.73 </td>
-                            <td> 423.73 </td>
-                            <td> 0 </td>
-                            <td class="text-center">
-                              <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                              </button>
-                              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal" data-placement="top"></span>
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td> 5 </td>
-                            <td> 748593212 </td>
-                            <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
-                            <td> UND </td>
-                            <td> 1</td>
-                            <td> 423.73 </td>
-                            <td> 423.73 </td>
-                            <td> 0 </td>
-                            <td class="text-center">
-                              <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                              </button>
-                              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal" data-placement="top"></span>
-                              </button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="row" style="width: 100%; margin-left: 0px;">
-                    <div class="col-sm-3 ">
-                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
-                        Total Cantidad: 6</div>
-                    </div>
-                    <div class="col-sm-3 ">
-                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
-                        Sub Total: 10000.00</div>
-                    </div>
-                    <div class="col-sm-3 ">
-                      <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
-                        IGV: 100.00</div>
-                    </div>
-                    <div class="col-sm-3" style="display: flex; justify-content: flex-end;">
-                      <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
-                        <ul class="pagination">
-                          <li class="paginate_button previous disabled " id="DataTables_Table_0_previous"><a href="#"
-                              class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
-                              tabindex="0">Anterior</a></li>
-                          <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"
-                              class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="1"
-                              tabindex="0">Siguiente</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <div class=" input-group input-daterange" style="text-align: start;">
+                  <label class="label-input">Almacén:</label>
+                  <select name="" id="" class="form-control input-sm">
+                    <option value="">------SELECCIONE --------</option>
+                    <option value="">------ALMACÉN ADM--------</option>
+                  </select>
                 </div>
-                <h3 class="dt-loading" style="display: none;">Loading...</h3>
+              </div>
+              <div class="form-group col-md-6">
+                <div class=" input-group input-daterange" style="text-align: start;">
+                  <label class="label-input">Observación: </label>
+                  <input type="text" class="form-control input-sm" id="password" name="password"
+                    placeholder="Observación:" required>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+            <div class="col-md-12 col-xs-12" style="margin-right:0px;">
+              <h6 style="text-align: center;">DOCUMENTOS DE COMPRA: </h6>
+            </div>
+
+            <div class="row">
+              <div class="form-group col-md-6">
+                <div class=" input-group input-daterange" style="text-align: start;">
+                  <label class="label-input">Comprobante: </label>
+                  <input type="password" class="form-control input-sm" id="password" name="password"
+                    placeholder="Código" required>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <div class=" input-group input-daterange" style="text-align: start;">
+                  <label class="label-input">Moneda: </label>
+                  <select name="" id="" class="form-control input-sm">
+                    <option value="">------SELECCIONE --------</option>
+                    <option value="">------SOLES--------</option>
+                    <option value="">------DOLARES--------</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col-md-6">
+                <div class=" input-group input-daterange" style="text-align: start;">
+                  <label class="label-input">Forma de Pago: </label>
+                  <select name="" id="" class="form-control input-sm">
+                    <option value="">------SELECCIONE --------</option>
+                    <option value="">------NINGUNO--------</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <div class="input-group input-daterange" style="
+                  text-align: start;              ">
+                  <label class="label-input">N° Documento: </label>
+                  <input type="text"
+                    class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
+                    ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="4" placeholder=""
+                    oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                  <div class="input-group-addon">-</div>
+                  <input type="number"
+                    class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
+                    ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value="" placeholder=""
+                    maxlength="8"
+                    oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    ng-pattern="/^-?[0-9][^\.]*$/">
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Fecha Doc. </label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input"> Asociar: </label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------NINGUNO--------</option>
+                </select>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+
+
+          <div class="col-md-4 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+            <div class="col-md-12 col-xs-12" style="margin-right:0px;">
+              <h6 style="text-align: center;">DOCUMENTOS DE COMPRA: </h6>
+            </div>
+            <div class="row">
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Comprobante: </label>
+                <input type="password" class="form-control input-sm" id="password" name="password" placeholder="Código"
+                  required>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Moneda: </label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------SOLES--------</option>
+                  <option value="">------DOLARES--------</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Forma de Pago: </label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------NINGUNO--------</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <div class="input-group input-daterange" style="
+                  text-align: start;
+              ">
+                <label class="label-input">N° Documento: </label>
+                <input type="text"
+                  class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
+                  ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="4" placeholder=""
+                  oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                <div class="input-group-addon">-</div>
+                <input type="number"
+                  class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
+                  ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value="" placeholder=""
+                  maxlength="8"
+                  oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  ng-pattern="/^-?[0-9][^\.]*$/">
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Fecha Doc. </label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input"> Asociar: </label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------NINGUNO--------</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <div class="btn-save" style="justify-content: flex-end;">
+                <button type="submit" class="btn  btn-sm btn-saves" style=" 
+                      height: 46% !important;
+                      margin-top: 8px !important; " align="right"><i class="fa fa-plus"></i>&nbsp;Guardar</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
+        <div class="row cls-content-ctrl-ses">
+          <div class="table-responsive">
+            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+              <div class="row" style="width: 100%;     
+                      margin-bottom: 10px; margin-left:0px ">
+                <div class="col-sm-7 ">
+                  <div class="dataTables_length" id="DataTables_Table_0_length">
+                    <label style="justify-content: flex-start;">Ver
+                      <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
+                        class="form-control input-sm">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                      </select> Líneas</label>
+                  </div>
+                </div>
+                <div class="col-sm-5">
+                  <div id="DataTables_Table_0_filter" class="dataTables_filter"><label style="
+                            justify-content: flex-end;">Buscar: <input type="search" class="form-control input-sm"
+                        placeholder="" aria-controls="DataTables_Table_0" style="
+                                margin-left: 3px;
+                            "></label>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="width: 100%; margin-left: 0px!important;">
+                <div class="col-sm-12">
+                  <table
+                    class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
+                    datatable="ng" dt-options="showCase.dtOptions" style="display: table;" id="DataTables_Table_0"
+                    role="grid" aria-describedby="DataTables_Table_0_info">
+                    <thead>
+                      <tr role="row">
+                        <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                          colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending"
+                          style="width: 79px;">
+                          N°
+                          <span class="fa fa-sort"></span>
+                        </th>
+                        <th class="text-left sorting" style="width: 49px;" tabindex="0"
+                          aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                          aria-label="Código: activate to sort column ascending">Cód. Patrimonial</th>
+
+                        <th class="text-center sorting" ng-show="vColUsuario" tabindex="0"
+                          aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                          aria-label="Usuario: activate to sort column ascending" style="width: 312px;">Descripción
+                        </th>
+                        <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                          colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending">U.MED</th>
+                        <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                          colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
+                          style="width: 312px;">Cantidad</th>
+                        <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                          colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
+                          style="width: 312px;">P.Unit</th>
+                        <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                          colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
+                          style="width: 312px;">Total Importe</th>
+                        <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                          colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending"
+                          style="width: 312px;">Stock</th>
+                        <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                          colspan="1" aria-label="Acción: activate to sort column ascending" style="width: 312px;">
+                          Acción</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td> 1 </td>
+                        <td> 745869221 </td>
+                        <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
+                        <td> UND </td>
+                        <td> 1 </td>
+                        <td> 423.73 </td>
+                        <td> 423.73 </td>
+                        <td> 0 </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                            <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                          </button>
+                          <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                            <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                              data-placement="top"></span>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> 2 </td>
+                        <td> 745125223 </td>
+                        <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
+                        <td> UND </td>
+                        <td> 1 </td>
+                        <td> 423.73 </td>
+                        <td> 423.73 </td>
+                        <td> 0 </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                            <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                          </button>
+                          <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                            <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                              data-placement="top"></span>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td> 3 </td>
+                        <td> 748525412 </td>
+                        <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
+                        <td> UND </td>
+                        <td> 1</td>
+                        <td> 423.73 </td>
+                        <td> 423.73 </td>
+                        <td> 0 </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                            <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                          </button>
+                          <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                            <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                              data-placement="top"></span>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td> 4 </td>
+                        <td> 748212522 </td>
+                        <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
+                        <td> UND </td>
+                        <td> 1 </td>
+                        <td> 423.73 </td>
+                        <td> 423.73 </td>
+                        <td> 0 </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                            <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                          </button>
+                          <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                            <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                              data-placement="top"></span>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td> 5 </td>
+                        <td> 748593212 </td>
+                        <td> ESTACION INDIVIDUAL DEL TRABAJO </td>
+                        <td> UND </td>
+                        <td> 1</td>
+                        <td> 423.73 </td>
+                        <td> 423.73 </td>
+                        <td> 0 </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                            <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                          </button>
+                          <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                            <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                              data-placement="top"></span>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row" style="width: 100%; margin-left: 0px;">
+                <div class="col-sm-3 ">
+                  <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                    Total Cantidad: 6</div>
+                </div>
+                <div class="col-sm-3 ">
+                  <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                    Sub Total: 10000.00</div>
+                </div>
+                <div class="col-sm-3 ">
+                  <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                    IGV: 100.00</div>
+                </div>
+                <div class="col-sm-3" style="display: flex; justify-content: flex-end;">
+                  <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                    <ul class="pagination">
+                      <li class="paginate_button previous disabled " id="DataTables_Table_0_previous"><a href="#"
+                          class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
+                          tabindex="0">Anterior</a></li>
+                      <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"
+                          class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="1"
+                          tabindex="0">Siguiente</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="dt-loading" style="display: none;">Loading...</h3>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  </div>
 
   </nav>
 
