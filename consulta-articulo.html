@@ -15,6 +15,7 @@
   <title>Sistema de Logística</title>
   <link rel="stylesheet" href="consulta-articulo-style.css">
   <link rel="stylesheet" href="menu-style.css">
+  <link rel="stylesheet" href="mantenedor.css">
 </head>
 
 <body>
@@ -53,29 +54,18 @@
     </div>
     <div class="recta"></div>
 
+  
     <div id="menu" class="hide" style="float: left;">
       <div class="title">
         <p>SISTEMA DE LOGÍSTICA</p>
       </div>
       <ul>
-        <li id="article"><a href="#">Artículo <i style="float: right; margin-top:2px;"
-              class="fas fa-caret-down show"></i></a></li>
-        <ul id="article_sub_menu" class="hide">
-          <li><a href="catalogo-articulo.html">Catálogo de Artículo</a></li>
-          <li><a href="registrar-artículo.html">Registro de Articulo</a></li>
-        </ul>
         <li id="inventories"><a href="#">Inventarios <i style="float: right; margin-top:2px;"
               class="fas fa-caret-down"></i></a></li>
         <ul id="inventories_sub_menu" class="hide">
             <li><a href="ingreso-almacen.html">Ingreso a Almacén</a></li>
             <li><a href="salida-almacen.html">Guías de Salida</a></li>
             <li><a href="">Guías de Remisión</a></li>
-        </ul>
-        <li id="shopping"><a href="#">Compras <i style="float: right; margin-top:2px;"
-              class="fas fa-caret-down"></i></a></li>
-        <ul id="shopping_sub_menu" class="hide">
-          <li><a>SUBMENÚ 1</a></li>
-          <li><a>SUBMENÚ 2</a></li>
         </ul>
         <li id="report"><a href="#">Reportes <i style="float: right; margin-top:2px;" class="fas fa-caret-down"></i></a>
         </li>
@@ -89,6 +79,7 @@
         <li id="maintenance"><a href="#">Mantenimiento <i style="float: right; margin-top:2px;"
               class="fas fa-caret-down"></i></a></li>
         <ul id="maintenance_sub_menu" class="hide">
+            <li><a href="catalogo-articulo.html">Registro de Artículo</a></li>
             <li><a href="mantenedor.html">Artículos</a></li>
             <li><a href="mantenedor-2.html">Sede</a></li>
         </ul>
@@ -112,66 +103,70 @@
       <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Consulta de Artículo</p>
   
 </div>
-    <div class="row">
-      <div class="col-md-6 col-sm-6  col-xs-12">
-        <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Local:</label>
-        <select class="form-control select-size">
-
-          <option value=""> ------ Seleccione ------ </option>
+<div class="row" style="background:  #F1F1F1;margin-top: 5px; border-radius: 5px; margin-left: 0px !important;margin-right: 0px !important;">
+  <div class="col-md-5 col-sm-6  col-xs-12" style="margin-bottom:15px;">
+      <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Local:</label>
+      <select class="form-control select-size">
+        <option value=""> ------ Seleccione ------ </option>
           <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima </option>
           <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
           <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-        </select>
-      </div>
-      <div class="col-md-6 col-sm-6  col-xs-12">
-        <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Almacen:</label>
-        <select class="form-control select-size">
-
-          <option value=""> ------ Seleccione ------ </option>
-          <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima </option>
-          <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-          <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 col-xs-12">
-        <div class="table-responsive">
+      </select>
+  </div>
+  <div class="col-md-5 col-sm-6  col-xs-12" style="margin-bottom:15px;">
+      <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Almacén:</label>
+      <select class="form-control select-size">
+        <option value=""> ------ Seleccione ------ </option>
+        <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima </option>
+        <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
+        <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
+      </select>
+  </div>
+<div class="col-md-2 col-sm-12  col-xs-12" style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:15px; float: none;text-align: center;">
+<button type="submit" class="btn  btn-sm btn-saves" style=" padding:7px 11px;
+        margin-top: 0px !important;" align="right"><i class="fas fa-search"></i>&nbsp;Consultar</button>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-12 col-xs-12">
+      <div class="table-responsive">
           <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-            <div class="row" style="width: 100%;">
-              <div class="col-sm-5">
-                <div id="DataTables_Table_0_filter" class="dataTables_filter" style="float:left"><label style="
-                      justify-content: flex-end; margin: 20px;
-                  ">Buscar:<input type="search" class="form-control input-sm" placeholder=""
-                      aria-controls="DataTables_Table_0" style="margin-left:10px;"></label>
-                </div>
+              <div class="row" style="width: 100%;">
+                  <div class="col-md-6 col-sm-6  col-xs-6">
+                      <div id="DataTables_Table_0_filter" class="dataTables_filter" style="float:left"><label
+                              style="
+          margin: 25px;margin-bottom: 5px!important; margin-left: 20px !important;
+        ">Buscar:<input type="search" class="form-control" placeholder=""
+                                  style="margin-left:0px;width: 300px"></label>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6  col-xs-6 ">
+                      <div class="dataTables_length" id="DataTables_Table_0_length"
+                          style="float:right; margin: 25px;margin-bottom: 5px!important;margin-right: 5px !important;">
+                          <label>Ver
+                              <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
+                                  class="form-control" style="margin-left:10px;margin-right:10px;">
+                                  <option value="10">10</option>
+                                  <option value="25">25</option>
+                                  <option value="50">50</option>
+                                  <option value="100">100</option>
+                              </select> Líneas</label>
+                      </div>
+                  </div>
               </div>
-              <div class="col-sm-7 ">
-                <div class="dataTables_length" id="DataTables_Table_0_length" style="float:right; margin: 20px;">
-                  <label style="justify-content: flex-start;">Ver
-                    <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
-                      class="form-control input-sm" style="margin-left:10px;margin-right:10px;">
-                      <option value="10">10</option>
-                      <option value="25">25</option>
-                      <option value="50">50</option>
-                      <option value="100">100</option>
-                    </select> Líneas</label>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
       </div>
-    </div>
+  </div>
+</div>
     <div class="row">
       <div class="col-md-12 col-xs-12">
         <div class="table-responsive">
           <div class="col-sm-12">
             <table
               class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
-              datatable="ng" dt-options="showCase.dtOptions" style="display: table; width: 1244px"
+              datatable="ng" dt-options="showCase.dtOptions" style="display: table;"
               id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
-              <thead>
+              <thead style="background:  #F1F1F1">
                 <tr role="row">
                   <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
                     colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending"
@@ -197,7 +192,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr style="background: #D6F4F4  ;">
                   <td class="text-center">
                     3087
                   </td>
@@ -369,10 +364,17 @@
               </tbody>
             </table>
             <strong>002874220051 - ÁNTENA INALÁMBRICA</strong>
-            <div style="float:right">
-              <button id="btn1" class="border">Salir</button>
-              <button id="btn2" class="border2">Kardex</button>
-            </div>
+            <div class="row" style=" float:none;
+        text-align:right;">
+            <div class="col-md-12 col-sm-12  col-xs-12"
+            style="padding-left: 0 !important;padding-right: 40px !important;float:right !important;margin-bottom: 10px; margin-top:15px; ">
+            <button style="
+            margin-top: 8px !important;font-size: 16px; " class="btn btn-sm btn-out"><i class="fas fa-arrow-left"></i>&nbsp;Salir</button>
+            <button style="
+            margin-top: 8px !important; font-size: 16px;" class="btn btn-sm btn-record"><i></i>&nbsp;Ver Kardex</button>
+
+
+        </div>
           </div>
         </div>
       </div>

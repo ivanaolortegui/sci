@@ -74,22 +74,23 @@ img{
     }
 
     #menu ul li a:hover {
-        background: rgb(135, 200, 228);
-        color: #fff;
+        background:  #F1F1F1 ;
+
     }
 
     
     #menu ul ul li {
         color: rgb(0, 0, 0);
         text-decoration: none;
-        text-transform: uppercase;
+      
         display: block;
         padding: 4px 10px 4px 30px;
     }
 
     #menu ul ul li:hover {
-        background:  rgb(135, 200, 228);
-        color: #fff;
+        background:  #F1F1F1 ;
+     
+        
     }
 
     .hide{
@@ -153,6 +154,6 @@ img{
     }
 
     #sign-off ul li a:hover {
-        background: rgb(135, 200, 228);
-        color: #fff;
+        background:  #F1F1F1 ;
+        
     }

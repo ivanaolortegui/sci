@@ -1,5 +1,4 @@
-const articulo = document.getElementById("article")
-const subMenuArticulo = document.getElementById("article_sub_menu")
+
 const iconMenu = document.getElementById("icon-menu")
 const menu =  document.getElementById("menu")
 const login = document.getElementById("login")
@@ -28,15 +27,7 @@ iconMenu.addEventListener("click", () => {
     }
     })
 
-articulo.addEventListener("click", () => {
-if(subMenuArticulo.classList.contains("hide")){
-    subMenuArticulo.classList.remove("hide");
-      subMenuArticulo.classList.add('show')
-} else {
-    subMenuArticulo.classList.remove("show");
-    subMenuArticulo.classList.add('hide')
-}
-}) 
+
 const inventario = document.getElementById("inventories")
 const subMenuInventario = document.getElementById("inventories_sub_menu")
 
@@ -50,18 +41,7 @@ if(subMenuInventario.classList.contains("hide")){
 }
 }) 
 
-const compras = document.getElementById("shopping")
-const subMenuCompras = document.getElementById("shopping_sub_menu")
 
-compras.addEventListener("click", () => {
-if(subMenuCompras.classList.contains("hide")){
-    subMenuCompras.classList.remove("hide");
-      subMenuCompras.classList.add('show')
-} else {
-    subMenuCompras.classList.remove("show");
-    subMenuCompras.classList.add('hide')
-}
-}) 
 const reporte = document.getElementById("maintenance")
 const subMenuReporte = document.getElementById("report_sub_menu")
 
