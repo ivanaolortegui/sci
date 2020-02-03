@@ -77,7 +77,7 @@
               class="fas fa-caret-down"></i></a></li>
         <ul id="maintenance_sub_menu" class="hide">
             <li><a href="catalogo-articulo.html">Registro de Artículo</a></li>
-            <li><a href="mantenedor.html">Artículos</a></li>
+            <li><a href="mantenedor.html">Clasificación</a></li>
             <li><a href="mantenedor-2.html">Sede</a></li>
         </ul>
       </ul>
@@ -103,46 +103,78 @@
           <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Guías de Salida</p>
 
         </div> <br>
-        <div class="row">
-            <div class="col-md-6 col-xs-12" ng-show="vCmbGrupoxGerente">
 
-              <div class="form-group">
-                <div class="input-group input-daterange">
-                  <label class="label-input">Serie/Número: </label>
-                  <input type="text"
-                    class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                    ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="4" placeholder="Serie"
-                    oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-                  <div class="input-group-addon">-</div>
-                  <input type="number"
-                    class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                    ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value=""
-                    placeholder="Comprobante" maxlength="8"
-                    oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                    ng-pattern="/^-?[0-9][^\.]*$/">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class=" input-group input-daterange" style="text-align: start;">
-                  <label class="label-input">Hora de Registro: </label>
-                  <input type="time" class="form-control input-sm" id="password" name="password"
-                    placeholder="Hora de Registro" required>
+        <div class="row cls-content-ctrl-ses" style="margin-right: 0px; margin-top:15px; background: #F1F1F1;margin-top: 5px; border-radius: 5px; margin-left: 10px !important;margin-right: 10px !important; padding-top: 20px; margin-bottom: 24px;">
+            <div class="col-md-4 col-xs-12" ng-show="vCmbGrupoxGerente">
 
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <div class="input-group input-daterange">
+                    <label class="label-input">Serie/Número: </label>
+                    <input type="text"
+                      class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
+                      ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="4" placeholder="Serie"
+                      oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                    <div class="input-group-addon">-</div>
+                    <input type="number"
+                      class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
+                      ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value=""
+                      placeholder="Comprobante" maxlength="8"
+                      oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                      ng-pattern="/^-?[0-9][^\.]*$/">
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Hora de Registro: </label>
+                    <input type="time" class="form-control input-sm" id="password" name="password" placeholder="Código"
+                      required>
+                  </div>
                 </div>
               </div>
-              <div class="form-group">
-                <div class=" input-group input-daterange" style="text-align: start;">
-                  <label class="label-input">Tipo de movimiento: </label>
-                  <select name="" id="" class="form-control input-sm">
-                    <option value="">------SELECCIONE --------</option>
-                    <option value="">------Salida de almacen--------</option>
-                  </select>
-                </div>
-              </div>
+  
+
+
+
             </div>
 
-            <div class="col-md-6 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
-              <div class="form-group">
+
+
+
+            <div class="col-md-4 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+            
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Tipo de movimiento: </label>
+                    <select name="" id="" class="form-control input-sm">
+                      <option value="">------SELECCIONE --------</option>
+                      <option value="">------COMPRA--------</option>
+                      <option value="">------VENTA--------</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <div class=" input-group input-daterange" style="text-align: start;">
+                    <label class="label-input">Proveedor:</label>
+                    <select name="" id="" class="form-control input-sm">
+                      <option value="">------SELECCIONE --------</option>
+                      <option value="">------INDUSTRIALES DEL VALLE S.A.--------</option>
+                      <option value="">------ NYSAE SAC--------</option>
+  
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+            <div class="col-md-4 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+            
+              <div class="row">
+
+              <div class="form-group col-md-6">
                 <div class=" input-group input-daterange" style="text-align: start;">
                   <label class="label-input">Almacén de destino:</label>
                   <select name="" id="" class="form-control input-sm">
@@ -152,7 +184,7 @@
                   </select>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group col-md-6">
                 <div class=" input-group input-daterange" style="text-align: start;">
                   <label class="label-input">Cliente:</label>
                   <select name="" id="" class="form-control input-sm">
@@ -161,6 +193,9 @@
                   </select>
                 </div>
               </div>
+            </div>
+
+
               <div class="form-group">
                 <div class=" input-group input-daterange" style="text-align: start;">
                   <label class="label-input">Observación: </label>
@@ -175,6 +210,11 @@
                 </div>
               </div>
             </div>
+
+         
+
+
+
 
           </div>
           <div class="row cls-content-ctrl-ses">
