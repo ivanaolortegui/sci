@@ -87,7 +87,7 @@
         <li id="maintenance"><a href="#">Mantenimiento <i style="float: right; margin-top:2px;"
               class="fas fa-caret-down"></i></a></li>
         <ul id="maintenance_sub_menu" class="hide">
-          <li><a href="mantenedor.html">Artículos</a></li>
+          <li><a href="mantenedor.html">Clasificador</a></li>
           <li><a href="mantenedor-2.html">Sede</a></li>
         </ul>
       </ul>
@@ -113,7 +113,7 @@
 
         </div>
 
-        <div class="row cls-content-ctrl-ses" style="margin-right: 0px; margin-top:15px">
+        <div class="row cls-content-ctrl-ses" style="margin-right: 0px; margin-top:15px; background: #F1F1F1;margin-top: 5px; border-radius: 5px; margin-left: 10px !important;margin-right: 10px !important; padding-top: 20px; margin-bottom: 24px;">
           <div class="col-md-4 col-xs-12" ng-show="vCmbGrupoxGerente">
             <div class="col-md-12 col-xs-12" style="margin-right:0px;">
               <h6 style="text-align: center;">DATOS GENERALES: </h6>
@@ -167,9 +167,16 @@
                   </select>
                 </div>
               </div>
+          </div>
 
+          </div>
+
+          <div class="col-md-4 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+            <div class="col-md-12 col-xs-12" style="margin-right:0px;">
+              <h6 style="text-align: center;">DOCUMENTOS DE COMPRA: </h6>
             </div>
 
+            
             <div class="row">
               <div class="form-group col-md-6">
                 <div class=" input-group input-daterange" style="text-align: start;">
@@ -188,13 +195,6 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-md-4 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
-            <div class="col-md-12 col-xs-12" style="margin-right:0px;">
-              <h6 style="text-align: center;">DOCUMENTOS DE COMPRA: </h6>
-            </div>
-
             <div class="row">
               <div class="form-group col-md-6">
                 <div class=" input-group input-daterange" style="text-align: start;">
@@ -215,55 +215,8 @@
               </div>
             </div>
 
-            <div class="row">
-              <div class="form-group col-md-6">
-                <div class=" input-group input-daterange" style="text-align: start;">
-                  <label class="label-input">Forma de Pago: </label>
-                  <select name="" id="" class="form-control input-sm">
-                    <option value="">------SELECCIONE --------</option>
-                    <option value="">------NINGUNO--------</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group col-md-6">
-                <div class="input-group input-daterange" style="
-                  text-align: start;              ">
-                  <label class="label-input">N° Documento: </label>
-                  <input type="text"
-                    class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                    ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="4" placeholder=""
-                    oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-                  <div class="input-group-addon">-</div>
-                  <input type="number"
-                    class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                    ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value="" placeholder=""
-                    maxlength="8"
-                    oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                    ng-pattern="/^-?[0-9][^\.]*$/">
-
-                </div>
-              </div>
-            </div>
-            <div class="row">
-            <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
-                <label class="label-input">Fecha Doc. </label>
-                <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
-                <label class="label-input"> Asociar: </label>
-                <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                  <option value="">------NINGUNO--------</option>
-                </select>
-              </div>
-            </div>
-        
-          </div>
+     
+ 
         </div>
 
 
@@ -271,26 +224,7 @@
             <div class="col-md-12 col-xs-12" style="margin-right:0px;">
               <h6 style="text-align: center;">DOCUMENTOS DE COMPRA: </h6>
             </div>
-            <div class="row">
-            <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
-                <label class="label-input">Comprobante: </label>
-                <input type="password" class="form-control input-sm" id="password" name="password" placeholder="Código"
-                  required>
-              </div>
-            </div>
-            <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
-                <label class="label-input">Moneda: </label>
-                <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                  <option value="">------SOLES--------</option>
-                  <option value="">------DOLARES--------</option>
-                </select>
-              </div>
-            </div>
-
-          </div>
+   
           <div class="row">
             <div class="form-group col-md-6">
               <div class=" input-group input-daterange" style="text-align: start;">
@@ -341,7 +275,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-12">
               <div class="btn-save" style="justify-content: flex-end;">
                 <button type="submit" class="btn  btn-sm btn-saves" style=" 
                       height: 46% !important;
