@@ -49,3 +49,14 @@ select {
   border-radius: .25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+.btn-default {
+  color: #333 !important;
+  background-color: #fff !important;
+  border-color: #ccc !important;
+
+}
+.btn-pag-number {
+  background: #33AADE !important;
+  border-radius: 0px;
+ color: white !important;
+}
