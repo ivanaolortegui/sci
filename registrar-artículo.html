@@ -9,6 +9,8 @@
 
   <link rel="stylesheet" href="registrar-articulo.css">
   <link rel="stylesheet" href="menu-style.css">
+  <link rel="stylesheet" href="ingreso-almacen.css">
+  <link rel="stylesheet" href="mantenedor.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -38,8 +40,7 @@
             <span class=""
               style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px; color:#555">Bienvenido(a):</span>
             <span class=""
-              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Judith
-              Quiñones</span>
+              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Ivana Olortegui</span>
             <span <i style="margin-right:0px !important;color:#555" class="caret-down"></span>
 
 
@@ -99,461 +100,267 @@
       style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
       <div class="row headboard">
 
-        <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Registrar Articulos</p>
+        <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Registrar Ingreso a Almacén</p>
 
       </div>
       <br>
       <div class="row" style="margin-right: 10px !important; margin-left: 10px !important;">
-        <div class="col-md-8 col-sm-8  col-xs-12">
 
+        <div class="col-md-6 col-sm-8  col-xs-12">
+          <div class="col-md-12 col-sm-12  col-xs-12">
+            <h3 style="margin:3px; text-align: center;">  Datos Generales </h3>
+          </div>
           <div class="row">
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Cod.
-                Artículo:</label>
-              <select class="form-control select-size" style="float:right">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Código: </label>
+                <input type="password" class="form-control input-sm" id="password" name="password" placeholder="Código"
+                  required>
+              </div>
             </div>
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Fecha
-                Planilla:</label>
-              <select class="form-control select-size" style="float:right">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Código Patriminial: </label>
+                <input type="password" class="form-control input-sm" id="password" name="password" placeholder="Código"
+                  required>
+              </div>
             </div>
+        
           </div>
 
 
           <div class="row">
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Grupo: </label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------COMPRA--------</option>
+                  <option value="">------VENTA--------</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Almacén:</label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------ALMACÉN ADM--------</option>
+                </select>
+              </div>
+            </div>
+       
+          </div>
+
+
+
+
+
+          <div class="row">
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Clase:</label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------INDUSTRIALES DEL VALLE S.A.--------</option>
+                  <option value="">------ NYSAE SAC--------</option>
+
+                </select>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Almacén:</label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------ALMACÉN ADM--------</option>
+                </select>
+              </div>
+            </div>
+         
+       
+          </div>
+
+
+          <div class="row">
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Familia:</label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------ALMACÉN ADM--------</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Código SVN: </label>
+                <input type="password" class="form-control input-sm" id="password" name="password" placeholder="Código"
+                  required>
+              </div>
+            </div>
+     
             <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Grupo:</label>
-              <select class="form-control"
-                style="width:85% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Clase:</label>
-              <select class="form-control"
-                style="width:85% !important;margin-top: 2%;margin-left:2% !important; vertical-align:middle;float:right">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Familia:</label>
-              <select class="form-control"
-                style="width:85% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Cód.
-                Patrimonial:</label>
-              <input class="form-control select-size" style="float:right">
-              </input>
-            </div>
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">N° de
-                Planilla:</label>
-              <input class="form-control select-size" style="float:right">
-
-              </input>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Cód.
-                SBN:</label>
-              <input class="form-control select-size" style="float:right">
-              </input>
-            </div>
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Cód.
-                Inventario:</label>
-              <input class="form-control select-size" style="float:right">
-
-              </input>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Descripción:</label>
+              <label class="text-select1" style="float:left; margin-top: 2px;">Descripción:</label>
               <input class="form-control"
-                style="width:75% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
-
+                style="width:84% !important;margin-left:2% !important;vertical-align:middle;float:right">
               </input>
             </div>
           </div>
+
+
+
+
           <div class="row">
+         
+     
             <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Descripción
-                Técnica:</label>
+              <label class="text-select1" style="float:left; margin-left: 1%; margin-right: 2%;">Observaciones:</label>
               <input class="form-control"
-                style="width:75% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
-
-              </input>
+                style="width:84% !important;margin-left:2% !important;vertical-align:middle;float:right">
+             
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Observaciones:</label>
-              <input class="form-control"
-                style="width:75% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
-              </input>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Marca:</label>
-              <select class="form-control select-size" style="float:right">
 
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
-            </div>
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Año:</label>
-              <select class="form-control select-size" style="float:right">
 
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Color:</label>
-              <input class="form-control select-size" style="float:right">
-              </input>
-            </div>
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Material:</label>
-              <input class="form-control select-size" style="float:right">
-
-              </input>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Estado:</label>
-              <select class="form-control select-size" style="float:right">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
-            </div>
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Propiedad:</label>
-              <select class="form-control select-size" style="float:right">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Uso:</label>
-              <select class="form-control select-size" style="float:right">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
-            </div>
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Usuario:</label>
-              <select class="form-control select-size" style="float:right">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
-            </div>
-          </div>
 
           <div class="row">
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Gerencia:</label>
-              <select class="form-control select-size" style="float:right">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
+            <div class="form-group col-md-12">
+              <h3>Información de Vida Util</h3> 
+ 
+             </div>
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input"> Vida Util S/N: </label>
+                <select name="" id="" class="form-control input-sm">
+               
+                  <option value="">------SI--------</option>
+                  <option value="">------NO--------</option>
+                </select>
+              </div>
             </div>
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1"
-                style="float:left; margin-left: 20px; margin-right: 2%;">Ambiente/Ubicación:</label>
-              <select class="form-control" style="float:right;width:50% !important;
-                                        margin-top: 2%;
-                                        margin-left:2% !important">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input"> Vida Util  </label>
+                <input class="form-control"
+                style="width:84% !important;margin-left:2% !important;vertical-align:middle;float:right">
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Edificio:</label>
-              <select class="form-control select-size" style="float:right">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
-            </div>
-            <div class="col-md-6 col-sm-6  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 20px; margin-right: 2%;">Piso:</label>
-              <select class="form-control" style="float:right;width:50% !important;
-                                        margin-top: 2%;
-                                        margin-left:2% !important">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
-            </div>
-          </div>
-
-
-
-
 
         </div>
-        <div class="col-md-4 col-sm-4  col-xs-12">
-          <div class="row" style="margin:8px; margin-top:15px !important">
-            <div class="col-md-12 col-sm-12  col-xs-12 caja-registro" style="padding: 15px;">
-              <p
-                style="color:#33AADE ; margin-bottom: -4px !important; margin-top: -30px !important; background: white; width: 110px;">
-                <strong>Datos de Registro:</strong></p>
-              <div class="row">
-                <div class="col-md-12 col-sm-12  col-xs-12">
-                  <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Usuario:</label>
-                  <input class="form-control"
-                    style="width:65% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
-                </div>
+        <div class="col-md-6 col-sm-6  col-xs-12">
+          <div class="col-md-12 col-sm-12  col-xs-12">
+          <h3 style="margin:3px">Estado</h3>  
+          </div>
+          <div class="row" >
+         
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Estado bien: </label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------BUENO--------</option>
+                  <option value="">------MALO--------</option>
+                </select>
               </div>
-              <div class="row">
-                <div class="col-md-12 col-sm-12  col-xs-12">
-                  <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Fecha/Hora:</label>
-                  <input class="form-control"
-                    style="width:65% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
-                </div>
+            </div>
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Uso: </label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------En Uso--------</option>
+                </select>
               </div>
-
             </div>
           </div>
-          <div class="row" style="margin:8px; margin-top:15px !important">
-            <div class="col-md-12 col-sm-12  col-xs-12 caja-registro" style="padding: 15px;">
-              <p
-                style="color:#33AADE ; margin-bottom: -4px !important; margin-top: -30px !important; background: white; width: 130px;">
-                <strong>Información Vida Útil:</strong></p>
-              <div class="row">
-                <div class="col-md-12 col-sm-12  col-xs-12">
-                  <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Vida Útil
-                    S/N:</label>
-                  <select class="form-control"
-                    style="width:65% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
-
-                    <option value=""> ------ Seleccione ------ </option>
-                    <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                    </option>
-                    <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                    <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-                  </select>
-                </div>
+          <div class="row" >
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Propiedad: </label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------BUENO--------</option>
+                  <option value="">------MALO--------</option>
+                </select>
               </div>
-              <div class="row">
-                <div class="col-md-12 col-sm-12  col-xs-12">
-                  <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">F. de
-                    Ingreso:</label>
-                  <select class="form-control"
-                    style="width:65% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
-
-                    <option value=""> ------ Seleccione ------ </option>
-                    <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                    </option>
-                    <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                    <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 col-sm-12  col-xs-12">
-                  <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Vida Útil:</label>
-                  <input class="form-control"
-                    style="width:65% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
-                </div>
-              </div>
-
             </div>
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Usuario: </label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------En Uso--------</option>
+                </select>
+              </div>
+            </div>
+           
           </div>
-          <div class="row" style="margin:8px; margin-top:15px !important">
-            <div class="col-md-12 col-sm-12  col-xs-12 caja-registro" style="padding: 15px;">
-              <p
-                style="color:#33AADE ; margin-bottom: -4px !important; margin-top: -30px !important; background: white; width: 55px;">
-                <strong>Garantía:</strong></p>
-              <div class="row">
-                <div class="col-md-12 col-sm-12  col-xs-12">
-                  <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">F. Inicio:</label>
-                  <select class="form-control"
-                    style="width:65% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
 
-                    <option value=""> ------ Seleccione ------ </option>
-                    <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                    </option>
-                    <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                    <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-                  </select>
-                </div>
+
+
+          <div class="row" >
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Tipo de producto: </label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------ACTIVO--------</option>
+                </select>
               </div>
-              <div class="row">
-                <div class="col-md-12 col-sm-12  col-xs-12">
-                  <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">F. Final:</label>
-                  <select class="form-control"
-                    style="width:65% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
-
-                    <option value=""> ------ Seleccione ------ </option>
-                    <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                    </option>
-                    <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                    <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-                  </select>
-                </div>
+            </div>
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input">Unidad de Medida </label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------UND--------</option>
+                  <option value="">------METROS--------</option>
+                </select>
               </div>
-              <div class="row">
-                <div class="col-md-12 col-sm-12  col-xs-12">
-                  <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Proveedor:</label>
-                  <select class="form-control"
-                    style="width:65% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
-
-                    <option value=""> ------ Seleccione ------ </option>
-                    <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                    </option>
-                    <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                    <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-                  </select>
-                </div>
-              </div>
-
             </div>
           </div>
 
+   
           <div class="row">
-            <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Unidad
-                Medida:</label>
-              <select class="form-control"
-                style="width:55% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
+            <div class="form-group col-md-12">
+             <h3>Garantia</h3> 
 
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
+            </div>
+         
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input"> Fecha de Inicio: </label>
+                <select name="" id="" class="form-control input-sm">
+               
+                  <option value="">------Centro Historico--------</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <div class=" input-group input-daterange" style="text-align: start;">
+                <label class="label-input"> Fecha Final: </label>
+                <select name="" id="" class="form-control input-sm">
+               
+                  <option value="">------Centro Historico--------</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="row">
+         
+     
             <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Tipo
-                Producto:</label>
-              <select class="form-control"
-                style="width:55% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
+              <label class="text-select1" style="float:left; margin-left: 1%; margin-right: 2%;">Observaciones:</label>
+              <input class="form-control"
+                style="width:84% !important;margin-left:2% !important;vertical-align:middle;float:right">
+              </input>
             </div>
           </div>
+        
           <div class="row">
-            <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Local:</label>
-              <select class="form-control"
-                style="width:55% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
 
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 2%; margin-right: 2%;">Ubicación:</label>
-              <select class="form-control"
-                style="width:55% !important;margin-top: 2%;margin-left:2% !important;vertical-align:middle;float:right">
-
-                <option value=""> ------ Seleccione ------ </option>
-                <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima
-                </option>
-                <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
-                <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-              </select>
-            </div>
           </div>
 
         </div>
@@ -562,9 +369,9 @@
         text-align:center;">
         <div class="col-md-12 col-sm-12  col-xs-12"
           style="padding-left: 0 !important;padding-right: 40px !important;float:right !important;margin-bottom: 10px; margin-top:15px; ">
-          <button style="
+          <a href="ingreso-almacen.html"> <button style="
             margin-top: 8px !important;font-size: 16px; " class="btn btn-sm btn-out"><i
-              class="fas fa-arrow-left"></i>&nbsp;Salir</button>
+              class="fas fa-arrow-left"></i>&nbsp;Salir</button></a>
           <button style="
             margin-top: 8px !important; font-size: 16px;" class="btn btn-sm btn-record"><i></i>&nbsp;Registrar</button>
 
