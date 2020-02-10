@@ -42,7 +42,8 @@
             <span class=""
               style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px; color:#555">Bienvenido(a):</span>
             <span class=""
-              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Ivana Olortegui</span>
+              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Ivana
+              Olortegui</span>
             <span <i style="margin-right:0px !important;color:#555" class="caret-down"></span>
 
 
@@ -52,7 +53,7 @@
     </div>
     <div class="recta"></div>
 
- 
+
     <div id="menu" class="hide" style="float: left;">
       <div class="title">
         <p>SISTEMA DE LOGÍSTICA</p>
@@ -61,14 +62,14 @@
         <li id="inventories"><a href="#">Inventarios <i style="float: right; margin-top:2px;"
               class="fas fa-caret-down"></i></a></li>
         <ul id="inventories_sub_menu" class="hide">
-            <li><a href="ingreso-almacen.html">Ingreso a Almacén</a></li>
-            <li><a href="salida-almacen.html">Guías de Salida</a></li>
-            <li><a href="">Guías de Remisión</a></li>
+          <li><a href="ingreso-almacen.html">Ingreso a Almacén</a></li>
+          <li><a href="salida-almacen.html">Guías de Salida</a></li>
+          <li><a href="">Guías de Remisión</a></li>
         </ul>
         <li id="report"><a href="#">Reportes <i style="float: right; margin-top:2px;" class="fas fa-caret-down"></i></a>
         </li>
         <ul id="report_sub_menu" class="hide">
-            <li><a href="reporte-guia-salida.html">Reporte de Inventarios</a></li>
+          <li><a href="reporte-guia-salida.html">Reporte de Inventarios</a></li>
           <li><a href="reporte-garantia-vidaUtil.html
             ">Garantía / Vida Útil</a></li>
           <li><a href="stock-almacen.html">Stock de Almacén</a></li>
@@ -77,9 +78,9 @@
         <li id="maintenance"><a href="#">Mantenimiento <i style="float: right; margin-top:2px;"
               class="fas fa-caret-down"></i></a></li>
         <ul id="maintenance_sub_menu" class="hide">
-            <li><a href="catalogo-articulo.html">Registro de Artículo</a></li>
-            <li><a href="mantenedor.html">Artículos</a></li>
-            <li><a href="mantenedor-2.html">Sede</a></li>
+          <li><a href="catalogo-articulo.html">Registro de Artículo</a></li>
+          <li><a href="mantenedor.html">Artículos</a></li>
+          <li><a href="mantenedor-2.html">Sede</a></li>
         </ul>
       </ul>
 
@@ -98,13 +99,9 @@
 
   </div>
 
-
-
-
   <div class="container-fluid" style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
     <div class="row headboard">
       <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Reportes</p>
-
     </div>
     <br>
     <div>
@@ -126,12 +123,11 @@
           <div class="panel-body" style="padding-bottom: 0px;">
             <div class="container-fluid"
               style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
-
               <div class="row" style="            margin-top: 9px;        ">
-                <div class="col-md-6 col-xs-12" ng-show="vCmbGrupoxGerente">
+                <div class="col-md-3 col-xs-12" ng-show="vCmbGrupoxGerente">
                   <div class="form-group">
+                    <label class="label-input">Local: </label>
                     <div class=" input-group input-daterange" style="text-align: start;">
-                      <label class="label-input">Local: </label>
                       <select name="" id="" class="form-control input-sm">
                         <option value="">------SELECCIONE --------</option>
                         <option value="3" class="ng-binding ng-scope">Software Enterprise Services</option>
@@ -140,21 +136,13 @@
                       </select>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <div class=" input-group input-daterange" style="text-align: start;">
-                      <label class="label-input">Fecha de Inicio: </label>
-                      <select name="" id="" class="form-control input-sm">
-                        <option value="">------SELECCIONE --------</option>
-                        <option value="">------01/010/2020--------</option>
-                      </select>
-                    </div>
-                  </div>
+
                 </div>
 
-                <div class="col-md-6 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
-                  <div class="form-group">
+                <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                  <div class="form-group" style="text-align: start">
+                    <label class="label-input">Almacen: </label>
                     <div class=" input-group input-daterange" style="text-align: start;">
-                      <label class="label-input">Almacen: </label>
                       <select name="" id="" class="form-control input-sm">
                         <option value="">------ALMACEN ADM--------</option>
                         <option value="">------OFICINA- 201--------</option>
@@ -162,20 +150,38 @@
                       </select>
                     </div>
                   </div>
-                  <div class="form-group">
+
+                </div>
+
+                <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                  <div class="form-group" style="text-align: start">
+                    <label class="label-input">Fecha de Inicio: </label>
                     <div class=" input-group input-daterange" style="text-align: start;">
-                      <label class="label-input">Fecha Final: </label>
+                      <select name="" id="" class="form-control input-sm">
+                        <option value="">------SELECCIONE --------</option>
+                        <option value="">------01/010/2020--------</option>
+                      </select>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                  <div class="form-group" style="text-align: start">
+                    <label class="label-input">Fecha Final: </label>
+                    <div class=" input-group input-daterange" style="text-align: start;">
                       <select name="" id="" class="form-control input-sm">
                         <option value="">------SELECCIONE --------</option>
                         <option value="">------01/02/2019--------</option>
                       </select>
                     </div>
                   </div>
-
-
                 </div>
-
+             
+             
               </div>
+
+
               <div class="row cls-content-ctrl-ses">
                 <div class="table-responsive">
                   <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
@@ -359,11 +365,10 @@
               style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
 
               <div class="row" style="            margin-top: 9px;        ">
-                <div class="col-md-6 col-xs-12" ng-show="vCmbGrupoxGerente">
-
+                <div class="col-md-3 col-xs-12" ng-show="vCmbGrupoxGerente">
                   <div class="form-group">
+                    <label class="label-input">Local: </label>
                     <div class=" input-group input-daterange" style="text-align: start;">
-                      <label class="label-input">Local: </label>
                       <select name="" id="" class="form-control input-sm">
                         <option value="">------SELECCIONE --------</option>
                         <option value="3" class="ng-binding ng-scope">Software Enterprise Services</option>
@@ -372,21 +377,13 @@
                       </select>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <div class=" input-group input-daterange" style="text-align: start;">
-                      <label class="label-input">Fecha de Inicio: </label>
-                      <select name="" id="" class="form-control input-sm">
-                        <option value="">------SELECCIONE --------</option>
-                        <option value="">------01/010/2020--------</option>
-                      </select>
-                    </div>
-                  </div>
+
                 </div>
 
-                <div class="col-md-6 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
-                  <div class="form-group">
+                <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                  <div class="form-group" style="text-align: start">
+                    <label class="label-input">Almacen: </label>
                     <div class=" input-group input-daterange" style="text-align: start;">
-                      <label class="label-input">Almacen: </label>
                       <select name="" id="" class="form-control input-sm">
                         <option value="">------ALMACEN ADM--------</option>
                         <option value="">------OFICINA- 201--------</option>
@@ -394,20 +391,37 @@
                       </select>
                     </div>
                   </div>
-                  <div class="form-group">
+
+                </div>
+
+                <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                  <div class="form-group" style="text-align: start">
+                    <label class="label-input">Fecha de Inicio: </label>
                     <div class=" input-group input-daterange" style="text-align: start;">
-                      <label class="label-input">Fecha Final: </label>
+                      <select name="" id="" class="form-control input-sm">
+                        <option value="">------SELECCIONE --------</option>
+                        <option value="">------01/010/2020--------</option>
+                      </select>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                  <div class="form-group" style="text-align: start">
+                    <label class="label-input">Fecha Final: </label>
+                    <div class=" input-group input-daterange" style="text-align: start;">
                       <select name="" id="" class="form-control input-sm">
                         <option value="">------SELECCIONE --------</option>
                         <option value="">------01/02/2019--------</option>
                       </select>
                     </div>
                   </div>
-
-
                 </div>
-
+             
+             
               </div>
+
               <div class="row cls-content-ctrl-ses">
                 <div class="table-responsive">
                   <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
@@ -592,11 +606,10 @@
               style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
 
               <div class="row" style="            margin-top: 9px;        ">
-                <div class="col-md-6 col-xs-12" ng-show="vCmbGrupoxGerente">
-
+                <div class="col-md-3 col-xs-12" ng-show="vCmbGrupoxGerente">
                   <div class="form-group">
+                    <label class="label-input">Local: </label>
                     <div class=" input-group input-daterange" style="text-align: start;">
-                      <label class="label-input">Local: </label>
                       <select name="" id="" class="form-control input-sm">
                         <option value="">------SELECCIONE --------</option>
                         <option value="3" class="ng-binding ng-scope">Software Enterprise Services</option>
@@ -605,21 +618,13 @@
                       </select>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <div class=" input-group input-daterange" style="text-align: start;">
-                      <label class="label-input">Fecha de Inicio: </label>
-                      <select name="" id="" class="form-control input-sm">
-                        <option value="">------SELECCIONE --------</option>
-                        <option value="">------01/010/2020--------</option>
-                      </select>
-                    </div>
-                  </div>
+
                 </div>
 
-                <div class="col-md-6 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
-                  <div class="form-group">
+                <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                  <div class="form-group" style="text-align: start">
+                    <label class="label-input">Almacen: </label>
                     <div class=" input-group input-daterange" style="text-align: start;">
-                      <label class="label-input">Almacen: </label>
                       <select name="" id="" class="form-control input-sm">
                         <option value="">------ALMACEN ADM--------</option>
                         <option value="">------OFICINA- 201--------</option>
@@ -627,20 +632,39 @@
                       </select>
                     </div>
                   </div>
-                  <div class="form-group">
+
+                </div>
+
+                <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                  <div class="form-group" style="text-align: start">
+                    <label class="label-input">Fecha de Inicio: </label>
                     <div class=" input-group input-daterange" style="text-align: start;">
-                      <label class="label-input">Fecha Final: </label>
+                      <select name="" id="" class="form-control input-sm">
+                        <option value="">------SELECCIONE --------</option>
+                        <option value="">------01/010/2020--------</option>
+                      </select>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                  <div class="form-group" style="text-align: start">
+                    <label class="label-input">Fecha Final: </label>
+                    <div class=" input-group input-daterange" style="text-align: start;">
                       <select name="" id="" class="form-control input-sm">
                         <option value="">------SELECCIONE --------</option>
                         <option value="">------01/02/2019--------</option>
                       </select>
                     </div>
                   </div>
-
-
                 </div>
-
+             
+             
               </div>
+
+
+
               <div class="row cls-content-ctrl-ses">
                 <div class="table-responsive">
                   <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">

@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+
+  <link rel="stylesheet" href="ingreso-almacen.css">
+
+
 </head>
 
 <body>
@@ -40,7 +44,8 @@
             <span class=""
               style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px; color:#555">Bienvenido(a):</span>
             <span class=""
-              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Ivana Olortegui</span>
+              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Ivana
+              Olortegui</span>
             <span <i style="margin-right:0px !important;color:#555" class="caret-down"></span>
 
 
@@ -75,7 +80,7 @@
               class="fas fa-caret-down"></i></a></li>
         <ul id="maintenance_sub_menu" class="hide">
           <li><a href="catalogo-articulo.html">Registro de Artículo</a></li>
-          <li><a href="mantenedor.html">Artículos</a></li>
+          <li><a href="mantenedor.html">Clasificación</a></li>
           <li><a href="mantenedor-2.html">Sede</a></li>
         </ul>
       </ul>
@@ -85,7 +90,7 @@
       <ul>
         <li id="perfil"><a href="#"><i class="fas fa-edit" style="margin-right: 5px;"></i>Perfil</a></li>
 
-        <li id="off"><a href="#"><i class="fas fa-sign-out-alt" style="margin-right: 5px;"></i>Cerrar Sesión</a>
+        <li id="off"><a href="#"><i class="fa fa-sign-out-alt" style="margin-right: 5px;"></i>Cerrar Sesión</a>
         </li>
       </ul>
 
@@ -100,7 +105,7 @@
       style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
       <div class="row headboard">
 
-        <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Registrar Ingreso a Almacén</p>
+        <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Registrar Guía de Salida</p>
 
       </div>
       <br>
@@ -108,13 +113,12 @@
 
         <div class="col-md-6 col-sm-8  col-xs-12">
           <div class="col-md-12 col-sm-12  col-xs-12">
-            <h3 style="margin:3px; text-align: center;">  Datos Generales </h3>
+            <h3 style="margin:3px; text-align: center;"> Datos Generales </h3>
           </div>
           <div class="row">
             <div class="form-group col-md-6">
               <label class="label-input">Serie/Número: </label>
               <div class="input-group input-daterange">
-              
                 <input type="number"
                   class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
                   ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="3" placeholder="Serie"
@@ -131,170 +135,74 @@
             <div class="form-group col-md-6">
               <label class="label-input">Tipo de movimiento: </label>
               <div class=" input-group input-daterange" style="text-align: start;">
-               
+
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
-                  <option value="">------COMPRA--------</option>
-                  <option value="">------VENTA--------</option>
+                  <option value="">------Salida de Almacen--------</option>
+                  <option value="">------Salida de Oficina--------</option>
                 </select>
               </div>
             </div>
           </div>
+
 
 
           <div class="row">
+        
+
+          </div>
+          <div class="row">
+                                
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-sm-6  col-xs-12">
+          <div class="col-md-12 col-sm-12  col-xs-12">
+            <h3 style="margin:3px">Estado</h3>
+          </div>
+          <div class="row">
             <div class="form-group col-md-6">
-              <label class="label-input">Proveedor:</label>
-              <div class=" input-group input-daterange" style="text-align: start;">
-               
+              <div class="  input-daterange" style="text-align: start;">
+                <label class="label-input">Almacén de destino:</label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
-                  <option value="">------INDUSTRIALES DEL VALLE S.A.--------</option>
-                  <option value="">------ NYSAE SAC--------</option>
-
+                  <option value="">------Oficina-302-piso3--------</option>
                 </select>
               </div>
             </div>
             <div class="form-group col-md-6">
-              <label class="label-input">Almacén:</label>
-              <div class=" input-group input-daterange" style="text-align: start;">
-              
+              <div class="  input-daterange" style="text-align: start;">
+                <label class="label-input">Cliente:</label>
                 <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                  <option value="">------ALMACÉN ADM--------</option>
+                  <option value="">--------SELECIONE-------</option>
+                  <option value="">------Ninguno--------</option>
+                  <option value="">------Edgar Peréz-------</option>
                 </select>
               </div>
             </div>
           </div>
-
-
-
-
-
+          <div class="row">
+     
+           
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-6  col-xs-12">
           <div class="row">
             <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 1%; margin-right: 2%;">Observaciones:</label>
-              <input class="form-control"
-                style="margin-left:2% !important;vertical-align:middle;float:right">
+              <label class="text-select1" style="float:left; margin-top: 2px;">Descripción:</label>
+              <input class="form-control" style="margin-left:2% !important;vertical-align:middle;float:right">
               </input>
             </div>
           </div>
-
-
-
-
-
-
-
-
-
-        </div>
-        <div class="col-md-6 col-sm-6  col-xs-12">
-          <div class="col-md-12 col-sm-12  col-xs-12">
-          <h3 style="margin:3px">Documentos de Compra</h3>  
-          </div>
-          <div class="row" >
-            <div class="form-group col-md-6">
-              <label class="label-input">Comprobante: </label>
-              <div class=" input-group input-daterange" style="text-align: start;">
-              
-                <input type="password" class="form-control input-sm" id="password" name="password" placeholder="Código"
-                  required>
-              </div>
-            </div>
-            <div class="form-group col-md-6">
-              <label class="label-input">Moneda: </label>
-              <div class=" input-group input-daterange" style="text-align: start;">
-                
-                <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                  <option value="">------SOLES--------</option>
-                  <option value="">------DOLARES--------</option>
-                </select>
-              </div>
-            </div>
-          
-          </div>
-          <div class="row" >
-            <div class="form-group col-md-6">
-              <label class="label-input">N° Documento: </label>
-              <div class="input-group input-daterange" style="
-                text-align: start;
-            ">
-              
-                <input type="text"
-                  class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                  ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="4" placeholder=""
-                  oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-                <div class="input-group-addon">-</div>
-                <input type="number"
-                  class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                  ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value="" placeholder=""
-                  maxlength="8"
-                  oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                  ng-pattern="/^-?[0-9][^\.]*$/">
-
-              </div>
-            </div>
-            <div class="form-group col-md-6">
-              <label class="label-input">Forma de Pago: </label>
-              <div class=" input-group input-daterange" style="text-align: start;">
-              
-                <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                  <option value="">------NINGUNO--------</option>
-                </select>
-              </div>
-            </div>
-            
-          </div>
-
-
-
-          <div class="row" >
-            <div class="form-group col-md-6">
-              <label class="label-input">Fecha Doc. </label>
-              <div class=" input-group input-daterange" style="text-align: start;">
-               
-                <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group col-md-6">
-              <label class="label-input"> Asociar: </label>
-              <div class=" input-group input-daterange" style="text-align: start;">
-            
-                <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                  <option value="">------NINGUNO--------</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-
-          </div>
-          <div class="row">
-
-          </div>
-          <div class="row">
-
-          </div>
-          <div class="row">
-
-          </div>
-
         </div>
       </div>
       <div class="row" style=" float:none;
         text-align:center;">
         <div class="col-md-12 col-sm-12  col-xs-12"
           style="padding-left: 0 !important;padding-right: 40px !important;float:right !important;margin-bottom: 10px; margin-top:15px; ">
-          <a href="ingreso-almacen.html"> <button style="
-            margin-top: 8px !important;font-size: 16px; " class="btn btn-sm btn-out"><i
-              class="fas fa-arrow-left"></i>&nbsp;Salir</button></a>
+          <a href="salida-almacen.html"> <button style="     margin-top: 8px !important;font-size: 16px; " class="btn btn-sm btn-out"><i
+                class="fas fa-arrow-left"></i>&nbsp;Salir</button></a>
           <button style="
             margin-top: 8px !important; font-size: 16px;" class="btn btn-sm btn-record"><i></i>&nbsp;Registrar</button>
 
