@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+
+  <link rel="stylesheet" href="ingreso-almacen.css">
+
+
 </head>
 
 <body>
@@ -40,7 +44,8 @@
             <span class=""
               style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px; color:#555">Bienvenido(a):</span>
             <span class=""
-              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Ivana Olortegui</span>
+              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Ivana
+              Olortegui</span>
             <span <i style="margin-right:0px !important;color:#555" class="caret-down"></span>
 
 
@@ -75,7 +80,7 @@
               class="fas fa-caret-down"></i></a></li>
         <ul id="maintenance_sub_menu" class="hide">
           <li><a href="catalogo-articulo.html">Registro de Artículo</a></li>
-          <li><a href="mantenedor.html">Artículos</a></li>
+          <li><a href="mantenedor.html">Clasificación</a></li>
           <li><a href="mantenedor-2.html">Sede</a></li>
         </ul>
       </ul>
@@ -85,7 +90,7 @@
       <ul>
         <li id="perfil"><a href="#"><i class="fas fa-edit" style="margin-right: 5px;"></i>Perfil</a></li>
 
-        <li id="off"><a href="#"><i class="fas fa-sign-out-alt" style="margin-right: 5px;"></i>Cerrar Sesión</a>
+        <li id="off"><a href="#"><i class="fa fa-sign-out-alt" style="margin-right: 5px;"></i>Cerrar Sesión</a>
         </li>
       </ul>
 
@@ -100,7 +105,7 @@
       style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
       <div class="row headboard">
 
-        <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Registrar Ingreso a Almacén</p>
+        <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Registrar de Artículo</p>
 
       </div>
       <br>
@@ -108,48 +113,50 @@
 
         <div class="col-md-6 col-sm-8  col-xs-12">
           <div class="col-md-12 col-sm-12  col-xs-12">
-            <h3 style="margin:3px; text-align: center;">  Datos Generales </h3>
+            <h3 style="margin:3px; text-align: center;"> Datos Generales </h3>
           </div>
           <div class="row">
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
+              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Código: </label>
                 <input type="password" class="form-control input-sm" id="password" name="password" placeholder="Código"
                   required>
               </div>
             </div>
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
+              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Código Patriminial: </label>
                 <input type="password" class="form-control input-sm" id="password" name="password" placeholder="Código"
                   required>
               </div>
             </div>
-        
+
           </div>
 
 
           <div class="row">
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
+              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Grupo: </label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
-                  <option value="">------COMPRA--------</option>
-                  <option value="">------VENTA--------</option>
+                  <option value="">------Comida y comedor--------</option>
+                  <option value="">------Oficina--------</option>
+                  <option value="">------Hospitalización--------</option>
                 </select>
               </div>
             </div>
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
-                <label class="label-input">Almacén:</label>
+              <div class="  input-daterange" style="text-align: start;">
+                <label class="label-input">Marca:</label>
                 <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                  <option value="">------ALMACÉN ADM--------</option>
+                  <option value="">--------SELECIONE-------</option>
+                  <option value="">------ACER--------</option>
+                  <option value="">------AOC--------</option>
                 </select>
               </div>
             </div>
-       
+
           </div>
 
 
@@ -158,18 +165,18 @@
 
           <div class="row">
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
+              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Clase:</label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
-                  <option value="">------INDUSTRIALES DEL VALLE S.A.--------</option>
-                  <option value="">------ NYSAE SAC--------</option>
+                  <option value="">------ Equipo de Oficina --------</option>
+                  <option value="">------Mobiliario de Oficina--------</option>
 
                 </select>
               </div>
             </div>
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
+              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Almacén:</label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
@@ -177,33 +184,33 @@
                 </select>
               </div>
             </div>
-         
-       
+
+
           </div>
 
 
           <div class="row">
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
+              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Familia:</label>
                 <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                  <option value="">------ALMACÉN ADM--------</option>
+                  <option value="">---------SELECCIONE---------</option>
+                  <option value="">------ Archivador de Madera--------</option>
+                  <option value="">-------Archivador de Melanina--------</option>
                 </select>
               </div>
             </div>
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
+              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Código SVN: </label>
                 <input type="password" class="form-control input-sm" id="password" name="password" placeholder="Código"
                   required>
               </div>
             </div>
-     
+
             <div class="col-md-12 col-sm-12  col-xs-12">
               <label class="text-select1" style="float:left; margin-top: 2px;">Descripción:</label>
-              <input class="form-control"
-                style="width:84% !important;margin-left:2% !important;vertical-align:middle;float:right">
+              <input class="form-control" style="margin-left:2% !important;vertical-align:middle;float:right">
               </input>
             </div>
           </div>
@@ -212,13 +219,10 @@
 
 
           <div class="row">
-         
-     
             <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 1%; margin-right: 2%;">Observaciones:</label>
-              <input class="form-control"
-                style="width:84% !important;margin-left:2% !important;vertical-align:middle;float:right">
-             
+              <label class="text-select1" style="float:left; margin-left: 1%;">Observaciones:</label>
+              <input class="form-control" style="margin-left:2% !important;vertical-align:middle;float:right">
+
             </div>
           </div>
 
@@ -226,24 +230,23 @@
 
           <div class="row">
             <div class="form-group col-md-12">
-              <h3>Información de Vida Util</h3> 
- 
-             </div>
+              <h3 style="  margin-top: 12px;  ">Información de Vida Util</h3>
+
+            </div>
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
+              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input"> Vida Util S/N: </label>
                 <select name="" id="" class="form-control input-sm">
-               
+
                   <option value="">------SI--------</option>
                   <option value="">------NO--------</option>
                 </select>
               </div>
             </div>
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
-                <label class="label-input"> Vida Util  </label>
-                <input class="form-control"
-                style="width:84% !important;margin-left:2% !important;vertical-align:middle;float:right">
+              <div class="  input-daterange" style="text-align: start;">
+                <label class="label-input"> Vida Util </label>
+                <input class="form-control" style="margin-left:2% !important;vertical-align:middle;float:right">
               </div>
             </div>
           </div>
@@ -251,12 +254,12 @@
         </div>
         <div class="col-md-6 col-sm-6  col-xs-12">
           <div class="col-md-12 col-sm-12  col-xs-12">
-          <h3 style="margin:3px">Estado</h3>  
+            <h3 style="margin:3px">Estado</h3>
           </div>
-          <div class="row" >
-         
+          <div class="row">
+
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
+              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Estado bien: </label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
@@ -266,7 +269,7 @@
               </div>
             </div>
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
+              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Uso: </label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
@@ -275,34 +278,34 @@
               </div>
             </div>
           </div>
-          <div class="row" >
+          <div class="row">
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
+              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Propiedad: </label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
-                  <option value="">------BUENO--------</option>
-                  <option value="">------MALO--------</option>
+                  <option value="">-----COMPRADO--------</option>
+                  <option value="">------ALQUILADO--------</option>
                 </select>
               </div>
             </div>
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
+              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Usuario: </label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
-                  <option value="">------En Uso--------</option>
+                  <option value="">------VALDEZ CARLOS--------</option>
                 </select>
               </div>
             </div>
-           
+
           </div>
 
 
 
-          <div class="row" >
+          <div class="row">
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
+              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Tipo de producto: </label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
@@ -311,7 +314,7 @@
               </div>
             </div>
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
+              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Unidad de Medida </label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
@@ -322,43 +325,46 @@
             </div>
           </div>
 
-   
+
           <div class="row">
             <div class="form-group col-md-12">
-             <h3>Garantia</h3> 
+              <h3 style="  margin-top: 5px;  ">Garantia</h3>
 
             </div>
-         
+
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
-                <label class="label-input"> Fecha de Inicio: </label>
-                <select name="" id="" class="form-control input-sm">
-               
-                  <option value="">------Centro Historico--------</option>
-                </select>
-              </div>
+              <div class="form-group">
+                <b>Fecha Inicio:</b>
+                <div class="input-group input-daterange">
+                    <div class="input-group-addon">
+                        <i class="fa fa-calendar cls-PunteroIcono" ng-click="BuscaFechaInicio = '' "></i>
+                    </div>
+                    <input type="text" class="form-control letranatura" ng-model="BuscaFechaInicio" id="FechaInicio" >
+                </div>
             </div>
+            </div>
+           
+
             <div class="form-group col-md-6">
-              <div class=" input-group input-daterange" style="text-align: start;">
-                <label class="label-input"> Fecha Final: </label>
-                <select name="" id="" class="form-control input-sm">
-               
-                  <option value="">------Centro Historico--------</option>
-                </select>
-              </div>
+              <div class="form-group">
+                <b>Fecha Fin:</b>
+                <div class="input-group input-daterange">
+                    <div class="input-group-addon">
+                        <i class="fa fa-calendar cls-PunteroIcono" ng-click="BuscaFechaFin = '' "></i>
+                    </div>
+                    <input type="text" class="form-control letranatura" ng-model="BuscaFechaFin" id="FechaFin">
+                </div>
+            </div>
             </div>
           </div>
           <div class="row">
-         
-     
             <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 1%; margin-right: 2%;">Observaciones:</label>
-              <input class="form-control"
-                style="width:84% !important;margin-left:2% !important;vertical-align:middle;float:right">
+              <label class="text-select1" style="float:left; margin-left: 1%; ">Observaciones:</label>
+              <input class="form-control" style="margin-left:2% !important;vertical-align:middle;float:right">
               </input>
             </div>
           </div>
-        
+
           <div class="row">
 
           </div>
@@ -371,7 +377,7 @@
           style="padding-left: 0 !important;padding-right: 40px !important;float:right !important;margin-bottom: 10px; margin-top:15px; ">
           <a href="ingreso-almacen.html"> <button style="
             margin-top: 8px !important;font-size: 16px; " class="btn btn-sm btn-out"><i
-              class="fas fa-arrow-left"></i>&nbsp;Salir</button></a>
+                class="fas fa-arrow-left"></i>&nbsp;Salir</button></a>
           <button style="
             margin-top: 8px !important; font-size: 16px;" class="btn btn-sm btn-record"><i></i>&nbsp;Registrar</button>
 
