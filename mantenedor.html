@@ -120,43 +120,32 @@
 
             <div class="row cls-content-ctrl-ses"
               style="margin-right: 0;margin-top:10px; margin-top: 9px;  padding: 15px;padding-top: 23px; background: #F1F1F1;margin-top: 5px;border-radius: 5px;margin-left: 10px !important;margin-right: 10px !important; margin-bottom: 20px;">
-              <div class="col-md-3 col-xs-12" ng-show="vCmbGrupoxGerente">
-                <div class="form-group">
-                  <div class="input-group input-daterange">
-                    <label class="label-input" style="width: auto;">Código : </label>
-                    <input type="number" class="form-control input-sm" id="password" name="password"
-                      placeholder="Código" required>
-                  </div>
-                </div>
-              </div>
+
               <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
                 <div class="form-group" style="text-align: start;">
+                  <label class="label-input" style="width: auto;">Código Grupo: </label>
                   <div class="input-group input-daterange">
-                    <label class="label-input" style="width: auto;">Código Grupo: </label>
                     <input type="number" class="form-control input-sm" id="password" name="password"
                       placeholder="Código" required>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-xs-12" style="margin-bottom:1%">
-                <div class="form-group ">
+              <div class="col-md-6 col-xs-12" style="margin-bottom:1%">
+                <div class="form-group "><label class="label-input" style="width: auto;">Grupo : </label>
                   <div class="input-group input-daterange">
-                    <label class="label-input" style="width: auto;">Grupo : </label>
-                    <input type="text" class="form-control input-sm" id="password" name="password"
-                    placeholder="Grupo" required>
+                    <input type="text" class="form-control input-sm" id="password" name="password" placeholder="Grupo"
+                      required>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-2">
-                <div class="row" style="justify-content: flex-end;">
+              <div class="col-md-3">
+                <div class="row" style="justify-content: flex-end; margin-top: 29px;">
                   <div class="form-group ">
                     <div class="btn-save">
-                      <a href="registro-clasificador.html"> <button type="submit" class="btn  btn-sm btn-saves"
-                          style=" 
-                          height: 46% !important;
-                          margin-top: 8px !important; " align="right"><i
-                            class="fa fa-plus"></i>&nbsp;Registrar</button></a>
+                      <button type="submit" class="btn  btn-sm btn-saves" style="                 height: 46% !important;
+                          margin-top: 8px !important; " align="right" data-toggle="modal"
+                        data-target=".bd-example-modal-sm"><i class="fa fa-plus"></i>&nbsp;Registrar</button>
                       <button type="submit" class="btn btn-sm btn-default" style=" 
                              height: 46% !important;
                              margin-top: 8px !important; " align="right"><i
@@ -199,7 +188,7 @@
                         class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
                         datatable="ng" dt-options="showCase.dtOptions" style="display: table;" id="DataTables_Table_0"
                         role="grid" aria-describedby="DataTables_Table_0_info">
-                        <thead>
+                        <thead style="background:  #F1F1F1">
                           <tr role="row">
                             <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
                               rowspan="1" colspan="1" aria-sort="ascending"
@@ -331,7 +320,7 @@
                       </table>
                     </div>
                   </div>
-                  
+
                   <div class="row" style="width: 100%; margin-right: 0px;margin-left: 0px;">
 
                     <div class="col-sm-5 ">
@@ -345,6 +334,9 @@
                           <li class="paginate_button previous disabled " id="DataTables_Table_0_previous"><a href="#"
                               class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
                               tabindex="0">Anterior</a></li>
+                              <li class="paginate_button previous disabled btn-pag-number" id="DataTables_Table_0_previous"><a href="#"
+                                class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
+                                tabindex="0">1</a></li>
                           <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"
                               class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="1"
                               tabindex="0">Siguiente</a></li>
@@ -366,7 +358,8 @@
         <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
           <div class="container-fluid ng-scope">
 
-            <div class="row cls-content-ctrl-ses"    style="margin-right: 0;margin-top:10px; margin-top: 9px;  padding: 15px;padding-top: 23px; background: #F1F1F1;margin-top: 5px;border-radius: 5px;margin-left: 10px !important;margin-right: 10px !important; margin-bottom: 20px;">
+            <div class="row cls-content-ctrl-ses"
+              style="margin-right: 0;margin-top:10px; margin-top: 9px;  padding: 15px;padding-top: 23px; background: #F1F1F1;margin-top: 5px;border-radius: 5px;margin-left: 10px !important;margin-right: 10px !important; margin-bottom: 20px;">
               <div class="form-group col-md-4">
                 <div class="  input-daterange" style="text-align: start;">
                   <label class="label-input">Grupo: </label>
@@ -381,7 +374,7 @@
 
               <div class="form-group col-md-4">
                 <div class="  input-daterange" style="text-align: start;">
-                  <label class="label-input">Clase</label> 
+                  <label class="label-input">Clase</label>
                   <select name="" id="" class="form-control input-sm">
                     <option value="">--------SELECIONE-------</option>
                     <option value="">------Equipo de Oficina--------</option>
@@ -390,33 +383,32 @@
                   </select>
                 </div>
               </div>
-     
 
-              <div class="col-md-4 col-xs-12" ng-show="vCmbGrupoxGerente">
+
+              <div class="col-md-2 col-xs-12" ng-show="vCmbGrupoxGerente">
                 <div class="form-group">
-                  <label class="label-input" style="width: auto;">Código : </label>
+                  <label class="label-input" style="width: auto;">Código Clase: </label>
                   <div class="input-group input-daterange">
-                  
+
                     <input type="number" class="form-control input-sm" id="password" name="password"
                       placeholder="Código" required>
                   </div>
                 </div>
               </div>
 
-             
-           
 
-              <div class="col-md-4"></div>
-              <div class="col-md-4"></div>
-              <div class="col-md-4">
-                <div class="row" style="justify-content: flex-end;">
+
+
+              
+              <div class="col-md-2">
+                <div class="row"> </div>
+                <div class="row" style="justify-content: flex-end; margin-top: 29px;">
                   <div class="form-group ">
                     <div class="btn-save">
-                      <a href="registrar-ingreso-almacen.html"> <button type="submit" class="btn  btn-sm btn-saves"
-                          style=" 
-                          height: 46% !important;
-                          margin-top: 8px !important; " align="right"><i
-                            class="fa fa-plus"></i>&nbsp;Registrar</button></a>
+                      <button type="submit" class="btn  btn-sm btn-saves" style=" height: 46% !important;
+                          margin-top: 8px !important; " align="right" data-toggle="modal"
+                        data-target=".bd-example-modal-clas"><i
+                          class="fa fa-plus"></i>&nbsp;Registrar</button>
                       <button type="submit" class="btn btn-sm btn-default" style=" 
                              height: 46% !important;
                              margin-top: 8px !important; " align="right"><i
@@ -459,7 +451,7 @@
                         class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
                         datatable="ng" dt-options="showCase.dtOptions" style="display: table;" id="DataTables_Table_0"
                         role="grid" aria-describedby="DataTables_Table_0_info">
-                        <thead>
+                        <thead style="background:  #F1F1F1">
                           <tr role="row">
                             <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
                               rowspan="1" colspan="1" aria-sort="ascending"
@@ -482,7 +474,7 @@
                               aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
                               aria-label="Acción: activate to sort column ascending">Acción</th>
                           </tr>
-                        </thead>
+                        </thead >
                         <tbody>
                           <tr>
                             <td> 1 </td>
@@ -521,7 +513,7 @@
                             <td> 3 </td>
 
                             <td> 00011 </td>
-                            <td>                              32                            </td>
+                            <td> 32 </td>
                             <td>
                               Equipo de Seguridad
                             </td>
@@ -601,6 +593,9 @@
                           <li class="paginate_button previous disabled " id="DataTables_Table_0_previous"><a href="#"
                               class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
                               tabindex="0">Anterior</a></li>
+                              <li class="paginate_button previous disabled btn-pag-number" id="DataTables_Table_0_previous"><a href="#"
+                                class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
+                                tabindex="0">1</a></li>
                           <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"
                               class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="1"
                               tabindex="0">Siguiente</a></li>
@@ -618,29 +613,18 @@
 
       </div>
 
-
+      <!-- Familia -->
       <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
         <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
           <div class="container-fluid ng-scope">
 
             <div class="row cls-content-ctrl-ses"
               style="margin-right: 0;margin-top:10px; margin-top: 9px;  padding: 15px;padding-top: 23px; background: #F1F1F1;margin-top: 5px;border-radius: 5px;margin-left: 10px !important;margin-right: 10px !important; margin-bottom: 20px;">
-              <div class="form-group col-md-4">
-                <div class="  input-daterange" style="text-align: start;">
-                  <label class="label-input">Grupo: </label>
-                  <select name="" id="" class="form-control input-sm">
-                    <option value="">------SELECCIONE --------</option>
-                    <option value="">------Comida y comedor--------</option>
-                    <option value="">------Oficina--------</option>
-                    <option value="">------Hospitalización--------</option>
-                  </select>
-                </div>
-              </div>
 
-             
+
               <div class="form-group col-md-4">
                 <div class="  input-daterange" style="text-align: start;">
-                  <label class="label-input">Clase</label> 
+                  <label class="label-input">Clase</label>
                   <select name="" id="" class="form-control input-sm">
                     <option value="">--------SELECIONE-------</option>
                     <option value="">------Equipo de Oficina--------</option>
@@ -652,7 +636,7 @@
 
               <div class="form-group col-md-4">
                 <div class="  input-daterange" style="text-align: start;">
-                  <label class="label-input">Familia</label> 
+                  <label class="label-input">Familia</label>
                   <select name="" id="" class="form-control input-sm">
                     <option value="">--------SELECIONE-------</option>
                     <option value="">------Equipo de Oficina--------</option>
@@ -661,29 +645,31 @@
                   </select>
                 </div>
               </div>
+              <div class="col-md-2 col-xs-12" ng-show="vCmbGrupoxGerente">
+                <div class="form-group">
+                  <label class="label-input" style="width: auto;">Código Familia: </label>
+                  <div class="input-group input-daterange">
+                    <input type="number" class="form-control input-sm" id="password" name="password"
+                      placeholder="Código" required>
+                  </div>
+                </div>
+              </div>
 
-             
-             
-            
 
-              <div class="col-md-4"></div>
-              <div class="col-md-4"></div>
-              <div class="col-md-4">
-                <div class="row" style="justify-content: flex-end;">
+
+              <div class="col-md-2">
+                <div class="row" style="justify-content: flex-end; margin-top: 29px;">
                   <div class="form-group ">
                     <div class="btn-save">
-                      <a href="registrar-ingreso-almacen.html"> <button type="submit" class="btn  btn-sm btn-saves"
-                          style=" 
-                          height: 46% !important;
-                          margin-top: 8px !important; " align="right"><i
-                            class="fa fa-plus"></i>&nbsp;Registrar</button></a>
+                      <button type="submit" class="btn  btn-sm btn-saves" style=" height: 46% !important;
+                          margin-top: 8px !important; " align="right" data-toggle="modal"
+                        data-target=".bd-example-modal-fmlia"><i
+                          class="fa fa-plus"></i>&nbsp;Registrar</button>
                       <button type="submit" class="btn btn-sm btn-default" style=" 
                              height: 46% !important;
-                             margin-top: 8px !important; " align="right"><i
-                          class="fa fa-search"></i>&nbsp;Consultar</button>
+                             margin-top: 8px !important; " align="right"><i class="fa fa-search"></i>&nbsp;Consultar</button>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -719,7 +705,7 @@
                         class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
                         datatable="ng" dt-options="showCase.dtOptions" style="display: table;" id="DataTables_Table_0"
                         role="grid" aria-describedby="DataTables_Table_0_info">
-                        <thead>
+                        <thead style="background:  #F1F1F1">
                           <tr role="row">
                             <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
                               rowspan="1" colspan="1" aria-sort="ascending"
@@ -867,6 +853,9 @@
                           <li class="paginate_button previous disabled " id="DataTables_Table_0_previous"><a href="#"
                               class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
                               tabindex="0">Anterior</a></li>
+                              <li class="paginate_button previous disabled btn-pag-number" id="DataTables_Table_0_previous"><a href="#"
+                                class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
+                                tabindex="0">1</a></li>
                           <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"
                               class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="1"
                               tabindex="0">Siguiente</a></li>
@@ -878,7 +867,6 @@
                 <h3 class="dt-loading" style="display: none;">Loading...</h3>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -925,6 +913,155 @@
     </div>
   </div>
 
+
+  <!--   Modal de Grupo -->
+  <!-- Large modal -->
+
+
+
+
+  <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header" style=" justify-content: center;">
+          <h4 class="modal-title letranatura">Registro de Grupo</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="label-input" style="width: auto;">Código de Grupo: </label>
+            <div class="input-group input-daterange">
+              <input type="number" class="form-control input-sm" id="password" name="password"
+                placeholder="Código de Grupo" required>
+            </div>
+          </div>
+
+        </div>
+        <div class="form-group col-md-12">
+          <div class="  input-daterange" style="text-align: start;">
+            <label class="label-input">Descripción</label>
+            <input type="text" class="form-control input-sm" id="password" name="password" placeholder="Descripción"
+              required>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn  btn-sm btn-saves"
+            style="   height: 46% !important;        padding: 6px 12px;" align="right" data-dismiss="modal"><i
+              class="fas fa-plus"></i>&nbsp;Guardar</button>
+          <button type="submit" class="btn btn-sm btn-default"
+            style=" height: 46% !important;  padding: 6px 6px;    margin-top: 8px !important; " align="right"
+            data-dismiss="modal"><i class="fas fa-arrow-left"></i>&nbsp;Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Clase -->
+  <div class="modal fade bd-example-modal-clas" tabindex="-1" role="dialog" aria-labelledby="Clase-modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header" style=" justify-content: center;">
+          <h4 class="modal-title letranatura">Registro de Clase</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group ">
+            <div class="  input-daterange" style="text-align: start;">
+              <label class="label-input">Grupo: </label>
+              <select name="" id="" class="form-control input-sm">
+                <option value="">------SELECCIONE --------</option>
+                <option value="">------Comida y comedor--------</option>
+                <option value="">------Oficina--------</option>
+                <option value="">------Hospitalización--------</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="label-input" style="width: auto;">Código de Clase: </label>
+            <div class="input-group input-daterange">
+              <input type="number" class="form-control input-sm" id="password" name="password"
+                placeholder="Código de Clase" required>
+            </div>
+          </div>
+
+        </div>
+        <div class="form-group col-md-12">
+          <div class="  input-daterange" style="text-align: start;">
+            <label class="label-input">Descripción</label>
+            <input type="text" class="form-control input-sm" id="password" name="password" placeholder="Descripción"
+              required>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn  btn-sm btn-saves"
+            style="   height: 46% !important;        padding: 6px 12px;" align="right" data-dismiss="modal"><i
+              class="fas fa-plus"></i>&nbsp;Guardar</button>
+          <button type="submit" class="btn btn-sm btn-default"
+            style=" height: 46% !important;  padding: 6px 6px;    margin-top: 8px !important; " align="right"
+            data-dismiss="modal"><i class="fas fa-arrow-left"></i>&nbsp;Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Familia Modal -->
+
+  <div class="modal fade bd-example-modal-fmlia" tabindex="-1" role="dialog" aria-labelledby="Clase-modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header" style=" justify-content: center;">
+          <h4 class="modal-title letranatura">Registro de Familia</h4>
+        </div>
+        <div class="modal-body">
+
+          <div class="form-group">
+            <div class="  input-daterange" style="text-align: start;">
+              <label class="label-input">Clase</label>
+              <select name="" id="" class="form-control input-sm">
+                <option value="">--------SELECIONE-------</option>
+                <option value="">------Equipo de Oficina--------</option>
+                <option value="">------Equipo de Seguridad--------</option>
+                <option value="">------Equipo de Limpieza--------</option>
+              </select>
+            </div>
+          </div>
+    
+          <div class="form-group">
+            <label class="label-input" style="width: auto;">Código de Familia: </label>
+            <div class="input-group input-daterange">
+              <input type="number" class="form-control input-sm" id="password" name="password"
+                placeholder="Código de Clase" required>
+            </div>
+          </div>
+
+        </div>
+        <div class="form-group col-md-12">
+          <div class="  input-daterange" style="text-align: start;">
+            <label class="label-input">Descripción</label>
+            <input type="text" class="form-control input-sm" id="password" name="password" placeholder="Descripción"
+              required>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn  btn-sm btn-saves"
+            style="   height: 46% !important;        padding: 6px 12px;" align="right" data-dismiss="modal"><i
+              class="fas fa-plus"></i>&nbsp;Guardar</button>
+          <button type="submit" class="btn btn-sm btn-default"
+            style=" height: 46% !important;  padding: 6px 6px;    margin-top: 8px !important; " align="right"
+            data-dismiss="modal"><i class="fas fa-arrow-left"></i>&nbsp;Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
 
   <script src="main.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
