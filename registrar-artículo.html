@@ -118,16 +118,20 @@
           <div class="row">
             <div class="form-group col-md-6">
               <div class="  input-daterange" style="text-align: start;">
-                <label class="label-input">Código: </label>
+                <label class="label-input">Código Patrimonial: </label>
                 <input type="password" class="form-control input-sm" id="password" name="password" placeholder="Código"
                   required>
               </div>
             </div>
             <div class="form-group col-md-6">
               <div class="  input-daterange" style="text-align: start;">
-                <label class="label-input">Código Patriminial: </label>
-                <input type="password" class="form-control input-sm" id="password" name="password" placeholder="Código"
-                  required>
+                <label class="label-input">Edicio:</label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">--------SELECIONE-------</option>
+                  <option value="">------EDIFICIO CERCADO DE LIMA--------</option>
+                  <option value="">------EDIFICIO VILLA MARIA DEL TRIUNFO--------</option>
+                  <option value="">------EDIFICIO MIRAFLORES--------</option>
+                </select>
               </div>
             </div>
 
@@ -146,17 +150,16 @@
                 </select>
               </div>
             </div>
+
             <div class="form-group col-md-6">
               <div class="  input-daterange" style="text-align: start;">
-                <label class="label-input">Marca:</label>
+                <label class="label-input">Ambiente</label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">--------SELECIONE-------</option>
-                  <option value="">------ACER--------</option>
-                  <option value="">------AOC--------</option>
+                  <option value="">------ALMACÉN HELPDESK--------</option>
                 </select>
               </div>
             </div>
-
           </div>
 
 
@@ -175,16 +178,17 @@
                 </select>
               </div>
             </div>
+
             <div class="form-group col-md-6">
               <div class="  input-daterange" style="text-align: start;">
-                <label class="label-input">Almacén:</label>
+                <label class="label-input">Piso:</label>
                 <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
+                  <option value="">--------SELECIONE-------</option>
                   <option value="">------ALMACÉN ADM--------</option>
+                  <option value="">------ALMACÉN EUS--------</option>
                 </select>
               </div>
             </div>
-
 
           </div>
 
@@ -200,23 +204,30 @@
                 </select>
               </div>
             </div>
+
+
+
             <div class="form-group col-md-6">
               <div class="  input-daterange" style="text-align: start;">
-                <label class="label-input">Código SVN: </label>
-                <input type="password" class="form-control input-sm" id="password" name="password" placeholder="Código"
-                  required>
+                <label class="label-input">Marca:</label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">--------SELECIONE-------</option>
+                  <option value="">------ACER--------</option>
+                  <option value="">------AOC--------</option>
+                </select>
               </div>
             </div>
+
 
             <div class="col-md-12 col-sm-12  col-xs-12">
               <label class="text-select1" style="float:left; margin-top: 2px;">Descripción:</label>
               <input class="form-control" style="margin-left:2% !important;vertical-align:middle;float:right">
               </input>
             </div>
+
+
+
           </div>
-
-
-
 
           <div class="row">
             <div class="col-md-12 col-sm-12  col-xs-12">
@@ -270,10 +281,10 @@
             </div>
             <div class="form-group col-md-6">
               <div class="  input-daterange" style="text-align: start;">
-                <label class="label-input">Uso: </label>
+                <label class="label-input">Tipo de producto: </label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
-                  <option value="">------En Uso--------</option>
+                  <option value="">------ACTIVO--------</option>
                 </select>
               </div>
             </div>
@@ -291,30 +302,6 @@
             </div>
             <div class="form-group col-md-6">
               <div class="  input-daterange" style="text-align: start;">
-                <label class="label-input">Usuario: </label>
-                <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                  <option value="">------VALDEZ CARLOS--------</option>
-                </select>
-              </div>
-            </div>
-
-          </div>
-
-
-
-          <div class="row">
-            <div class="form-group col-md-6">
-              <div class="  input-daterange" style="text-align: start;">
-                <label class="label-input">Tipo de producto: </label>
-                <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                  <option value="">------ACTIVO--------</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group col-md-6">
-              <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Unidad de Medida </label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
@@ -323,43 +310,45 @@
                 </select>
               </div>
             </div>
+
           </div>
 
 
-          <div class="row">
-            <div class="form-group col-md-12">
-              <h3 style="  margin-top: 5px;  ">Garantia</h3>
+
+          <div class="row" style="margin-top: 38px;"> 
+            <div class=" col-md-12">
+              <h3 style="  margin-bottom: 16px;  ">Garantia</h3>
 
             </div>
 
             <div class="form-group col-md-6">
-              <div class="form-group">
-                <b>Fecha Inicio:</b>
+              <label class="label-input">Fecha Inicio:</label> 
+               
                 <div class="input-group input-daterange">
-                    <div class="input-group-addon">
-                        <i class="fa fa-calendar cls-PunteroIcono" ng-click="BuscaFechaInicio = '' "></i>
-                    </div>
-                    <input type="text" class="form-control letranatura" ng-model="BuscaFechaInicio" id="FechaInicio" >
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar cls-PunteroIcono"></i>
+                  </div>
+                  <input type="text" class="form-control letranatura" ng-model="BuscaFechaInicio" id="FechaInicio">
                 </div>
+              
             </div>
-            </div>
-           
+
 
             <div class="form-group col-md-6">
-              <div class="form-group">
-                <b>Fecha Fin:</b>
+            
+              <label class="label-input">Fecha Fin:</label> 
                 <div class="input-group input-daterange">
-                    <div class="input-group-addon">
-                        <i class="fa fa-calendar cls-PunteroIcono" ng-click="BuscaFechaFin = '' "></i>
-                    </div>
-                    <input type="text" class="form-control letranatura" ng-model="BuscaFechaFin" id="FechaFin">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar cls-PunteroIcono" ng-click="BuscaFechaFin = '' "></i>
+                  </div>
+                  <input type="text" class="form-control letranatura" ng-model="BuscaFechaFin" id="FechaFin">
                 </div>
-            </div>
+              
             </div>
           </div>
           <div class="row">
             <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-left: 1%; ">Observaciones:</label>
+              <label class="" style="float:left; margin-left: 1%; ">Observaciones:</label>
               <input class="form-control" style="margin-left:2% !important;vertical-align:middle;float:right">
               </input>
             </div>

@@ -360,7 +360,7 @@
 
             <div class="row cls-content-ctrl-ses"
               style="margin-right: 0;margin-top:10px; margin-top: 9px;  padding: 15px;padding-top: 23px; background: #F1F1F1;margin-top: 5px;border-radius: 5px;margin-left: 10px !important;margin-right: 10px !important; margin-bottom: 20px;">
-              <div class="form-group col-md-4">
+              <div class="form-group col-md-3">
                 <div class="  input-daterange" style="text-align: start;">
                   <label class="label-input">Grupo: </label>
                   <select name="" id="" class="form-control input-sm">
@@ -372,17 +372,6 @@
                 </div>
               </div>
 
-              <div class="form-group col-md-4">
-                <div class="  input-daterange" style="text-align: start;">
-                  <label class="label-input">Clase</label>
-                  <select name="" id="" class="form-control input-sm">
-                    <option value="">--------SELECIONE-------</option>
-                    <option value="">------Equipo de Oficina--------</option>
-                    <option value="">------Equipo de Seguridad--------</option>
-                    <option value="">------Equipo de Limpieza--------</option>
-                  </select>
-                </div>
-              </div>
 
 
               <div class="col-md-2 col-xs-12" ng-show="vCmbGrupoxGerente">
@@ -397,7 +386,14 @@
               </div>
 
 
-
+              <div class="col-md-5 col-xs-12" style="margin-bottom:1%">
+                <div class="form-group "><label class="label-input" style="width: auto;">Clase: </label>
+                  <div class="input-group input-daterange">
+                    <input type="text" class="form-control input-sm" id="password" name="password" placeholder="Clase"
+                      required>
+                  </div>
+                </div>
+              </div>
 
               
               <div class="col-md-2">
@@ -621,8 +617,18 @@
             <div class="row cls-content-ctrl-ses"
               style="margin-right: 0;margin-top:10px; margin-top: 9px;  padding: 15px;padding-top: 23px; background: #F1F1F1;margin-top: 5px;border-radius: 5px;margin-left: 10px !important;margin-right: 10px !important; margin-bottom: 20px;">
 
-
-              <div class="form-group col-md-4">
+              <div class="form-group col-md-2">
+                <div class="  input-daterange" style="text-align: start;">
+                  <label class="label-input">Grupo: </label>
+                  <select name="" id="" class="form-control input-sm">
+                    <option value="">------SELECCIONE --------</option>
+                    <option value="">------Comida y comedor--------</option>
+                    <option value="">------Oficina--------</option>
+                    <option value="">------Hospitalización--------</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-md-2">
                 <div class="  input-daterange" style="text-align: start;">
                   <label class="label-input">Clase</label>
                   <select name="" id="" class="form-control input-sm">
@@ -634,17 +640,6 @@
                 </div>
               </div>
 
-              <div class="form-group col-md-4">
-                <div class="  input-daterange" style="text-align: start;">
-                  <label class="label-input">Familia</label>
-                  <select name="" id="" class="form-control input-sm">
-                    <option value="">--------SELECIONE-------</option>
-                    <option value="">------Equipo de Oficina--------</option>
-                    <option value="">------Equipo de Seguridad--------</option>
-                    <option value="">------Equipo de Limpieza--------</option>
-                  </select>
-                </div>
-              </div>
               <div class="col-md-2 col-xs-12" ng-show="vCmbGrupoxGerente">
                 <div class="form-group">
                   <label class="label-input" style="width: auto;">Código Familia: </label>
@@ -655,6 +650,14 @@
                 </div>
               </div>
 
+              <div class="col-md-4 col-xs-12" style="margin-bottom:1%">
+                <div class="form-group "><label class="label-input" style="width: auto;">Familia: </label>
+                  <div class="input-group input-daterange">
+                    <input type="text" class="form-control input-sm" id="password" name="password" placeholder="Familia"
+                      required>
+                  </div>
+                </div>
+              </div>
 
 
               <div class="col-md-2">
@@ -1018,7 +1021,17 @@
           <h4 class="modal-title letranatura">Registro de Familia</h4>
         </div>
         <div class="modal-body">
-
+          <div class="form-group ">
+            <div class="  input-daterange" style="text-align: start;">
+              <label class="label-input">Grupo: </label>
+              <select name="" id="" class="form-control input-sm">
+                <option value="">------SELECCIONE --------</option>
+                <option value="">------Comida y comedor--------</option>
+                <option value="">------Oficina--------</option>
+                <option value="">------Hospitalización--------</option>
+              </select>
+            </div>
+          </div>
           <div class="form-group">
             <div class="  input-daterange" style="text-align: start;">
               <label class="label-input">Clase</label>
