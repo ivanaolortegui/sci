@@ -117,51 +117,81 @@
           </div>
           <div class="row">
             <div class="form-group col-md-6">
-              <label class="label-input">Artículo:</label>
-              <div class=" input-group input-daterange" style="text-align: start;">              
-                <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                  <option value="">------ÁNTENA INALÁMBRICA--------</option>
-                  <option value="">------ADAPTADOR INALÁMBRICO PCI--------</option>
-                  <option value="">------TARJETA DE RED--------</option>
-                  <option value="">------CABLE DE CONSOLA--------</option>
-                </select>
+                <label class="label-input">Serie/Número: </label>
+                <div class="input-group input-daterange">
+                  <input type="number"
+                    class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
+                    ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="3" placeholder="Serie"
+                    oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                  <div class="input-group-addon">-</div>
+                  <input type="number"
+                    class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
+                    ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value=""
+                    placeholder="Comprobante" maxlength="5"
+                    oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    ng-pattern="/^-?[0-9][^\.]*$/">
+                </div>
               </div>
-            </div>
             <div class="form-group col-md-6">
-              <label class="label-input">Código Patrimonial: </label>
+              <label class="label-input">Ruc </label>
               <div class=" input-group input-daterange" style="text-align: start;">             
-                <input type="number" class="form-control input-sm" id="password" name="number" placeholder="Código Patrimonial" value=""
+                <input type="number" class="form-control input-sm" id="password" name="number" placeholder="RUC" value=""
                   required>
               </div>
             </div>
             <div class="form-group col-md-6">
-              <label class="label-input">Serie/Número: </label>
-              <div class="input-group input-daterange">
-                <input type="number"
-                  class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                  ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="3" placeholder="Serie"
-                  oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-                <div class="input-group-addon">-</div>
-                <input type="number"
-                  class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                  ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value=""
-                  placeholder="Comprobante" maxlength="5"
-                  oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                  ng-pattern="/^-?[0-9][^\.]*$/">
+                <div class="  input-daterange" style="text-align: start;">
+                  <label class="label-input">Cliente:</label>
+                  <select name="" id="" class="form-control input-sm">
+                    <option value="">--------SELECIONE-------</option>
+                    <option value="">------Ninguno--------</option>
+                    <option value="">------Edgar Peréz-------</option>
+                  </select>
+                </div>
               </div>
-            </div>
             <div class="form-group col-md-6">
-              <label class="label-input">Tipo de movimiento: </label>
+              <label class="label-input">Dirección: </label>
               <div class=" input-group input-daterange" style="text-align: start;">
 
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
-                  <option value="">------Salida de Almacen--------</option>
-                  <option value="">------Salida de Oficina--------</option>
+                  <option value="">------Av.Alcanfores 567--------</option>
+                  <option value="">------Jirón La Paz 152--------</option>
                 </select>
               </div>
             </div>
+            <div class="form-group col-md-6">
+                <label class="label-input">Almacen: </label>
+                <div class=" input-group input-daterange" style="text-align: start;">
+  
+                  <select name="" id="" class="form-control input-sm">
+                    <option value="">------SELECCIONE --------</option>
+                    <option value="">------Salida de Almacen--------</option>
+                    <option value="">------Salida de Oficina--------</option>
+                  </select>
+                </div>
+              </div>
+         
+              <div class="form-group col-md-6">
+                <label class="label-input">Asociar: </label>
+                <div class=" input-group input-daterange" style="text-align: start;">
+                  <select name="" id="" class="form-control input-sm">
+                    <option value="">---SELECCIONE---</option>
+                    <option value="">---NINGUNO---</option>
+                   
+                  </select>
+                          
+                    <input type="number" class="form-control input-sm" id="password" name="number" placeholder="" value=""
+                      required>
+                      <button style="
+                       font-size: 16px;" class="btn btn-sm btn-record"><i></i>&nbsp;Buscar</button>
+              
+                </div>
+             
+                
+                  
+            
+              </div>
           </div>
 
 
@@ -178,12 +208,12 @@
 
         <div class="col-md-6 col-sm-6  col-xs-12">
           <div class="col-md-12 col-sm-12  col-xs-12">
-            <h3 style="margin:3px">Estado</h3>
+            <h3 style="margin:3px">Transporte</h3>
           </div>
           <div class="row">
             <div class="form-group col-md-6">
               <div class="  input-daterange" style="text-align: start;">
-                <label class="label-input">Almacén de destino:</label>
+                <label class="label-input">Transportista:</label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
                   <option value="">------Oficina-302-piso3--------</option>
@@ -192,7 +222,7 @@
             </div>
             <div class="form-group col-md-6">
               <div class="  input-daterange" style="text-align: start;">
-                <label class="label-input">Almacén de origén:</label>
+                <label class="label-input">Detalle Trp</label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
                   <option value="">------Oficina-302-piso3--------</option>
@@ -201,7 +231,7 @@
             </div>
             <div class="form-group col-md-6">
               <div class="  input-daterange" style="text-align: start;">
-                <label class="label-input">Cliente:</label>
+                <label class="label-input">Chofer:</label>
                 <select name="" id="" class="form-control input-sm">
                   <option value="">--------SELECIONE-------</option>
                   <option value="">------Ninguno--------</option>
@@ -209,21 +239,47 @@
                 </select>
               </div>
             </div>
+            <div class="form-group col-md-6">
+                <div class="  input-daterange" style="text-align: start;">
+                  <label class="label-input">Vehiculo:</label>
+                  <select name="" id="" class="form-control input-sm">
+                    <option value="">--------SELECIONE-------</option>
+                    <option value="">------Ninguno--------</option>
+                    <option value="">------Edgar Peréz-------</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <div class="  input-daterange" style="text-align: start;">
+                  <label class="label-input">Mot. Traslado:</label>
+                  <select name="" id="" class="form-control input-sm">
+                    <option value="">--------SELECIONE-------</option>
+                    <option value="">------Ninguno--------</option>
+                    <option value="">------Edgar Peréz-------</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label class="label-input">Nro Factura </label>
+                <div class=" input-group input-daterange" style="text-align: start;">             
+                  <input type="number" class="form-control input-sm" id="password" name="number" placeholder="Nro Factura" value=""
+                    required>
+                </div>
+              </div>
+              <div class="form-group col-md-12">
+                <label class="label-input">Observación </label>
+                <div class=" input-group input-daterange" style="text-align: start;">             
+                  <input type="number" class="form-control input-sm" id="password" name="number" placeholder="Observación" value=""
+                    required>
+                </div>
+              </div>          
           </div>
           <div class="row">
      
            
           </div>
         </div>
-        <div class="col-md-12 col-sm-6  col-xs-12">
-          <div class="row">
-            <div class="col-md-12 col-sm-12  col-xs-12">
-              <label class="text-select1" style="float:left; margin-top: 2px;">Descripción:</label>
-              <input class="form-control" style="margin-left:2% !important;vertical-align:middle;float:right">
-              </input>
-            </div>
-          </div>
-        </div>
+     
       </div>
       <div class="row" style=" float:none;
         text-align:center;">

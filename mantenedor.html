@@ -10,6 +10,7 @@
   <link href="mantenedor.css" rel="stylesheet" />
   <link rel="stylesheet" href="ingreso-almacen.css">
   <link rel="stylesheet" href="menu-style.css">
+  <link rel="stylesheet" href="catalogo-articulo.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -61,7 +62,7 @@
         <ul id="inventories_sub_menu" class="hide">
           <li><a href="ingreso-almacen.html">Ingreso a Almacén</a></li>
           <li><a href="salida-almacen.html">Guías de Salida</a></li>
-          <li><a href="">Guías de Remisión</a></li>
+          <li><a href="guia-remisión.html">Guías de Remisión</a></li>
         </ul>
         <li id="report"><a href="#">Reportes <i style="float: right; margin-top:2px;" class="fas fa-caret-down"></i></a>
         </li>
@@ -123,7 +124,7 @@
 
               <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
                 <div class="form-group" style="text-align: start;">
-                  <label class="label-input" style="width: auto;">Código Grupo: </label>
+                  <label class="label-input text-select" style="width: auto;">Código Grupo: </label>
                   <div class="input-group input-daterange">
                     <input type="number" class="form-control input-sm" id="password" name="password"
                       placeholder="Código" required>
@@ -131,7 +132,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-xs-12" style="margin-bottom:1%">
-                <div class="form-group "><label class="label-input" style="width: auto;">Grupo : </label>
+                <div class="form-group "><label class="label-input text-select" style="width: auto;">Grupo : </label>
                   <div class="input-group input-daterange">
                     <input type="text" class="form-control input-sm" id="password" name="password" placeholder="Grupo"
                       required>
@@ -140,7 +141,7 @@
               </div>
 
               <div class="col-md-3">
-                <div class="row" style="justify-content: flex-end; margin-top: 29px;">
+                <div class="row" style="justify-content: flex-end; margin-top: 39px;">
                   <div class="form-group ">
                     <div class="btn-save">
                       <button type="submit" class="btn  btn-sm btn-saves" style="                 height: 46% !important;
@@ -326,7 +327,7 @@
                     <div class="col-sm-5 ">
                       <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
                         Mostrando
-                        0 hasta 0 de 0 registros</div>
+                        1 hasta 5 de 5 registros</div>
                     </div>
                     <div class="col-sm-7" style="display: flex; justify-content: flex-end;">
                       <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
@@ -362,7 +363,7 @@
               style="margin-right: 0;margin-top:10px; margin-top: 9px;  padding: 15px;padding-top: 23px; background: #F1F1F1;margin-top: 5px;border-radius: 5px;margin-left: 10px !important;margin-right: 10px !important; margin-bottom: 20px;">
               <div class="form-group col-md-3">
                 <div class="  input-daterange" style="text-align: start;">
-                  <label class="label-input">Grupo: </label>
+                  <label class="label-input text-select">Grupo: </label>
                   <select name="" id="" class="form-control input-sm">
                     <option value="">------SELECCIONE --------</option>
                     <option value="">------Comida y comedor--------</option>
@@ -376,7 +377,7 @@
 
               <div class="col-md-2 col-xs-12" ng-show="vCmbGrupoxGerente">
                 <div class="form-group">
-                  <label class="label-input" style="width: auto;">Código Clase: </label>
+                  <label class="label-input text-select" style="width: auto;">Código Clase: </label>
                   <div class="input-group input-daterange">
 
                     <input type="number" class="form-control input-sm" id="password" name="password"
@@ -387,7 +388,7 @@
 
 
               <div class="col-md-5 col-xs-12" style="margin-bottom:1%">
-                <div class="form-group "><label class="label-input" style="width: auto;">Clase: </label>
+                <div class="form-group "><label class="label-input text-select" style="width: auto;">Clase: </label>
                   <div class="input-group input-daterange">
                     <input type="text" class="form-control input-sm" id="password" name="password" placeholder="Clase"
                       required>
@@ -398,7 +399,7 @@
               
               <div class="col-md-2">
                 <div class="row"> </div>
-                <div class="row" style="justify-content: flex-end; margin-top: 29px;">
+                <div class="row" style="justify-content: flex-end; margin-top: 39px;">
                   <div class="form-group ">
                     <div class="btn-save">
                       <button type="submit" class="btn  btn-sm btn-saves" style=" height: 46% !important;
@@ -581,7 +582,7 @@
                     <div class="col-sm-5 ">
                       <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
                         Mostrando
-                        0 hasta 0 de 0 registros</div>
+                        1 hasta 5 de 5 registros</div>
                     </div>
                     <div class="col-sm-7" style="display: flex; justify-content: flex-end;">
                       <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
@@ -619,7 +620,7 @@
 
               <div class="form-group col-md-2">
                 <div class="  input-daterange" style="text-align: start;">
-                  <label class="label-input">Grupo: </label>
+                  <label class="label-input text-select">Grupo: </label>
                   <select name="" id="" class="form-control input-sm">
                     <option value="">------SELECCIONE --------</option>
                     <option value="">------Comida y comedor--------</option>
@@ -630,7 +631,7 @@
               </div>
               <div class="form-group col-md-2">
                 <div class="  input-daterange" style="text-align: start;">
-                  <label class="label-input">Clase</label>
+                  <label class="label-input text-select">Clase</label>
                   <select name="" id="" class="form-control input-sm">
                     <option value="">--------SELECIONE-------</option>
                     <option value="">------Equipo de Oficina--------</option>
@@ -642,7 +643,7 @@
 
               <div class="col-md-2 col-xs-12" ng-show="vCmbGrupoxGerente">
                 <div class="form-group">
-                  <label class="label-input" style="width: auto;">Código Familia: </label>
+                  <label class="label-input text-select" style="width: auto;">Código Familia: </label>
                   <div class="input-group input-daterange">
                     <input type="number" class="form-control input-sm" id="password" name="password"
                       placeholder="Código" required>
@@ -651,7 +652,7 @@
               </div>
 
               <div class="col-md-4 col-xs-12" style="margin-bottom:1%">
-                <div class="form-group "><label class="label-input" style="width: auto;">Familia: </label>
+                <div class="form-group "><label class="label-input text-select" style="width: auto;">Familia: </label>
                   <div class="input-group input-daterange">
                     <input type="text" class="form-control input-sm" id="password" name="password" placeholder="Familia"
                       required>
@@ -661,7 +662,7 @@
 
 
               <div class="col-md-2">
-                <div class="row" style="justify-content: flex-end; margin-top: 29px;">
+                <div class="row" style="justify-content: flex-end; margin-top: 39px;">
                   <div class="form-group ">
                     <div class="btn-save">
                       <button type="submit" class="btn  btn-sm btn-saves" style=" height: 46% !important;
@@ -848,7 +849,7 @@
                     <div class="col-sm-5 ">
                       <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
                         Mostrando
-                        0 hasta 0 de 0 registros</div>
+                        1 hasta 5 de 5 registros</div>
                     </div>
                     <div class="col-sm-7" style="display: flex; justify-content: flex-end;">
                       <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">

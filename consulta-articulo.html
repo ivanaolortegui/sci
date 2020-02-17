@@ -37,13 +37,14 @@
         </div>
         <div class="col-md-4 col-sm-4  col-xs-4 text-center"
           style="padding-left: 0 !important; padding-right: 0 !important;">
-          <a id="login"  style="margin-left:100px; margin-top:100px!important;text-decoration:none;color:black;" href=""
+          <a id="login" style="margin-left:100px; margin-top:100px!important;text-decoration:none;color:black;" href=""
             class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-user pull-left " style="font-size: 1.5em;margin-top:10px!important;color:#555"></i>
             <span class=""
               style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px; color:#555">Bienvenido(a):</span>
             <span class=""
-              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Ivana Olortegui</span>
+              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Ivana
+              Olortegui</span>
             <span <i style="margin-right:0px !important;color:#555" class="caret-down"></span>
 
 
@@ -53,7 +54,7 @@
     </div>
     <div class="recta"></div>
 
-  
+
     <div id="menu" class="hide" style="float: left;">
       <div class="title">
         <p>SISTEMA DE LOGÍSTICA</p>
@@ -62,14 +63,14 @@
         <li id="inventories"><a href="#">Inventarios <i style="float: right; margin-top:2px;"
               class="fas fa-caret-down"></i></a></li>
         <ul id="inventories_sub_menu" class="hide">
-            <li><a href="ingreso-almacen.html">Ingreso a Almacén</a></li>
-            <li><a href="salida-almacen.html">Guías de Salida</a></li>
-            <li><a href="">Guías de Remisión</a></li>
+          <li><a href="ingreso-almacen.html">Ingreso a Almacén</a></li>
+          <li><a href="salida-almacen.html">Guías de Salida</a></li>
+          <li><a href="">Guías de Remisión</a></li>
         </ul>
         <li id="report"><a href="#">Reportes <i style="float: right; margin-top:2px;" class="fas fa-caret-down"></i></a>
         </li>
         <ul id="report_sub_menu" class="hide">
-            <li><a href="reporte-guia-salida.html">Reporte de Inventarios</a></li>
+          <li><a href="reporte-guia-salida.html">Reporte de Inventarios</a></li>
           <li><a href="reporte-garantia-vidaUtil.html
             ">Garantía / Vida Útil</a></li>
           <li><a href="stock-almacen.html">Stock de Almacén</a></li>
@@ -78,9 +79,9 @@
         <li id="maintenance"><a href="#">Mantenimiento <i style="float: right; margin-top:2px;"
               class="fas fa-caret-down"></i></a></li>
         <ul id="maintenance_sub_menu" class="hide">
-            <li><a href="catalogo-articulo.html">Registro de Artículo</a></li>
-            <li><a href="mantenedor.html">Artículos</a></li>
-            <li><a href="mantenedor-2.html">Sede</a></li>
+          <li><a href="catalogo-articulo.html">Registro de Artículo</a></li>
+          <li><a href="mantenedor.html">Artículos</a></li>
+          <li><a href="mantenedor-2.html">Sede</a></li>
         </ul>
       </ul>
 
@@ -98,91 +99,93 @@
 
   <div class="container-fluid" style="padding-right: 0 !important;padding-left: 0!important;margin-bottom: 50px;">
     <div class="row headboard">
-                            
+
       <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Consulta de Artículo</p>
-  
-</div>
-<div class="row" style="background:  #F1F1F1;margin-top: 5px; border-radius: 5px; margin-left: 0px !important;margin-right: 0px !important;">
-  <div class="col-md-5 col-sm-6  col-xs-12" style="margin-bottom:15px;">
-      <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Local:</label>
-      <select class="form-control select-size">
-        <option value=""> ------ Seleccione ------ </option>
+
+    </div>
+    <div class="row"
+      style="background:  #F1F1F1;margin-top: 5px; border-radius: 5px; margin-left: 13px !important;margin-right: 13px !important;">
+      <div class="col-md-5 col-sm-6  col-xs-12" style="margin-bottom:15px;">
+        <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Local:</label>
+        <select class="form-control select-size">
+          <option value=""> ------ Seleccione ------ </option>
           <option value="3" class="ng-binding ng-scope">Centro Histórico – Lima </option>
           <option value="3" class="ng-binding ng-scope">San Isidro – Lima </option>
           <option value="3" class="ng-binding ng-scope">San Borja – Lima </option>
-      </select>
-  </div>
-  <div class="col-md-5 col-sm-6  col-xs-12" style="margin-bottom:15px;">
-      <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Almacén:</label>
-      <select class="form-control select-size">
-       
-        <option value=""> ------ Seleccione ------ </option>
-        <option value="">------ADMINISTRADOR DE DATA CENTER & NETWORKING--------</option>
-        <option value="">------ADMINISTRADOR DE HELPDESK--------</option>
-        <option value="">------ALMACÉN HELPDESK--------</option>
-      </select>
-  </div>
-<div class="col-md-2 col-sm-12  col-xs-12" style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:15px; float: none;text-align: center;">
-<button type="submit" class="btn  btn-sm btn-saves" style=" padding:7px 11px;
-        margin-top: 0px !important;" align="right"><i class="fas fa-search"></i>&nbsp;Consultar</button>
-</div>
-</div>
-<div class="row">
-  <div class="col-md-12 col-xs-12">
-      <div class="table-responsive">
-          <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-              <div class="row" style="width: 100%;">
-                  <div class="col-md-6 col-sm-6  col-xs-6">
-                      <div id="DataTables_Table_0_filter" class="dataTables_filter" style="float:left"><label
-                              style="          margin: 25px;margin-bottom: 5px!important; margin-left: 20px !important;
-        ">Buscar:<input type="search" class="form-control" placeholder=""
-                                  style="margin-left:0px;width: 300px"></label>
-                      </div>
-                  </div>
-                  <div class="col-md-6 col-sm-6  col-xs-6 ">
-                      <div class="dataTables_length" id="DataTables_Table_0_length"
-                          style="float:right; margin: 25px;margin-bottom: 5px!important;margin-right: 5px !important;">
-                          <label>Ver
-                              <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
-                                  class="form-control" style="margin-left:10px;margin-right:10px;">
-                                  <option value="10">10</option>
-                                  <option value="25">25</option>
-                                  <option value="50">50</option>
-                                  <option value="100">100</option>
-                              </select> Líneas</label>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        </select>
       </div>
-  </div>
-</div>
+      <div class="col-md-5 col-sm-6  col-xs-12" style="margin-bottom:15px;">
+        <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Almacén:</label>
+        <select class="form-control select-size">
+
+          <option value=""> ------ Seleccione ------ </option>
+          <option value="">------TODOS-------</option>
+          <option value="">------ADMINISTRADOR DE HELPDESK--------</option>
+          <option value="">------ALMACÉN HELPDESK--------</option>
+        </select>
+      </div>
+      <div class="col-md-2 col-sm-12  col-xs-12"
+        style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:15px; float: none;text-align: center;">
+        <button type="submit" class="btn  btn-sm btn-saves" style=" padding:7px 11px;
+        margin-top: 0px !important;" align="right"><i class="fas fa-search"></i>&nbsp;Consultar</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+        <div class="table-responsive">
+          <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+            <div class="row" style="width: 100%;">
+              <div class="col-md-6 col-sm-6  col-xs-6">
+                <div id="DataTables_Table_0_filter" class="dataTables_filter" style="float:left"><label
+                    style=" margin: 25px;margin-bottom: 5px!important; margin-left: 20px !important;">Buscar:
+                    <input type="search" class="form-control" placeholder=""
+                      style="margin-left:0px;width: 300px"></label>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6  col-xs-6 ">
+                <div class="dataTables_length" id="DataTables_Table_0_length"
+                  style="float:right; margin: 25px;margin-bottom: 5px!important;margin-right: 5px !important;">
+                  <label>Ver
+                    <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-control"
+                      style="margin-left:10px;margin-right:10px;">
+                      <option value="10">10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                    </select> Líneas</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-12 col-xs-12">
         <div class="table-responsive">
           <div class="col-sm-12">
             <table
               class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
-              datatable="ng" dt-options="showCase.dtOptions" style="display: table;"
-              id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+              datatable="ng" dt-options="showCase.dtOptions" style="display: table;" id="DataTables_Table_0" role="grid"
+              aria-describedby="DataTables_Table_0_info">
               <thead style="background:  #F1F1F1">
                 <tr role="row">
                   <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
                     colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending"
-                    style="width: 79px;">
+                    style="width: 99px;">
                     Código
                   </th>
-                  <th class="text-left sorting" style="width: 50px;" tabindex="0" aria-controls="DataTables_Table_0"
-                    rowspan="1" colspan="1" aria-label="Código: activate to sort column ascending">Código de Fabricación
+                  <th class="text-center sorting" style="width: 150px;" tabindex="0" aria-controls="DataTables_Table_0"
+                    rowspan="1" colspan="1" aria-label="Código: activate to sort column ascending">Código Patrimonial
                   </th>
 
-                  <th class="text-center sorting" ng-show="vColUsuario" style="width: 300px;" tabindex="0"
+                  <th class="text-center sorting" ng-show="vColUsuario" style="width: 450px;" tabindex="0"
                     aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
                     aria-label="Usuario: activate to sort column ascending">Artículo</th>
                   <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                    colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending" style="width: 50;">
+                    colspan="1" aria-label="Tipo de Solicitud: activate to sort column ascending" style="width: 90px;"  >
                     Marca</th>
-                  <th class="text-center sorting" style="width: 50px;" tabindex="0" aria-controls="DataTables_Table_0"
+                  <th class="text-center sorting" style="width: 90px;" tabindex="0" aria-controls="DataTables_Table_0"
                     rowspan="1" colspan="1" aria-label="Acción: activate to sort column ascending">U/M</th>
                   <th class="text-center sorting" style="width: 95px;" tabindex="0" aria-controls="DataTables_Table_0"
                     rowspan="1" colspan="1" aria-label="Acción: activate to sort column ascending">Stock</th>
@@ -365,43 +368,45 @@
             <strong>002874220051 - ÁNTENA INALÁMBRICA</strong>
             <div class="row" style=" float:none;
         text-align:right;">
-            <div class="col-md-12 col-sm-12  col-xs-12"
-            style="padding-left: 0 !important;padding-right: 40px !important;float:right !important;margin-bottom: 10px; margin-top:15px; ">
-            <button style="
-            margin-top: 8px !important;font-size: 16px; " class="btn btn-sm btn-out"><i class="fas fa-arrow-left"></i>&nbsp;Salir</button>
-            <button style="
-            margin-top: 8px !important; font-size: 16px;" class="btn btn-sm btn-record"><i></i>&nbsp;Ver Kardex</button>
+              <div class="col-md-12 col-sm-12  col-xs-12"
+                style="padding-left: 0 !important;padding-right: 40px !important;float:right !important;margin-bottom: 10px; margin-top:15px; ">
+                <button style="
+            margin-top: 8px !important;font-size: 16px; " class="btn btn-sm btn-out"><i
+                    class="fas fa-arrow-left"></i>&nbsp;Salir</button>
+                <button style="
+            margin-top: 8px !important; font-size: 16px;" class="btn btn-sm btn-record"><i></i>&nbsp;Ver
+                  Kardex</button>
 
 
-        </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
 
 
-  <footer class=" sky-blue-ses" style="position:fixed;
+    <footer class=" sky-blue-ses" style="position:fixed;
   left:0px;
   bottom:0px;
   height:25px;
   width:100%;">
-    <div class="col-md-12 col-xs-12">
-      <p style="margin:5px;" class="text-center font-color-white">© 2019 - 2020 SES - Sistema Logístico 1.0 -
-        Todos los derechos reservados</p>
-    </div>
-  </footer>
+      <div class="col-md-12 col-xs-12">
+        <p style="margin:5px;" class="text-center font-color-white">© 2019 - 2020 SES - Sistema Logístico 1.0 -
+          Todos los derechos reservados</p>
+      </div>
+    </footer>
 
 
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -63,7 +63,7 @@
         <ul id="inventories_sub_menu" class="hide">
           <li><a href="ingreso-almacen.html">Ingreso a Almacén</a></li>
           <li><a href="salida-almacen.html">Guías de Salida</a></li>
-          <li><a href="">Guías de Remisión</a></li>
+          <li><a href="guia-remisión.html">Guías de Remisión</a></li>
         </ul>
         <li id="report"><a href="#">Reportes <i style="float: right; margin-top:2px;" class="fas fa-caret-down"></i></a>
         </li>
@@ -120,18 +120,10 @@
           <div class="container-fluid ng-scope">
             <div class="row"
               style="background:  #F1F1F1;margin-top: 5px; border-radius: 5px; margin-left: 0px !important;margin-right: 0px !important;">
+           
               <div class="col-md-4 col-sm-6  col-xs-12" style="margin-bottom:15px;">
                 <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Edicio:</label>
-                <select name="" id="" class="form-control input-sm select-size">
-                  <option value="">--------SELECIONE-------</option>
-                  <option value="">------EDIFICIO CERCADO DE LIMA--------</option>
-                  <option value="">------EDIFICIO VILLA MARIA DEL TRIUNFO--------</option>
-                  <option value="">------EDIFICIO MIRAFLORES--------</option>
-                </select>
-              </div>
-              <div class="col-md-4 col-sm-6  col-xs-12" style="margin-bottom:15px;">
-                <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Edicio:</label>
-                <select name="" id="" class="form-control input-sm select-size">
+                <select name="" id="" class="form-control input-sm ">
                   <option value="">--------SELECIONE-------</option>
                   <option value="">------ADMINISTRADOR DE DATA CENTER & NETWORKING--------</option>
                   <option value="">------ADMINISTRADOR DE HELPDESK--------</option>
@@ -139,15 +131,29 @@
                 </select>
               </div>
 
-              <div class="col-md-2 col-sm-6  col-xs-12" style="margin-top: 8px;">
-                <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Código:</label>
-                <input class="form-control select-size">
-                </input>
-
+              <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                <div class="form-group" style="text-align: start;">
+                  <label class="label-input text-select" style="width: auto;">Código Ambiente: </label>
+                  <div class="input-group input-daterange">
+                    <input type="number" class="form-control input-sm" id="password" name="password"
+                      placeholder="Código" required>
+                  </div>
+                </div>
+              </div>
+              
+             <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                <div class="form-group" style="text-align: start;">
+                  <label class="label-input text-select" style="width: auto;">Descripción: </label>
+                  <div class="input-group input-daterange">
+                    <input type="text" class="form-control input-sm" id="password" name="password"
+                      placeholder="Descripción" required>
+                  </div>
+                </div>
               </div>
               <div class="col-md-2 col-sm-12  col-xs-12"
-                style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:15px; float: none;text-align: center;">
+                style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:15px; float: none;text-align: end;">
                 <div class="form-group ">
+                  <label class="label-input text-select" style="width: auto;"></label>
                   <div class="btn-save">
                     <button type="submit" class="btn  btn-sm btn-saves" style="height: 46% !important;
                         margin-top: 8px !important; " align="right" data-toggle="modal"
@@ -165,16 +171,9 @@
                 <div class="table-responsive">
                   <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
                     <div class="row" style="width: 100%;">
-                      <div class="col-md-6 col-sm-6  col-xs-6">
-                        <div id="DataTables_Table_0_filter" class="dataTables_filter" style="float:left"><label style="
-                      margin: 25px;margin-bottom: 5px!important; margin-left: 5px !important;
-                    ">Buscar:<input type="search" class="form-control" placeholder=""
-                              style="margin-left:0px;width: 300px"></label>
-                        </div>
-                      </div>
                       <div class="col-md-6 col-sm-6  col-xs-6 ">
                         <div class="dataTables_length" id="DataTables_Table_0_length"
-                          style="float:right; margin: 25px;margin-bottom: 5px!important;margin-right: 5px !important;">
+                          style="float: left;; margin: 25px;margin-bottom: 5px!important;margin-right: 5px !important;">
                           <label>Ver
                             <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
                               class="form-control" style="margin-left:10px;margin-right:10px;">
@@ -185,6 +184,14 @@
                             </select> Líneas</label>
                         </div>
                       </div>
+                      <div class="col-md-6 col-sm-6  col-xs-6">
+                        <div id="DataTables_Table_0_filter" class="dataTables_filter" style="float:right"><label style="
+                      margin: 25px 0;margin-bottom: 5px!important; margin-left: 5px !important;
+                    ">Buscar:<input type="search" class="form-control" placeholder=""
+                              style="margin-left:0px;"></label>
+                        </div>
+                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -326,7 +333,7 @@
                 <div class="row" style="margin-left:25px;margin-right:25px;margin-bottom:10px;">
                   <div class="col-md-6 col-sm-6  col-xs-6"
                     style="padding-left: 0 !important;padding-right: 0 !important;">
-                    <p>Mostrando 0 hasta 0 de 0 registros</p>
+                    <p>Mostrando 1 hasta 5 de 5 registros</p>
                   </div>
                   <div class="col-md-6 col-sm-6  col-xs-6"
                     style="padding-left: 0 !important;padding-right:0;float:right !important;">
@@ -353,47 +360,49 @@
           <div class="container-fluid ng-scope">
             <div class="row"
               style="background:  #F1F1F1;margin-top: 5px; border-radius: 5px; margin-left: 0px !important;margin-right: 0px !important;">
-              <div class="col-md-5 col-sm-6  col-xs-12" style="margin-bottom:15px;">
-                <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Código:</label>
-                <input class="form-control select-size">
-                </input>
-
-              </div>
-              <div class="col-md-5 col-sm-6  col-xs-12" style="margin-bottom:15px;">
-                <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Descripción:</label>
-                <input class="form-control select-size">
-                </input>
-              </div>
-              <div class="col-md-2 col-sm-12  col-xs-12"
-                style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:15px; float: none;text-align: center;">
-                <div class="form-group">
-                  <div class="btn-save">
-                    <button type="submit" class="btn  btn-sm btn-saves" style="height: 46% !important;
-                        margin-top: 8px !important; " align="right" data-toggle="modal"
-                      data-target=".bd-example-modal-edificio"><i class="fa fa-plus"></i>&nbsp;Registrar</button>
-                    <button type="submit" class="btn btn-sm btn-default" style=" 
-                           height: 46% !important;
-                           margin-top: 8px !important; " align="right"><i
-                        class="fa fa-search"></i>&nbsp;Consultar</button>
+             
+              <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                <div class="form-group" style="text-align: start;">
+                  <label class="label-input text-select" style="width: auto;">Código Ambiente: </label>
+                  <div class="input-group input-daterange">
+                    <input type="number" class="form-control input-sm" id="password" name="password"
+                      placeholder="Código" required>
                   </div>
                 </div>
               </div>
+              <div class="col-md-5 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                <div class="form-group" style="text-align: start;">
+                  <label class="label-input text-select" style="width: auto;">Descripción: </label>
+                  <div class="input-group input-daterange">
+                    <input type="text" class="form-control input-sm" id="password" name="password"
+                      placeholder="Descripción" required>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12  col-xs-12"
+              style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:15px; float: none;text-align:end;">
+              <div class="form-group ">
+                <label class="label-input text-select" style="width: auto;"></label>
+                <div class="btn-save">
+                  <button type="submit" class="btn  btn-sm btn-saves" style="height: 46% !important;
+                      margin-top: 8px !important; " align="right" data-toggle="modal"
+                    data-target=".bd-example-modal-sm"><i class="fa fa-plus"></i>&nbsp;Registrar</button>
+                  <button type="submit" class="btn btn-sm btn-default" style=" 
+                         height: 46% !important;
+                         margin-top: 8px !important; " align="right"><i
+                      class="fa fa-search"></i>&nbsp;Consultar</button>
+                </div>
+              </div>
+            </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-xs-12">
                 <div class="table-responsive">
                   <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
                     <div class="row" style="width: 100%;">
-                      <div class="col-md-6 col-sm-6  col-xs-6">
-                        <div id="DataTables_Table_0_filter" class="dataTables_filter" style="float:left"><label style="
-                      margin: 25px;margin-bottom: 5px!important; margin-left: 5px !important;
-                    ">Buscar:<input type="search" class="form-control" placeholder=""
-                              style="margin-left:0px;width: 300px"></label>
-                        </div>
-                      </div>
                       <div class="col-md-6 col-sm-6  col-xs-6 ">
                         <div class="dataTables_length" id="DataTables_Table_0_length"
-                          style="float:right; margin: 25px;margin-bottom: 5px!important;margin-right: 5px !important;">
+                          style="float: left;; margin: 25px;margin-bottom: 5px!important;margin-right: 5px !important;">
                           <label>Ver
                             <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
                               class="form-control" style="margin-left:10px;margin-right:10px;">
@@ -404,6 +413,14 @@
                             </select> Líneas</label>
                         </div>
                       </div>
+                      <div class="col-md-6 col-sm-6  col-xs-6">
+                        <div id="DataTables_Table_0_filter" class="dataTables_filter" style="float:right"><label style="
+                      margin: 25px 0;margin-bottom: 5px!important; margin-left: 5px !important;
+                    ">Buscar:<input type="search" class="form-control" placeholder=""
+                              style="margin-left:0px"></label>
+                        </div>
+                      </div>
+                   
                     </div>
                   </div>
                 </div>
@@ -546,7 +563,7 @@
                 <div class="row" style="margin-left:25px;margin-right:25px;margin-bottom:10px">
                   <div class="col-md-6 col-sm-6  col-xs-6"
                     style="padding-left: 0 !important;padding-right: 0 !important;">
-                    <p>Mostrando 0 hasta 0 de 0 registros</p>
+                    <p>Mostrando 1 hasta 5 de 5 registros</p>
                   </div>
                   <div class="col-md-6 col-sm-6  col-xs-6"
                     style="padding-left: 0 !important;padding-right:0;float:right !important;">
@@ -570,60 +587,68 @@
           <div class="container-fluid ng-scope">
             <div class="row"
               style="background:  #F1F1F1;margin-top: 5px; border-radius: 5px; margin-left: 0px !important;margin-right: 0px !important;">
-              <div class="col-md-4 col-sm-6  col-xs-12" style="margin-bottom:15px;">
+            
+              <div class="col-md-2 col-sm-6  col-xs-12" style="margin-bottom:15px;">
                 <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Edicio:</label>
-                <select name="" id="" class="form-control input-sm select-size">
+                <select name="" id="" class="form-control input-sm ">
                   <option value="">--------SELECIONE-------</option>
                   <option value="">------ADMINISTRADOR DE DATA CENTER & NETWORKING--------</option>
                   <option value="">------ADMINISTRADOR DE HELPDESK--------</option>
                   <option value="">------ALMACÉN HELPDESK--------</option>
                 </select>
               </div>
-              <div class="col-md-4 col-sm-6  col-xs-12" style="margin-bottom:15px;">
-                <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Piso:</label>
-                <select name="" id="" class="form-control input-sm select-size">
+
+              <div class="col-md-2 col-sm-6  col-xs-12" style="margin-bottom:15px;">
+                <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Ambiente:</label>
+                <select name="" id="" class="form-control input-sm ">
                   <option value="">--------SELECIONE-------</option>
                   <option value="">------	ALMACÉN ADM--------</option>
                   <option value="">------ALMACÉN EUS--------</option>
                   <option value="">------OFIC. 200 - PISO 2--------</option>
                 </select>
               </div>
-              <div class="col-md-2 col-sm-6  col-xs-12" style="margin-top: 8px;">
-                <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Código:</label>
-                <input class="form-control select-size">
-                </input>
-
+          
+              <div class="col-md-2  col-xs-12" style="margin-bottom:15px;">
+                <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Código Piso: </label>
+                <div class="input-group input-daterange">
+                  <input type="number" class="form-control input-sm" id="password" name="password"
+                    placeholder="Código" required>
+                </div>
               </div>
-              <div class="col-md-2 col-sm-12  col-xs-12"
-                style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:15px; float: none;text-align: center;">
-                <div class="form-group ">
-                  <div class="btn-save">
-                    <button type="submit" class="btn  btn-sm btn-saves" style="                 height: 46% !important;
-                        margin-top: 8px !important; " align="right" data-toggle="modal"
-                      data-target=".bd-example-modal-piso"><i class="fa fa-plus"></i>&nbsp;Registrar</button>
-                    <button type="submit" class="btn btn-sm btn-default" style=" 
-                           height: 46% !important;
-                           margin-top: 8px !important; " align="right"><i
-                        class="fa fa-search"></i>&nbsp;Consultar</button>
+               <div class="col-md-4 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+                <div class="form-group" style="text-align: start;">
+                  <label class="label-input text-select " style="width: auto;">Descripción: </label>
+                  <div class="input-group input-daterange">
+                    <input type="text" class="form-control input-sm" id="password" name="password"
+                      placeholder="Descripción" required>
                   </div>
                 </div>
               </div>
+            
+              <div class="col-md-2 col-sm-12  col-xs-12"
+              style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:14px; float: none;text-align: end;">
+              <div class="form-group ">
+                <label class="label-input text-select" style="width: auto;"></label>
+                <div class="btn-save">
+                  <button type="submit" class="btn  btn-sm btn-saves" style="height: 46% !important;
+                      margin-top: 8px !important; " align="right" data-toggle="modal"
+                    data-target=".bd-example-modal-sm"><i class="fa fa-plus"></i>&nbsp;Registrar</button>
+                  <button type="submit" class="btn btn-sm btn-default" style=" 
+                         height: 46% !important;
+                         margin-top: 8px !important; " align="right"><i
+                      class="fa fa-search"></i>&nbsp;Consultar</button>
+                </div>
+              </div>
+            </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-xs-12">
                 <div class="table-responsive">
                   <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
                     <div class="row" style="width: 100%;">
-                      <div class="col-md-6 col-sm-6  col-xs-6">
-                        <div id="DataTables_Table_0_filter" class="dataTables_filter" style="float:left"><label style="
-                      margin: 25px;margin-bottom: 5px!important; margin-left: 5px !important;
-                    ">Buscar:<input type="search" class="form-control" placeholder=""
-                              style="margin-left:0px;width: 300px"></label>
-                        </div>
-                      </div>
                       <div class="col-md-6 col-sm-6  col-xs-6 ">
                         <div class="dataTables_length" id="DataTables_Table_0_length"
-                          style="float:right; margin: 25px;margin-bottom: 5px!important;margin-right: 5px !important;">
+                          style="float: left;; margin: 25px;margin-bottom: 5px!important;margin-right: 5px !important;">
                           <label>Ver
                             <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
                               class="form-control" style="margin-left:10px;margin-right:10px;">
@@ -634,6 +659,14 @@
                             </select> Líneas</label>
                         </div>
                       </div>
+                      <div class="col-md-6 col-sm-6  col-xs-6">
+                        <div id="DataTables_Table_0_filter" class="dataTables_filter" style="float: right;"><label style="
+                      margin: 25px;margin-bottom: 5px!important; margin-left: 5px !important;
+                    ">Buscar:<input type="search" class="form-control" placeholder=""
+                              style="margin-left:0px"></label>
+                        </div>
+                      </div>
+                     
                     </div>
                   </div>
                 </div>
@@ -777,7 +810,7 @@
                 <div class="row" style="margin-left:25px;margin-right:25px;margin-bottom:10px">
                   <div class="col-md-6 col-sm-6  col-xs-6"
                     style="padding-left: 0 !important;padding-right: 0 !important;">
-                    <p>Mostrando 0 hasta 0 de 0 registros</p>
+                    <p>Mostrando 1 hasta 5 de 5 registros</p>
                   </div>
                   <div class="col-md-6 col-sm-6  col-xs-6"
                     style="padding-left: 0 !important;padding-right:0;float:right !important;">

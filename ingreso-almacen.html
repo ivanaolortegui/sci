@@ -40,7 +40,8 @@
             <span class=""
               style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px; color:#555">Bienvenido(a):</span>
             <span class=""
-              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Ivana Olortegui</span>
+              style="font-weight: 700; margin-right: 10px; font-style:normal; font-size:14px;color:#555">Ivana
+              Olortegui</span>
             <span <i style="margin-right:0px !important;color:#555" class="caret-down"></span>
 
 
@@ -60,7 +61,7 @@
         <ul id="inventories_sub_menu" class="hide">
           <li><a href="ingreso-almacen.html">Ingreso a Almacén</a></li>
           <li><a href="salida-almacen.html">Guías de Salida</a></li>
-          <li><a href="">Guías de Remisión</a></li>
+          <li><a href="guia-remisión.html">Guías de Remisión</a></li>
         </ul>
         <li id="report"><a href="#">Reportes <i style="float: right; margin-top:2px;" class="fas fa-caret-down"></i></a>
         </li>
@@ -105,13 +106,13 @@
           style="margin-right: 0px; margin-top:15px; background: #F1F1F1;margin-top: 5px; border-radius: 5px; margin-left: 10px !important;margin-right: 10px !important; padding-top: 20px; margin-bottom: 24px;">
 
           <div class="col-md-4 col-xs-12" ng-show="vCmbGrupoxGerente">
-          
+
 
             <div class="row">
               <div class="form-group col-md-6">
                 <label class="label-input">Serie/Número: </label>
                 <div class="input-group input-daterange">
-                
+
                   <input type="number"
                     class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
                     ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="3" placeholder="Serie"
@@ -128,7 +129,7 @@
               <div class="form-group col-md-6">
                 <label class="label-input">Almacén:</label>
                 <div class=" input-group input-daterange" style="text-align: start;">
-                 
+
                   <select name="" id="" class="form-control input-sm">
                     <option value="">------SELECCIONE --------</option>
                     <option value="">------ALMACÉN ADM--------</option>
@@ -138,38 +139,38 @@
             </div>
 
             <div class="row">
-            
-            
+
+
             </div>
 
           </div>
 
           <div class="col-md-4 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
-            
+
 
 
             <div class="row">
-          
+
             </div>
             <div class="row">
-             
-             
+
+
               <div class="form-group col-md-6" style="text-align: start;">
                 <label class="label-input">Fecha Doc. </label>
                 <div class="input-group input-daterange">
                   <div class="input-group-addon">
-                      <i class="fa fa-calendar cls-PunteroIcono" ng-click="BuscaFechaFin = '' "></i>
+                    <i class="fa fa-calendar cls-PunteroIcono" ng-click="BuscaFechaFin = '' "></i>
                   </div>
                   <input type="text" class="form-control letranatura" ng-model="BuscaFechaFin" id="FechaFin">
-              </div>
+                </div>
               </div>
 
-              
+
 
               <div class="form-group col-md-6" style="text-align: start;">
                 <label class="label-input">Proveedor:</label>
                 <div class=" input-group input-daterange" style="text-align: start;">
-                 
+
                   <select name="" id="" class="form-control input-sm">
                     <option value="">------SELECCIONE --------</option>
                     <option value="">---INDUSTRIALES DEL VALLE S.A.---</option>
@@ -186,29 +187,33 @@
 
 
           <div class="col-md-4 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
-           
+
 
             <div class="row">
               <div class="form-group col-md-12">
-                <label class="label-input">  </label>
+                <label class="label-input"> </label>
                 <div class="btn-save" style="justify-content: flex-end;">
-                  <a href="registrar-ingreso-almacen.html">  <button type="submit" class="btn  btn-sm btn-saves" style=" 
+                  <a href="registrar-ingreso-almacen.html"> <button type="submit" class="btn  btn-sm btn-saves" style=" 
                       height: 46% !important;
-                      margin-top: 8px !important; " align="right"><i class="fa fa-plus"></i>&nbsp;Registrar</button></a>
-                         <button type="submit" class="btn btn-sm btn-default" style=" 
+                      margin-top: 8px !important; " align="right"><i
+                        class="fa fa-plus"></i>&nbsp;Registrar</button></a>
+                  <button type="submit" class="btn btn-sm btn-default" style=" 
                          height: 46% !important;
-                         margin-top: 8px !important; " align="right"><i class="fa fa-search"></i>&nbsp;Consultar</button>
+                         margin-top: 8px !important; " align="right"><i
+                      class="fa fa-search"></i>&nbsp;Consultar</button>
                 </div>
               </div>
-            
+
             </div>
-                      </div>
+          </div>
         </div>
 
 
         <div class="row cls-content-ctrl-ses">
           <div class="table-responsive">
-            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer" style="
+            margin: 0px 13px;
+        ">
               <div class="row" style="width: 100%;     
                       margin-bottom: 10px; margin-left:0px ">
                 <div class="col-sm-7 ">
@@ -394,17 +399,17 @@
                       <li class="paginate_button previous disabled " id="DataTables_Table_0_previous"><a href="#"
                           class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
                           tabindex="0">Anterior</a></li>
-                          <li class="paginate_button previous disabled btn-pag-number" id="DataTables_Table_0_previous"><a href="#"
-                            class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
-                            tabindex="0">1</a></li>
+                      <li class="paginate_button previous disabled btn-pag-number" id="DataTables_Table_0_previous"><a
+                          href="#" class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="0"
+                          tabindex="0">1</a></li>
                       <li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#"
                           class="btn btn-pag" aria-controls="DataTables_Table_0" data-dt-idx="1"
                           tabindex="0">Siguiente</a></li>
                     </ul>
                   </div>
                 </div>
-           
-                
+
+
               </div>
             </div>
             <h3 class="dt-loading" style="display: none;">Loading...</h3>

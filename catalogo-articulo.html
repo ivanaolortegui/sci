@@ -34,8 +34,8 @@
         <div class="col-md-5 col-sm-5  col-xs-4 text-center ">
 
         </div>
-        <div class="col-md-4 col-sm-4  col-xs-4 text-center"
-          style="padding-left: 0 !important; padding-right: 0 !important;">
+        <div class="col-md-4 col-sm-4  col-xs-4 "
+          style="padding-left: 0 !important; text-align: end;">
           <a id="login" style="margin-left:100px; margin-top:100px!important;text-decoration:none;color:black;" href=""
             class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-user pull-left " style="font-size: 1.5em;margin-top:10px!important;color:#555"></i>
@@ -64,7 +64,7 @@
         <ul id="inventories_sub_menu" class="hide">
           <li><a href="ingreso-almacen.html">Ingreso a Almacén</a></li>
           <li><a href="salida-almacen.html">Guías de Salida</a></li>
-          <li><a href="">Guías de Remisión</a></li>
+          <li><a href="guia-remisión.html">Guías de Remisión</a></li>
         </ul>
         <li id="report"><a href="#">Reportes <i style="float: right; margin-top:2px;" class="fas fa-caret-down"></i></a>
         </li>
@@ -111,7 +111,7 @@
 
           <option value=""> ------ Seleccione ------ </option>
           <option value="3" class="ng-binding ng-scope">Codigo Interno </option>
-     
+
         </select>
       </div>
       <div class="col-md-5 col-sm-6  col-xs-12" style="margin-bottom:15px;">
@@ -120,11 +120,11 @@
 
           <option value=""> ------ Seleccione ------ </option>
           <option value="3" class="ng-binding ng-scope">Vigentes </option>
-     
+
         </select>
       </div>
       <div class="col-md-2 col-sm-12  col-xs-12"
-        style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:15px; float: none;text-align: center;">
+        style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:20px; float: none;text-align: end;">
         <a style="
             margin-top: 8px !important;" class="btn btn-sm btn-registrar" href="registrar-artículo.html"><i
             class="fa fa-plus"></i>&nbsp;Registrar</a>
@@ -139,16 +139,10 @@
         <div class="table-responsive">
           <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
             <div class="row" style="width: 100%;">
-              <div class="col-md-6 col-sm-6  col-xs-6">
-                <div id="DataTables_Table_0_filter" class="dataTables_filter" style="float:left"><label style="
-                    margin: 25px;margin-bottom: 5px!important;
-                  ">Buscar:<input type="search" class="form-control" placeholder=""
-                      style="margin-left:10px;width: 300px"></label>
-                </div>
-              </div>
+
               <div class="col-md-6 col-sm-6  col-xs-6 ">
                 <div class="dataTables_length" id="DataTables_Table_0_length"
-                  style="float:right; margin: 25px;margin-bottom: 5px!important;">
+                  style="float: left;; margin: 25px;margin-bottom: 5px!important;">
                   <label>Ver
                     <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-control"
                       style="margin-left:10px;margin-right:10px;">
@@ -157,6 +151,12 @@
                       <option value="50">50</option>
                       <option value="100">100</option>
                     </select> Líneas</label>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6  col-xs-6">
+                <div id="DataTables_Table_0_filter" class="dataTables_filter" style="float: right;"><label style="
+                    margin: 25px 0;margin-bottom: 5px!important;
+                  ">Buscar:<input type="search" class="form-control" placeholder="" style="margin-left:10px"></label>
                 </div>
               </div>
             </div>
@@ -174,17 +174,17 @@
               <tr role="row">
                 <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
                   colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending"
-                  style="width: 50px;">                  Código                  <span class="fa fa-sort"></span>
+                  style="width: 50px;"> Código <span class="fa fa-sort"></span>
                 </th>
-                <th class="text-left sorting" style="width: 50px;" tabindex="0" aria-controls="DataTables_Table_0"
-                  rowspan="1" colspan="1" aria-label="Código: activate to sort column ascending">Código Interno</th>
+                <th class="text-center sorting" style="width: 50px;" tabindex="0" aria-controls="DataTables_Table_0"
+                  rowspan="1" colspan="1" aria-label="Código: activate to sort column ascending">Código Patrimonial</th>
 
                 <th class="text-center sorting" ng-show="vColUsuario" tabindex="0" aria-controls="DataTables_Table_0"
                   rowspan="1" colspan="1" aria-label="Usuario: activate to sort column ascending" style="width: 320px;">
                   Artículo
                 </th>
                 <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                  aria-label="Tipo de Solicitud: activate to sort column ascending"style="width: 50px;">Modelo</th>
+                  aria-label="Tipo de Solicitud: activate to sort column ascending" style="width: 50px;">Modelo</th>
                 <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
                   aria-label="Tipo de Solicitud: activate to sort column ascending" style="width: 50px;">Tipo</th>
                 <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
@@ -309,7 +309,7 @@
 
       </div>
     </div>
-    <div class="row" style=" float:none;
+    <!--    <div class="row" style=" float:none;
         text-align:center;">
       <div class="col-md-12 col-sm-12  col-xs-12"
         style="padding-left: 0 !important;padding-right: 40px !important;float:right !important;margin-bottom: 10px; margin-top:15px; ">
@@ -323,16 +323,9 @@
 
       </div>
 
-      <!-- <div class="col-md-6 col-sm-6  col-xs-6" style="padding-left: 0 !important;"> 
-                <button class="btn-salir"></button>
-            </div>
-            <div class="col-md-6 col-sm-6  col-xs-6" style="padding-left: 0 !important;">
-                <button class="btn-historial">Ver Historial <img class="poligono-blanco" src="img/Polygon 32.png"
-                        alt=""></button>
-            </div>
-        </div> -->
+    
 
-    </div>
+    </div> -->
 
 
     <footer class=" sky-blue-ses" style="position:fixed;
