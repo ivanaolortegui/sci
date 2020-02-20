@@ -105,7 +105,7 @@
       style="padding-left: 0px !important; padding-right: 0px !important;margin-bottom: 50px;">
       <div class="row headboard">
 
-        <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Registrar Guía de Salida</p>
+        <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Registrar Guía de Remisión</p>
 
       </div>
       <br>
@@ -127,7 +127,7 @@
                 <input type="number"
                   class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
                   ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value=""
-                  placeholder="Comprobante" maxlength="5"
+                  placeholder="Número" maxlength="5"
                   oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   ng-pattern="/^-?[0-9][^\.]*$/">
               </div>
@@ -172,22 +172,7 @@
               </div>
             </div>
 
-            <div class="form-group col-md-6">
-              <label class="label-input">Asociar: </label>
-              <div class=" input-group input-daterange" style="text-align: start;">
-                <select name="" id="" class="form-control input-sm">
-                  <option value="">---SELECCIONE---</option>
-                  <option value="">---NINGUNO---</option>
-
-                </select>
-
-                <input type="number" class="form-control input-sm" id="password" name="number" placeholder="" value=""
-                  required>
-                <button style="font-size: 16px;" class="btn btn-sm btn-record"><i></i>&nbsp;Buscar</button>
-
-              </div>
-
-            </div>
+     
           </div>
 
 

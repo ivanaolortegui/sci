@@ -105,15 +105,16 @@
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
         <a class="nav-item nav-link active" id="nav-contact-tab" data-toggle="tab" href="#nav-edificio" role="tab"
           aria-controls="nav-edificio" aria-selected="false">Edificio</a>
-        <a class="nav-item nav-link" id="nav-ambiente-tab" data-toggle="tab" href="#nav-ambiente" role="tab"
-          aria-controls="nav-ambiente" aria-selected="false">Ambiente</a>
+       
         <a class="nav-item nav-link" id="nav-piso-tab" data-toggle="tab" href="#nav-piso" role="tab"
           aria-controls="nav-piso" aria-selected="false">Piso</a>
+          <a class="nav-item nav-link" id="nav-ambiente-tab" data-toggle="tab" href="#nav-ambiente" role="tab"
+          aria-controls="nav-ambiente" aria-selected="false">Ambiente</a>
       </div>
     </nav>
     <div class="tab-content" id="nav-tabContent">
 
-      <!-- CLASE -->
+      <!-- Ambiente -->
 
       <div class="tab-pane fade" id="nav-ambiente" role="tabpanel" aria-labelledby="nav-ambiente-tab">
         <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
@@ -121,7 +122,7 @@
             <div class="row"
               style="background:  #F1F1F1;margin-top: 5px; border-radius: 5px; margin-left: 0px !important;margin-right: 0px !important;">
            
-              <div class="col-md-4 col-sm-6  col-xs-12" style="margin-bottom:15px;">
+              <div class="col-md-2 col-sm-6  col-xs-12" style="margin-bottom:15px;">
                 <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Edicio:</label>
                 <select name="" id="" class="form-control input-sm ">
                   <option value="">--------SELECIONE-------</option>
@@ -131,7 +132,17 @@
                 </select>
               </div>
 
-              <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+              <div class=" col-md-2 col-sm-6  col-xs-12 input-daterange" style="text-align: start;">
+                <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Piso: </label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------PISO 2--------</option>
+                  <option value="">------PISO 3--------</option>
+                  <option value="">------PISO 3--------</option>
+                </select>
+              </div>
+
+              <div class="col-md-2 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
                 <div class="form-group" style="text-align: start;">
                   <label class="label-input text-select" style="width: auto;">Código Ambiente: </label>
                   <div class="input-group input-daterange">
@@ -141,7 +152,7 @@
                 </div>
               </div>
               
-             <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+             <div class="col-md-2 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
                 <div class="form-group" style="text-align: start;">
                   <label class="label-input text-select" style="width: auto;">Descripción: </label>
                   <div class="input-group input-daterange">
@@ -149,6 +160,14 @@
                       placeholder="Descripción" required>
                   </div>
                 </div>
+              </div>
+              <div class=" col-md-2 col-sm-6  col-xs-12 input-daterange" style="text-align: start;">
+                <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Almacen Central</label>
+                <select name="" id="" class="form-control input-sm">
+                  <option value="">------SELECCIONE --------</option>
+                  <option value="">------NO--------</option>
+                  <option value="">------SI--------</option>      
+                </select>
               </div>
               <div class="col-md-2 col-sm-12  col-xs-12"
                 style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:15px; float: none;text-align: end;">
@@ -200,7 +219,7 @@
             <div class="row cls-content-ctrl-ses">
               <div class="table-responsive">
                 <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                  <div class="row" style="width: 100%; margin-bottom: 0px!important; margin-left:0px ">
+                  <div class="row" style="width: 100%; margin-bottom: 0px; margin-left:0px ">
                     <div class="col-sm-12">
                       <table
                         class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
@@ -221,10 +240,13 @@
                             <th class="text-center sorting" ng-show="vColUsuario" style="width: 80px;" tabindex="0"
                               aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
                               aria-label="Usuario: activate to sort column ascending">Descripción</th>
-
+                              <th class="text-left sorting text-center" style="width: 40px;" tabindex="0"
+                              aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                              aria-label="Código: activate to sort column ascending">Almacén Central</th>
                             <th class="text-center sorting" style="width: 95px;" tabindex="0"
                               aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
                               aria-label="Acción: activate to sort column ascending">Acción</th>
+                            
                           </tr>
                         </thead>
                         <tbody>
@@ -234,12 +256,15 @@
                             </td>
 
                             <td>
-                              0211
+                              0012
                             </td>
 
                             <td>
-                              ADMINISTRADOR DE DATA CENTER & NETWORKING
+                              ALMACÉN ADM
                             </td>
+                            <td class="text-center">
+                              SI
+                             </td>
                             <td class="text-center">
                               <button type="button" class="btn btn-edit btn-xs" title="Editar">
                                 <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
@@ -255,11 +280,14 @@
                               2
                             </td>
                             <td>
-                              0209
+                              0001
                             </td>
 
                             <td>
-                              ADMINISTRADOR DE HELPDESK
+                              ALMACÉN EUS
+                            </td>
+                            <td class="text-center">
+                             NO
                             </td>
                             <td class="text-center">
                               <button type="button" class="btn btn-edit btn-xs" title="Editar">
@@ -278,6 +306,9 @@
 
                             <td> ALMACÉN HELPDESK </td>
                             <td class="text-center">
+                              NO
+                             </td>
+                            <td class="text-center">
                               <button type="button" class="btn btn-edit btn-xs" title="Editar">
                                 <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
                               </button>
@@ -291,9 +322,12 @@
                           <tr>
                             <td> 4 </td>
 
-                            <td> 0140 </td>
+                            <td> 0011 </td>
 
-                            <td> ANALISTA 2 </td>
+                            <td> OFIC. 200  </td>
+                            <td class="text-center">
+                              NO
+                             </td>
                             <td class="text-center">
                               <button type="button" class="btn btn-edit btn-xs" title="Editar">
                                 <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
@@ -309,12 +343,15 @@
                               5
                             </td>
                             <td>
-                              0175
+                              0008
                             </td>
 
                             <td>
-                              ÁREA COMÚN - FINANZAS
+                              OFIC. 304 
                             </td>
+                            <td class="text-center">
+                              NO
+                             </td>
                             <td class="text-center">
                               <button type="button" class="btn btn-edit btn-xs" title="Editar">
                                 <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
@@ -329,8 +366,9 @@
                       </table>
                     </div>
                   </div>
+
                 </div>
-                <div class="row" style="margin-left:25px;margin-right:25px;margin-bottom:10px;">
+                <div class="row" style="margin-left:25px;margin-right:25px;margin-bottom:10px">
                   <div class="col-md-6 col-sm-6  col-xs-6"
                     style="padding-left: 0 !important;padding-right: 0 !important;">
                     <p>Mostrando 1 hasta 5 de 5 registros</p>
@@ -347,6 +385,7 @@
                 <h3 class="dt-loading" style="display: none;">Loading...</h3>
               </div>
             </div>
+           
 
           </div>
         </div>
@@ -354,7 +393,7 @@
       </div>
 
 
-
+<!-- Edificio -->
       <div class="tab-pane fade show active" id="nav-edificio" role="tabpanel" aria-labelledby="nav-edificio-tab">
         <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
           <div class="container-fluid ng-scope">
@@ -386,7 +425,7 @@
                 <div class="btn-save">
                   <button type="submit" class="btn  btn-sm btn-saves" style="height: 46% !important;
                       margin-top: 8px !important; " align="right" data-toggle="modal"
-                    data-target=".bd-example-modal-sm"><i class="fa fa-plus"></i>&nbsp;Registrar</button>
+                    data-target=".bd-example-modal-edificio"><i class="fa fa-plus"></i>&nbsp;Registrar</button>
                   <button type="submit" class="btn btn-sm btn-default" style=" 
                          height: 46% !important;
                          margin-top: 8px !important; " align="right"><i
@@ -582,57 +621,50 @@
         </div>
       </div>
 
+    <!--   Piso -->
       <div class="tab-pane fade" id="nav-piso" role="tabpanel" aria-labelledby="nav-piso-tab">
         <div class="panel-body" style="padding-bottom: 0px;padding-top: 2px;">
           <div class="container-fluid ng-scope">
             <div class="row"
-              style="background:  #F1F1F1;margin-top: 5px; border-radius: 5px; margin-left: 0px !important;margin-right: 0px !important;">
-            
-              <div class="col-md-2 col-sm-6  col-xs-12" style="margin-bottom:15px;">
-                <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Edicio:</label>
-                <select name="" id="" class="form-control input-sm ">
-                  <option value="">--------SELECIONE-------</option>
-                  <option value="">------ADMINISTRADOR DE DATA CENTER & NETWORKING--------</option>
-                  <option value="">------ADMINISTRADOR DE HELPDESK--------</option>
-                  <option value="">------ALMACÉN HELPDESK--------</option>
-                </select>
-              </div>
+            style="background:  #F1F1F1;margin-top: 5px; border-radius: 5px; margin-left: 0px !important;margin-right: 0px !important;">
+         
+            <div class="col-md-4 col-sm-6  col-xs-12" style="margin-bottom:15px;">
+              <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Edicio:</label>
+              <select name="" id="" class="form-control input-sm ">
+                <option value="">--------SELECIONE-------</option>
+                <option value="">------ADMINISTRADOR DE DATA CENTER & NETWORKING--------</option>
+                <option value="">------ADMINISTRADOR DE HELPDESK--------</option>
+                <option value="">------ALMACÉN HELPDESK--------</option>
+              </select>
+            </div>
 
-              <div class="col-md-2 col-sm-6  col-xs-12" style="margin-bottom:15px;">
-                <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Ambiente:</label>
-                <select name="" id="" class="form-control input-sm ">
-                  <option value="">--------SELECIONE-------</option>
-                  <option value="">------	ALMACÉN ADM--------</option>
-                  <option value="">------ALMACÉN EUS--------</option>
-                  <option value="">------OFIC. 200 - PISO 2--------</option>
-                </select>
-              </div>
-          
-              <div class="col-md-2  col-xs-12" style="margin-bottom:15px;">
-                <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Código Piso: </label>
+            <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+              <div class="form-group" style="text-align: start;">
+                <label class="label-input text-select" style="width: auto;">Código Piso: </label>
                 <div class="input-group input-daterange">
                   <input type="number" class="form-control input-sm" id="password" name="password"
                     placeholder="Código" required>
                 </div>
               </div>
-               <div class="col-md-4 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
-                <div class="form-group" style="text-align: start;">
-                  <label class="label-input text-select " style="width: auto;">Descripción: </label>
-                  <div class="input-group input-daterange">
-                    <input type="text" class="form-control input-sm" id="password" name="password"
-                      placeholder="Descripción" required>
-                  </div>
+            </div>
+            
+           <div class="col-md-3 col-xs-12" aria-label="..." align="right" style="margin-bottom:1%">
+              <div class="form-group" style="text-align: start;">
+                <label class="label-input text-select" style="width: auto;">Descripción: </label>
+                <div class="input-group input-daterange">
+                  <input type="text" class="form-control input-sm" id="password" name="password"
+                    placeholder="Descripción" required>
                 </div>
               </div>
-            
-              <div class="col-md-2 col-sm-12  col-xs-12"
-              style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:14px; float: none;text-align: end;">
+            </div>
+            <div class="col-md-2 col-sm-12  col-xs-12"
+              style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:15px; float: none;text-align: end;">
               <div class="form-group ">
                 <label class="label-input text-select" style="width: auto;"></label>
                 <div class="btn-save">
                   <button type="submit" class="btn  btn-sm btn-saves" style="height: 46% !important;
                       margin-top: 8px !important; " align="right" data-toggle="modal"
-                    data-target=".bd-example-modal-sm"><i class="fa fa-plus"></i>&nbsp;Registrar</button>
+                    data-target=".bd-example-modal-piso"><i class="fa fa-plus"></i>&nbsp;Registrar</button>
                   <button type="submit" class="btn btn-sm btn-default" style=" 
                          height: 46% !important;
                          margin-top: 8px !important; " align="right"><i
@@ -640,7 +672,7 @@
                 </div>
               </div>
             </div>
-            </div>
+          </div>
             <div class="row">
               <div class="col-md-12 col-xs-12">
                 <div class="table-responsive">
@@ -676,7 +708,7 @@
             <div class="row cls-content-ctrl-ses">
               <div class="table-responsive">
                 <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                  <div class="row" style="width: 100%; margin-bottom: 0px; margin-left:0px ">
+                  <div class="row" style="width: 100%; margin-bottom: 0px!important; margin-left:0px ">
                     <div class="col-sm-12">
                       <table
                         class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
@@ -705,17 +737,10 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>
-                              1
-                            </td>
+                            <td> 3 </td>
+                            <td> 0005 </td>
 
-                            <td>
-                              0012
-                            </td>
-
-                            <td>
-                              ALMACÉN ADM
-                            </td>
+                            <td>PISO 2</td>
                             <td class="text-center">
                               <button type="button" class="btn btn-edit btn-xs" title="Editar">
                                 <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
@@ -731,28 +756,12 @@
                               2
                             </td>
                             <td>
-                              0001
+                              0209
                             </td>
 
                             <td>
-                              ALMACÉN EUS
+                              PISO 2
                             </td>
-                            <td class="text-center">
-                              <button type="button" class="btn btn-edit btn-xs" title="Editar">
-                                <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
-                              </button>
-                              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
-                                <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
-                                  data-placement="top"></span>
-                              </button>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td> 3 </td>
-                            <td> 0005 </td>
-
-                            <td> OFIC. 200 - PISO 2</td>
                             <td class="text-center">
                               <button type="button" class="btn btn-edit btn-xs" title="Editar">
                                 <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
@@ -769,7 +778,24 @@
 
                             <td> 0011 </td>
 
-                            <td> OFIC. 304 - PISO 3 </td>
+                            <td> PISO 3 </td>
+                            <td class="text-center">
+                              <button type="button" class="btn btn-edit btn-xs" title="Editar">
+                                <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
+                              </button>
+                              <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                                <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                                  data-placement="top"></span>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td> 4 </td>
+
+                            <td> 0140 </td>
+
+                            <td> PISO 3  </td>
                             <td class="text-center">
                               <button type="button" class="btn btn-edit btn-xs" title="Editar">
                                 <span class="fa fa-edit" data-toggle="tooltip" data-placement="top"></span>
@@ -785,11 +811,11 @@
                               5
                             </td>
                             <td>
-                              0008
+                              0175
                             </td>
 
                             <td>
-                              OFIC. 308 - PISO 3
+                              PISO 4
                             </td>
                             <td class="text-center">
                               <button type="button" class="btn btn-edit btn-xs" title="Editar">
@@ -805,9 +831,8 @@
                       </table>
                     </div>
                   </div>
-
                 </div>
-                <div class="row" style="margin-left:25px;margin-right:25px;margin-bottom:10px">
+                <div class="row" style="margin-left:25px;margin-right:25px;margin-bottom:10px;">
                   <div class="col-md-6 col-sm-6  col-xs-6"
                     style="padding-left: 0 !important;padding-right: 0 !important;">
                     <p>Mostrando 1 hasta 5 de 5 registros</p>
@@ -928,6 +953,22 @@
                 <option value="">------EDIFICIO VILLA MARIA DEL TRIUNFO--------</option>
                 <option value="">------EDIFICIO MIRAFLORES--------</option>
               </select>
+            </div>
+            <div class="  input-daterange" style="text-align: start;">
+              <label class="label-input">Piso: </label>
+              <select name="" id="" class="form-control input-sm">
+                <option value="">------SELECCIONE --------</option>
+                <option value="">------OFIC. 200 - PISO 2--------</option>
+                <option value="">------OFIC. 304 - PISO 3--------</option>
+                <option value="">------OFIC. 308 - PISO 3--------</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="label-input" style="width: auto;">Código Ambiente: </label>
+              <div class="input-group input-daterange">
+                <input type="number" class="form-control input-sm" id="password" name="password"
+                  placeholder="Código de Ambiente" required>
+              </div>
             </div>
           </div>
         </div>
