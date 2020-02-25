@@ -126,8 +126,8 @@
                 <div class="input-group-addon">-</div>
                 <input type="number"
                   class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
-                  ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value=""
-                  placeholder="Número" maxlength="5"
+                  ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante" value="" placeholder="Número"
+                  maxlength="5"
                   oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   ng-pattern="/^-?[0-9][^\.]*$/">
               </div>
@@ -143,21 +143,17 @@
               <div class="  input-daterange" style="text-align: start;">
                 <label class="label-input">Cliente:</label>
                 <select name="" id="" class="form-control input-sm">
-                  <option value="">--------SELECIONE-------</option>
-                  <option value="">------Ninguno--------</option>
-                  <option value="">------Carlos Salas-------</option>
+
+
+                  <option value="">------Transportes Privados Select-------</option>
                 </select>
               </div>
             </div>
             <div class="form-group col-md-6">
               <label class="label-input">Dirección: </label>
               <div class=" input-group input-daterange" style="text-align: start;">
-
-                <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                  <option value="">------Av.Alcanfores 567--------</option>
-                  <option value="">------Jirón La Paz 152--------</option>
-                </select>
+                <input type="text" class="form-control input-sm" id="password" name="password" placeholder="Código"
+                  value="Calle Robles 654">
               </div>
             </div>
             <div class="form-group col-md-6">
@@ -165,25 +161,17 @@
               <div class=" input-group input-daterange" style="text-align: start;">
 
                 <select name="" id="" class="form-control input-sm">
-                  <option value="">------SELECCIONE --------</option>
-                  <option value="">------Salida de Almacen--------</option>
-                  <option value="">------Salida de Oficina--------</option>
+
+                  <option value="">------ALMACEN ADM--------</option>
+                  <option value="">------ALMACEN EUS--------</option>
                 </select>
               </div>
             </div>
 
-     
-          </div>
-
-
-
-          <div class="row">
-
 
           </div>
-          <div class="row">
 
-          </div>
+
         </div>
 
 
@@ -258,7 +246,204 @@
                   value="" required>
               </div>
             </div>
-          </div>     
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <div class="table-responsive">
+            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+              <div class="row" style="width: 100%;">
+                <div class="col-md-6 col-sm-6  col-xs-6">
+                  <div id="DataTables_Table_0_filter" class="dataTables_filter"
+                    style="float: left;  margin: 0 25px;margin-bottom: 5px!important;"><label style="
+                      margin: 25px 0;margin-bottom: 5px!important;
+                    "> 4 ARTÍCULOS </label>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6  col-xs-6 ">
+                  <div class="dataTables_length" id="DataTables_Table_0_length"
+                    style="float: right; margin: 25px 0;margin-bottom: 5px!important;">
+
+                    <label>Cod.Patrimonial <input type="number" maxlength="11" class="form-control"
+                        style="margin-left:2% !important;vertical-align:middle;float:right" />
+                      <button style="
+                       font-size: 16px; border-radius: 0 5px 5px 0 !important;"
+                        class="btn btn-sm btn-record"><i></i>&nbsp;Registrar</button></label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-right: 10px;margin-left: 10px;">
+        <div class="col-sm-12">
+          <table class="table table-bordered table-ses table-condensed table-hover ng-isolate-scope dataTable no-footer"
+            datatable="ng" dt-options="showCase.dtOptions" style="display: table;" id="DataTables_Table_0" role="grid"
+            aria-describedby="DataTables_Table_0_info">
+            <thead style="background:  #F1F1F1">
+              <tr role="row">
+                <th class="text-center sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                  colspan="1" aria-label=": activate to sort column descending" style="width: 79px;">
+                  Cod.Patrimonial
+
+                </th>
+
+
+                <th class="text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
+                  aria-label="Tipo de Solicitud: activate to sort column ascending" style="width: 312px;">
+                  Descripción</th>
+                <th class="text-center sorting" style="width: 95px;" tabindex="0" aria-controls="DataTables_Table_0"
+                  rowspan="1" colspan="1" aria-label="Acción: activate to sort column ascending">U.Medida</th>
+                <th class="text-center sorting" style="width: 95px;" tabindex="0" aria-controls="DataTables_Table_0"
+                  rowspan="1" colspan="1" aria-label="Acción: activate to sort column ascending">Cantidad</th>
+                <th class="text-center sorting" style="width: 95px;" tabindex="0" aria-controls="DataTables_Table_0"
+                  rowspan="1" colspan="1" aria-label="Acción: activate to sort column ascending">P.Unit</th>
+                <th class="text-center sorting" style="width: 95px;" tabindex="0" aria-controls="DataTables_Table_0"
+                  rowspan="1" colspan="1" aria-label="Acción: activate to sort column ascending">Total Importe</th>
+                <th class="text-center sorting" style="width: 95px;" tabindex="0" aria-controls="DataTables_Table_0"
+                  rowspan="1" colspan="1" aria-label="Acción: activate to sort column ascending">Quitar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">
+                  14737379923
+                </td>
+
+                <td class="text-center">
+                  ADAPTADOR INALÁMBRICO PCI
+                </td>
+                <td class="text-center">
+                  UND
+                </td>
+                <td class="text-center">
+                  <input type="number" class="form-control text-center
+                 h ng-touched letranatura" ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante"
+                    value="1" placeholder="" maxlength="8">
+
+                </td>
+                <td class="text-center">
+                  3000
+                </td>
+                <td class="text-center">
+                  3000
+                </td>
+
+                <td class="text-center">
+
+                  <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                    <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                      data-placement="top"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">
+                  002999508002
+                </td>
+                <td class="text-center">
+                  TARJETA DE RED
+                </td>
+                <td class="text-center">
+                  UND
+                </td>
+                <td class="text-center">
+                  <input type="number" class="form-control text-center
+                 h ng-touched letranatura" ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante"
+                    value="1" placeholder="" maxlength="8">
+
+                </td>
+
+                <td class="text-center">
+                  3000
+                </td>
+                <td class="text-center">
+                  3000
+                </td>
+                <td class="text-center">
+
+                  <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                    <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                      data-placement="top"></span>
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-center"> 003095220034 </td>
+                <td class="text-center"> CABLE DE CONSOLA </td>
+                <td class="text-center">
+                  UND
+                </td>
+                <td class="text-center">
+                  <input type="number" class="form-control text-center
+                 h ng-touched letranatura" ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante"
+                    value="1" placeholder="" maxlength="8">
+
+                </td>
+
+                <td class="text-center">
+                  3000
+                </td>
+                <td class="text-center">
+                  3000
+                </td>
+                <td class="text-center">
+
+                  <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                    <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                      data-placement="top"></span>
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-center"> 002995080025 </td>
+                <td class="text-center"> CABLE UTP Categoria 6- 3MTS</td>
+                <td class="text-center">
+                  UND
+                </td>
+                <td class="text-center">
+                  <input type="number" class="form-control text-center
+                 h ng-touched letranatura" ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante"
+                    value="1" placeholder="" maxlength="8">
+
+                </td>
+                <td class="text-center">
+                  3000
+                </td>
+                <td class="text-center">
+                  3000
+                </td>
+                <td class="text-center">
+
+                  <button type="button" class="btn btn-delete btn-xs" title="Eliminar">
+                    <span class="fa fa-trash-alt" data-toggle="modal" data-target="#exampleModal"
+                      data-placement="top"></span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row" style="margin-left:25px;margin-right:25px;margin-bottom:10px">
+        <div class="col-md-6 col-sm-6  col-xs-6" style="padding-left: 0 !important;padding-right: 0 !important;">
+          <strong>Total Cantidad 4</strong>
+        </div>
+        <div class="col-md-2 col-sm-6  col-xs-6" style="padding-left: 0 !important;padding-right: 0 !important;">
+          <strong>SubTotal: 12000</strong>
+        </div>
+        <div class="col-md-2 col-sm-6  col-xs-6" style="padding-left: 0 !important;padding-right: 0 !important;">
+          <strong>IGV: 216</strong>
+        </div>
+        <div class="col-md-2 col-sm-3  col-xs-6"
+          style="padding-left: 0 !important;padding-right:0;float:right !important;">
+          <strong>Total: 1416</strong>
         </div>
       </div>
       <div class="row" style=" float:none;
@@ -268,15 +453,12 @@
           <a href="salida-almacen.html"> <button style="     margin-top: 8px !important;font-size: 16px; "
               class="btn btn-sm btn-out"><i class="fas fa-arrow-left"></i>&nbsp;Salir</button></a>
           <button style="
-            margin-top: 8px !important; font-size: 16px;" class="btn btn-sm btn-record"><i></i>&nbsp;Registrar</button>
+            margin-top: 8px !important; font-size: 16px;" class="btn btn-sm btn-record"><i></i>&nbsp;Guardar</button>
         </div>
       </div>
     </div>
-    <footer class=" sky-blue-ses" style="position:fixed;
-                    left:0px;
-                    bottom:0px;
-                    height:25px;
-                    width:100%;">
+    <footer class=" sky-blue-ses"
+      style="position:fixed;                    left:0px;                    bottom:0px;                    height:25px;                    width:100%;">
       <div class="col-md-12 col-xs-12">
         <p style="margin:5px;" class="text-center font-color-white">© 2019 - 2020 SES - Sistema Logístico 1.0 -
           Todos los derechos reservados</p>

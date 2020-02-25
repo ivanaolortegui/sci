@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="catalogo-articulo.css">
   <link rel="stylesheet" href="mantenedor.css">
   <link rel="stylesheet" href="menu-style.css">
+  <link href="mantenedor.css" rel="stylesheet" />
+  <link rel="stylesheet" href="ingreso-almacen.css">
+  
+
 </head>
 
 <body>
@@ -103,35 +107,62 @@
       <p style=" margin-bottom: 2px !important;margin-top: 2px !important;">Catálogo de Articulos</p>
 
     </div>
+
+  
     <div class="row"
       style="background:  #F1F1F1;margin-top: 5px; border-radius: 5px; margin-left: 10px !important;margin-right: 10px !important;">
-      <div class="col-md-5 col-sm-6  col-xs-12" style="margin-bottom:15px;">
-        <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Ordenar por:</label>
-        <select class="form-control select-size">
+
+
+      
+      <div class="col-md-5 col-sm-6  col-xs-12 form-group" style="margin-bottom:15px;">
+        <label class="text-select label-input" style="float:left; margin-left: 20px; margin-right: 2%;">Ordenar por:</label>
+        <select class="form-control input-sm">
 
           <option value=""> ------ Seleccione ------ </option>
-          <option value="3" class="ng-binding ng-scope">Codigo Interno </option>
+          <option value="3" >Codigo Interno </option>
 
         </select>
       </div>
+
+    
+     
+  <!--       <div class="col-md-5 col-sm-6  col-xs-12 form-group" >
+          <label class="label-input">Moneda: </label>
+          <div class=" input-group input-daterange" style="text-align: start;">
+            <select name="" id="" class="form-control input-sm">
+              <option value="">------SELECCIONE --------</option>
+              <option value="">------SOLES--------</option>
+              <option value="">------DOLARES--------</option>
+            </select>
+          </div>
+        </div>
+   -->
+      
       <div class="col-md-5 col-sm-6  col-xs-12" style="margin-bottom:15px;">
-        <label class="text-select" style="float:left; margin-left: 20px; margin-right: 2%;">Estados:</label>
-        <select class="form-control select-size">
+        <label class="text-select label-input" style="float:left; margin-left: 20px; margin-right: 2%;">Estados:</label>
+        <select class="form-control input-sm">
 
           <option value=""> ------ Seleccione ------ </option>
-          <option value="3" class="ng-binding ng-scope">Vigentes </option>
+          <option value="3" >Vigentes </option>
 
         </select>
       </div>
-      <div class="col-md-2 col-sm-12  col-xs-12"
-        style="padding-left: 0 !important;float:right !important;margin-bottom: 10px; margin-top:20px; float: none;text-align: end;">
-        <a style="
-            margin-top: 8px !important;" class="btn btn-sm btn-registrar" href="registrar-artículo.html"><i
+      
+      <div class="col-md-2">
+        <div class="row" style="justify-content: flex-end; margin-top: 39px;">
+          <div class="form-group ">
+            <div class="btn-save">
+              <a style="
+              margin-top: 8px !important;" class="btn btn-sm btn-registrar" href="registrar-artículo.html"><i
             class="fa fa-plus"></i>&nbsp;Registrar</a>
-        <button style="
-            margin-top: 8px !important; " class="btn btn-sm btn-consultar"><i
-            class="fas fa-search"></i>&nbsp;Consultar</button>
+              <button type="submit" class="btn btn-sm btn-default" style=" 
+                     height: 46% !important;
+                     margin-top: 8px !important; " align="right"><i
+                  class="fa fa-search"></i>&nbsp;Consultar</button>
+            </div>
+          </div>
 
+        </div>
       </div>
     </div>
     <div class="row">
@@ -139,7 +170,6 @@
         <div class="table-responsive">
           <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
             <div class="row" style="width: 100%;">
-
               <div class="col-md-6 col-sm-6  col-xs-6 ">
                 <div class="dataTables_length" id="DataTables_Table_0_length"
                   style="float: left;; margin: 25px;margin-bottom: 5px!important;">
@@ -320,11 +350,7 @@
             margin-top: 8px !important; font-size: 16px;" class="btn btn-sm btn-record"><i></i>&nbsp;Ver
           Historial</button>
 
-
       </div>
-
-    
-
     </div> -->
 
 

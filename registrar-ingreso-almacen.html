@@ -118,7 +118,6 @@
             <div class="form-group col-md-6">
               <label class="label-input">Serie/Número: </label>
               <div class="input-group input-daterange">
-
                 <input type="number"
                   class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
                   ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="3" placeholder="Serie"
@@ -169,17 +168,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
         </div>
         <div class="col-md-6 col-sm-6  col-xs-12">
           <div class="col-md-12 col-sm-12  col-xs-12">
@@ -210,12 +198,9 @@
           <div class="row">
             <div class="form-group col-md-6">
               <label class="label-input">N° Documento: </label>
-              <div class="input-group input-daterange" style="
-                text-align: start;
-            ">
+              <div class="input-group input-daterange" style="text-align: start;">
 
-                <input type="text"
-                  class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
+                <input type="text" class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched letranatura"
                   ng-model="Serie" ng-disabled="HabilitoDeta" id="NewSerie" value="" maxlength="4" placeholder=""
                   oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
                 <div class="input-group-addon">-</div>
@@ -224,27 +209,18 @@
                   value="" placeholder="" maxlength="8"
                   oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   ng-pattern="/^-?[0-9][^\.]*$/">
-
               </div>
             </div>
             <div class="form-group col-md-6">
               <label class="label-input">Forma de Pago: </label>
               <div class=" input-group input-daterange" style="text-align: start;">
-
                 <select name="" id="" class="form-control input-sm">
                   <option value="">------SELECCIONE --------</option>
                   <option value="">------NINGUNO--------</option>
                 </select>
               </div>
             </div>
-
-
-
           </div>
-
-
-
-
         </div>
       </div>
     
@@ -266,7 +242,7 @@
                   
                     <label>Cod.Patrimonial   <input type="number" maxlength="11" class="form-control" style="margin-left:2% !important;vertical-align:middle;float:right"/>
                       <button style="
-                       font-size: 16px; border-radius: 0 5px 5px 0 !important;" class="btn btn-sm btn-record"><i></i>&nbsp;Adicionar</button></label>
+                       font-size: 16px; border-radius: 0 5px 5px 0 !important;" class="btn btn-sm btn-record"><i></i>&nbsp;Registrar</button></label>
                   </div>
                 </div>
                 
@@ -317,10 +293,18 @@
                 UND
               </td>
               <td class="text-center">
-                1
+               <input type="number" class="form-control text-center
+                h ng-touched letranatura" ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante"
+                value="1" placeholder="" maxlength="8"           
+               >
+
               </td>
               <td class="text-center">
-                3000
+                <input type="number " class="form-control text-center
+                h ng-touched letranatura" ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante"
+                value="3000" placeholder="" maxlength="8"           
+               >
+
               </td>
               <td class="text-center">
                 3000
@@ -345,12 +329,19 @@
                 UND
               </td>
               <td class="text-center">
-                1
-              </td>
-              
-              <td class="text-center">
-                3000
-              </td>
+                <input type="number" class="form-control text-center
+                 h ng-touched letranatura" ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante"
+                 value="1" placeholder="" maxlength="8"           
+                >
+ 
+               </td>
+               <td class="text-center">
+                 <input type="number " class="form-control text-center
+                 h ng-touched letranatura" ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante"
+                 value="3000" placeholder="" maxlength="8"           
+                >
+ 
+               </td>
               <td class="text-center">
                 3000
               </td>
@@ -370,12 +361,19 @@
                 UND
               </td>
               <td class="text-center">
-                1
-              </td>
-              
-              <td class="text-center">
-                3000
-              </td>
+                <input type="number" class="form-control text-center
+                 h ng-touched letranatura" ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante"
+                 value="1" placeholder="" maxlength="8"           
+                >
+ 
+               </td>
+               <td class="text-center">
+                 <input type="number " class="form-control text-center
+                 h ng-touched letranatura" ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante"
+                 value="3000" placeholder="" maxlength="8"           
+                >
+ 
+               </td>
               <td class="text-center">
                 3000
               </td>
@@ -395,12 +393,18 @@
                 UND
               </td>
               <td class="text-center">
-                1
-              </td>
-              
-              <td class="text-center">
-                3000
-              </td>
+                <input type="number" class="form-control text-center
+                 h ng-touched letranatura" ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante"
+                 value="1" placeholder="" maxlength="8"     >
+ 
+               </td>
+               <td class="text-center">
+                 <input type="number " class="form-control text-center
+                 h ng-touched letranatura" ng-model="NroComprobante" ng-disabled="HabilitoDeta" id="nrocomprobante"
+                 value="3000" placeholder="" maxlength="8"           
+                >
+ 
+               </td>
               <td class="text-center">
                 3000
               </td>
@@ -446,7 +450,7 @@
             margin-top: 8px !important;font-size: 16px; " class="btn btn-sm btn-out"><i
               class="fas fa-arrow-left"></i>&nbsp;Salir</button></a>
         <button style="
-            margin-top: 8px !important; font-size: 16px;" class="btn btn-sm btn-record"><i></i>&nbsp;Registrar</button>
+            margin-top: 8px !important; font-size: 16px;" class="btn btn-sm btn-record"><i></i>&nbsp;Guardar</button>
 
 
       </div>
